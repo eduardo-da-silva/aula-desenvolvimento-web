@@ -86,7 +86,7 @@ Crie uma pasta chamada `db` e dentro dessa pasta, um arquivo chamado `db.json`:
     "publishers": [],
     "books": [
         {"id": 1, "title": "Livro 1", "categoryId": 1, "publisherId": 1},
-        {"id": 1, "title": "Livro 2", "categoryId": 2, "publisherId": 1},
+        {"id": 1, "title": "Livro 2", "categoryId": 2, "publisherId": 1}
     ]
 }
 ```
