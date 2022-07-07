@@ -1,6 +1,7 @@
 ## Sumário
 
 1. [Servidor json-server](configuracao-do-ambiente.md)
+1.1 [Deploy no Heroku](deploy-no-heroku.md)
 
 # Introdução
 
