@@ -25,7 +25,7 @@ Caso você ainda não tenha uma conta no Heroku, seguir os seguintes passos:
 * Acessar o [https://www.heroku.com/](https://www.heroku.com/)
 * Clicar no ícone `SignUp` para criar uma nova conta
 
-![](.gitbook/assets/Heroku-Home.png)
+![](/.gitbook/assets/Heroku-Home.png)
 
 * Preencha o formulário de criação de conta
 
