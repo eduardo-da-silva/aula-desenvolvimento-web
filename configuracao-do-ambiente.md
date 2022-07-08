@@ -105,4 +105,4 @@ npm run start
 
 Um servidor será disponibilizado no endereço `http://localhost:4000`
 
-{% include button.html %}
+{% include_relative components/btn.html %}
