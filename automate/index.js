@@ -8,7 +8,17 @@ const markdownFiles = files.filter((file) => file.endsWith(".md"));
 // then, we need to read each file and extract the "{btn}" text
 markdownFiles.map((file) => {
   const content = fs.readFileSync(path.join(__dirname, "../", file), "utf8");
-  const newContent = content.replace(/\{btn\}/g, "<button>click!</button>");
+  //get page number by seeing the {page VALUE} text
+  const pageNumber = content.match(/\{page (\d+)\}/);
+  if (pageNumber) {
+    const page = pageNumber[1];
+  }
+
+  const newContent = content.replace(
+    /\{btn\}/g,
+    '{% include_relative components/btn.html next_page="youtube.com" %}'
+  );
+
   fs.writeFileSync(path.join(__dirname, "../", file), newContent);
 });
 

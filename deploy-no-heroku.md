@@ -1,3 +1,4 @@
+{page 1};
 # Deploy no Heroku
 
 ## Preparação do projeto para o Heroku
@@ -46,3 +47,4 @@ Estando no dashboard de acesso, você deve criar uma nova aplicação, clicando 
 
 ![](.gitbook/assets/image.png)
 
+{btn}
