@@ -47,4 +47,4 @@ Estando no dashboard de acesso, você deve criar uma nova aplicação, clicando 
 
 ![](.gitbook/assets/image.png)
 
-{% include_relative components/btn.html next_page="youtube.com" %}
+{% include_relative components/btn.html next_page="'https://youtube.com'" %}
