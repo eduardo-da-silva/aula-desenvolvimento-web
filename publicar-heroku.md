@@ -5,4 +5,4 @@
 
 Isso vai ser um novo teste
 
-{btn}
+{% include_relative components/btn.html next_page="youtube.com" %}
