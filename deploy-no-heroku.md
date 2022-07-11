@@ -26,7 +26,7 @@ Caso você ainda não tenha uma conta no Heroku, seguir os seguintes passos:
 * Acessar o [https://www.heroku.com/](https://www.heroku.com/)
 * Clicar no ícone `SignUp` para criar uma nova conta
 
-![](/.gitbook/assets/Heroku-Home.png)
+![](assets/Heroku-Home.png)
 
 * Preencha o formulário de criação de conta
 
@@ -35,7 +35,7 @@ Caso você ainda não tenha uma conta no Heroku, seguir os seguintes passos:
 * Um e-mail de confirmação será enviado para o email que você informou no cadastro. Confirme o recebimento.
 * Ao confirmar a criação da conta, será apresentado um formulário para a inserção da senha
 
-![](.gitbook/assets/Heroku-AccountActivation.png)
+![](/assets/Heroku-AccountActivation.png)
 
 * Após a criação senha de acesso, será apresentada uma tela de aceitação dos termos de contrato. Com a aceitação, você será redirecionado para o dashboard de gerenciamento.
 
@@ -45,6 +45,6 @@ Caso você já tenha uma conta de acesso ao Heroku, acesse o endereço https://h
 
 Estando no dashboard de acesso, você deve criar uma nova aplicação, clicando em `Create new app`, como segue:
 
-![](.gitbook/assets/image.png)
+![](./assets/image.png)
 
 {% include_relative components/btn.html next_page="'https://youtube.com'" %}
