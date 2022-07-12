@@ -1,6 +1,7 @@
 layout: page
-title: "Exemplos de uso do axios "
+title: "Exemplos de uso do axios"
 permalink: /axios/exemplos-de-uso
+
 # Exemplos de uso
 
 ## Importando o axios em um arquivo `.js` ou `.vue`
