@@ -47,4 +47,4 @@ Estando no dashboard de acesso, você deve criar uma nova aplicação, clicando 
 
 ![](./assets/image.png)
 
-{% include_relative components/btn.html next_page="'https://youtube.com'" %}
+
