@@ -24,8 +24,7 @@ Verifique se o **npm** está instalado:
 npm --version
 ```
 
-# 
 
 [&lt; Início](../ "Início") 
 <span style="display: inline-block;width: 60%"></span>
-[Configuração do ambiente &gt;](configuracao-do-ambiente.md "Próximo")  
+[Configuração do ambiente &gt;](configuracao-do-ambiente.html "Próximo")  

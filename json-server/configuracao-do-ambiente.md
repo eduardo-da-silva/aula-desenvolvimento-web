@@ -105,6 +105,6 @@ npm run start
 
 Um servidor será disponibilizado no endereço `http://localhost:4000`
 
-[&lt; Clone repo to your PC](clonerepotoyourpc "Previous") 
-<span style="display: inline-block;width: 50%"></span>
-[Configuração do ambiente](json-server/configuracao-do-ambiente.md "Próximo")  
+[&lt; Intro](intro.html "Anterior") 
+<span style="display: inline-block;width: 60%"></span>
+[Deploy no Heroku &gt;](deploy-no-heroku.html "Próximo") 
