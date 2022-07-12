@@ -26,6 +26,6 @@ npm --version
 
 # 
 
-[&lt; Início](../README.md "Início") 
+[&lt; Início](../ "Início") 
 <span style="display: inline-block;width: 60%"></span>
 [Configuração do ambiente &gt;](configuracao-do-ambiente.md "Próximo")  
