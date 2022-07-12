@@ -1,4 +1,3 @@
-{page 2}
 # Criação do servidor
 
 ### Criação do projeto
@@ -106,4 +105,6 @@ npm run start
 
 Um servidor será disponibilizado no endereço `http://localhost:4000`
 
-{% include_relative components/btn.html %}
+[&lt; Clone repo to your PC](clonerepotoyourpc "Previous") 
+<span style="display: inline-block;width: 50%"></span>
+[Configuração do ambiente](json-server/configuracao-do-ambiente.md "Próximo")  
