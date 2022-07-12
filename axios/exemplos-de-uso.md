@@ -50,9 +50,9 @@ Vamos considerar, nesse exemplo, que o servidor `json-server` tenha uma entrada 
 
 ```json
 "categorias": [
-    {"id": 1, "descrição": "Carros"},
-    {"id": 2, "descrição": "Motos"},
-    {"id": 3, "descrição": "Caminhões"},
+    {"id": 1, "descricao": "Carros"},
+    {"id": 2, "descricao": "Motos"},
+    {"id": 3, "descricao": "Caminhões"},
 ]
 ```
 
@@ -75,9 +75,9 @@ No exemplo acima, a função `buscarTodasAsCategorias` busca todas as categorias
 
 ```json
 [
-    {"id": 1, "descrição": "Carros"},
-    {"id": 2, "descrição": "Motos"},
-    {"id": 3, "descrição": "Caminhões"},
+    {"id": 1, "descricao": "Carros"},
+    {"id": 2, "descricao": "Motos"},
+    {"id": 3, "descricao": "Caminhões"},
 ]
 ```
 Note que é possível enviar opções no método GET, como filtros, paginação, ordenação, etc., que podem ou não estar implementados pelo servidor REST. Daí a importância de uma boa documentação da API disponibilizada.
@@ -100,8 +100,38 @@ async function buscarCategoria(id) {
 No exemplo acima, a função `buscarCategoria` faz o filtro pelo `id` e retorna ao solicitante a categoria solicitada ou um erro com _status_ 404 (não encontrada). No caso do nosso exemplo, se o solicitante chamasse a função com o parâmetro id=2 `buscarCategoria(2)`, o seguinte resultado seria retornado pela função:
 
 ```json
-{"id": 2, "descrição": "Motos"}
+{"id": 2, "descricao": "Motos"}
 ```
+
+## O método POST
+
+Usamos o POST para adicionar um novo recurso. Nesse caso, adicionaremos uma nova categoria. O exemplo a seguir mostra a implementação de uma nova categoria, que recebe um objeto ``nova_categoria` como parâmetro, que pode ter o seguinte formato:
+    
+```json
+{
+    "descricao": "Nova categoria"
+}
+```
+
+Neste caso, objeto `nova_categoria` deve conter os atributos do recurso `categoria`, como `descricao` no nosso exemplo. Outros atributos poderiam ser adicionados, caso o recurso tenha mais atributos. 
+
+```javascript
+async function adicionarCategoria(nova_categoria) {
+    try {
+        const resposta = await axios.post('http://localhost:4000/categorias', {nova_categoria})
+        return resposta.data
+    } catch(error) {
+        console.log(error)
+    }
+}
+```
+
+Caso o objeto `nova_categoria` não seja válido, o servidor retornará um erro com _status_ 400 (_BAD REQUEST_). Note também que, como o exemplo do método GET, em caso de sucesso, é retornado o atributo `data` do objeto `resposta` que contém a representação do recurso adicionado. No caso do nosso exemplo, seria retornado pela função:
+
+```json
+{"id": 4, "descricao": "Nova categoria"}
+```
+
 
 
 [&lt; Intro](intro.html "Anterior") 
