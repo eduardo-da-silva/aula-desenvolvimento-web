@@ -132,7 +132,56 @@ Caso o objeto `nova_categoria` não seja válido, o servidor retornará um erro 
 {"id": 4, "descricao": "Nova categoria"}
 ```
 
+## Os métodos PUT e PATCH
 
+Os métodos PUT e PATCH são similares. Ambos são utilizados para a atualização de um recurso. No exemplo a seguir, vamos atualizar a categoria com id = 2. Contudo, em geral, usamos o método PUT para substituir todo o objeto, enquanto o método PATCH é utilizado para atualizar apenas alguns atributos. Contudo, o uso dos dois é similar e a diferença acontece principalmente na forma que é implementado no servidor REST. Em alguns caso, o servidor REST pode retornar um erro com _status_ 400 (BAD REQUEST) caso não sejam informados todos os atributos num método PUT. Em outros casos, caso o atributo não seja informado, ele será excluído no armazenamento do recurso (que é o caso do `json-server`) 
+
+No nosso exemplo, modificaremos a descrição de uma nova categoria. Definiremos um objeto com os valores modificados. No nosso exemplo, a variável `categoria` terá o seguinte conteúdo:
+    
+```json
+{
+    "id": 2,
+    "descricao": "Motocicleta"
+}
+```
+
+Neste caso, objeto `categoria` deve conter os atributos do recurso `categoria`, como `descricao`. Como no método GET, outros atributos poderiam ser adicionados, caso o recurso tenha mais atributos. 
+
+```javascript
+async function alteraCategoria(categoria) {
+    try {
+        const resposta = await axios.put(`http://localhost:4000/categorias/${categoria.id}`, {categoria})
+        return resposta.data
+    } catch(error) {
+        console.log(error)
+    }
+```
+
+Caso o objeto `categoria` não seja válido, o servidor retornará um erro com _status_ 400 (_BAD REQUEST_). Note também que, como o exemplo do método GET, em caso de sucesso, é retornado o atributo `data` do objeto `resposta` que contém a representação do recurso adicionado. No caso do nosso exemplo, seria retornado pela função:
+
+```json
+{"id": 2, "descricao": "Motocicleta"}
+```
+
+O uso do método PUT seria similar, mas caso o recurso tivesse mais atributos, seria necessário informar todos os valores, senão eles seriam excluídos.
+
+
+# O método DELETE
+
+Por fim, o método DELETE é utilizado para excluir um recurso. No exemplo a seguir, vamos excluir a categoria com id = 2.
+
+```javascript
+async function excluirCategoria(id) {
+    try {
+        const resposta = await axios.delete(`http://localhost:4000/categorias/${id}`)
+        return resposta.data
+    } catch(error) {
+        console.log(error)
+    }
+}
+```
+
+Neste caso, o servidor retornará um erro com _status_ 404 (não encontrada) caso o recurso não exista, ou com _status_ 204 (no content) caso a exclusão seja realizada com sucesso.
 
 [&lt; Intro](intro.html "Anterior") 
 <span style="display: inline-block;width: 60%"></span>
