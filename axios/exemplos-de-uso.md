@@ -1,5 +1,4 @@
 ---
-layout: page
 title: "Exemplos de uso do axios"
 permalink: /axios/exemplos-de-uso
 ---
