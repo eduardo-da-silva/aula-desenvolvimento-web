@@ -48,7 +48,7 @@ Note que, neste exemplo, criamos uma classe chamada `TimesApi` que contém diver
 
 Em seguida, podemos fazer o acesso a essa classe no código em **vue** de manipulação dos times, como no exemplo a seguir:
 
-```javascript
+```html
 <script>
 import TimesApi from "@/api/times.js";
 const timesApi = new TimesApi();
