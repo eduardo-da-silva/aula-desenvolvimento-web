@@ -1,3 +1,12 @@
+---
+title: "A biblioteca Axios"
+description: Funcionamento básico do Axios no VueJS
+permalink: /axios
+---
+# Índice da aula
+2.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
+2.2. [Uso no projeto Times-Jogadores](axios/uso-times-jogadores.md) 
+
 # Introdução
 
 **Objetivo:** Utilizar a biblioteca axios para acessar o servidor json-server, instalado nas aulas anteriores.
@@ -8,7 +17,7 @@
 * Abra a **pasta** do projeto no vscode (repita em voz alta: _"Nunca abra um arquivo, sempre abra a pasta."_).
 * Verifique se o `node` está instalado com uma versão igual ou superior a 16.
 
-## A biblioteca `axios` e sua instalação
+# A biblioteca `axios` e sua instalação
 
 A biblioteca `axios` é um cliente HTTP tanto para uso no `node.js` quanto em um navegador. 
 

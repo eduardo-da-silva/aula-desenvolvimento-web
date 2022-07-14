@@ -184,4 +184,5 @@ async function excluirCategoria(id) {
 Neste caso, o servidor retornará um erro com _status_ 404 (não encontrada) caso o recurso não exista, ou com _status_ 204 (no content) caso a exclusão seja realizada com sucesso.
 
 [&lt; Intro](intro.html "Anterior") 
-<span style="display: inline-block;width: 60%"></span>
+<span style="display: inline-block;width: 40%"></span>
+[Uso no Time-Jogadores &gt;](uso-time-jogadores.html "Próximo") 

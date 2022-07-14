@@ -5,7 +5,8 @@
   1.2. [Deploy no Heroku](json-server/deploy-no-heroku.md)  
 
 2. [Aula 2 - Usando o Axios](axios/intro.md)  
-  2.1. [Exemplos de uso](axios/exemplos-de-uso.md)
+  2.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
+  2.2. [Uso no projeto Times-Jogadores](axios/uso-times-jogadores.md)
 
 # Informações
 
