@@ -102,8 +102,8 @@ export default {
         </thead>
         <tbody>
           <tr v-for="time in times" :key="time.id">
-            <td>{{ time.id }}</td>
-            <td>{{ time.nome }}</td>
+            <td>{% raw %}{{ time.id }}{% endraw %}</td>
+            <td>{% raw %}{{ time.nome }}{% endraw %}</td>
             <td>
               <button @click="editar(time)">Editar</button>
               <button @click="excluir(time)">Excluir</button>
