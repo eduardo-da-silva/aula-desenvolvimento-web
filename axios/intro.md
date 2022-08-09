@@ -4,8 +4,8 @@ description: Funcionamento básico do Axios no VueJS
 permalink: /axios
 ---
 # Índice da aula
-2.1. [Exemplos de uso](axios/exemplos-de-uso)  
-2.2. [Uso no projeto Times-Jogadores](axios/uso-times-jogadores) 
+2.1. [Exemplos de uso](axios/exemplos-de-uso.html)  
+2.2. [Uso no projeto Times-Jogadores](axios/uso-times-jogadores.html) 
 
 # Introdução
 
@@ -31,4 +31,4 @@ Outras formas de instalação podem ser encontradas na [documentação](https://
 
 [&lt; Início](../ "Início") 
 <span style="display: inline-block;width: 60%"></span>
-[Exemplos de uso do Axios &gt;](/axios/exemplos-de-uso "Próximo")  
+[Exemplos de uso do Axios &gt;](axios/exemplos-de-uso.html "Próximo")  
