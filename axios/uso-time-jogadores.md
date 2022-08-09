@@ -48,7 +48,7 @@ Note que, neste exemplo, criamos uma classe chamada `TimesApi` que contém diver
 
 Em seguida, podemos fazer o acesso a essa classe no código em **vue** de manipulação dos times, como no exemplo a seguir:
 
-```javascript
+```html
 <script>
 import TimesApi from "@/api/times.js";
 const timesApi = new TimesApi();
@@ -102,8 +102,8 @@ export default {
         </thead>
         <tbody>
           <tr v-for="time in times" :key="time.id">
-            <td>{{ time.id }}</td>
-            <td>{{ time.nome }}</td>
+            <td>{% raw %}{{ time.id }}{% endraw %}</td>
+            <td>{% raw %}{{ time.nome }}{% endraw %}</td>
             <td>
               <button @click="editar(time)">Editar</button>
               <button @click="excluir(time)">Excluir</button>
