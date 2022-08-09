@@ -15,7 +15,7 @@ permalink: /ambiente
 
 Recomendo a utilização do `nvm`, que permite a utilização de versões diferentes do NodeJS. O nvm é gerenciador de versões do NodeJs, desenvolvido para ser instalado utilizando a conta de um usuário final.
 
-Para instalar ou atualizaro o `nvm`, execute o comando abaixo:
+Para instalar ou atualizar o o `nvm`, execute o comando abaixo:
 
 ```bash
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
