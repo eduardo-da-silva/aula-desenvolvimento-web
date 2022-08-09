@@ -14,6 +14,8 @@ permalink: /
   3.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
   3.2. [Uso no projeto Times-Jogadores](axios/uso-time-jogadores.md)
 
+4. [Aula 4 - Revisão Geral de Componentes](componentes/intro.md)
+
 # Informações
 
 Essas são notas de aula para o uso nas disciplinas de desenvolvimento web realizadas por mim. 
