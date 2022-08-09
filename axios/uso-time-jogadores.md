@@ -118,5 +118,5 @@ export default {
 <style></style>
 ```
 
-[&lt; Exemplo de uso](exemplo-de-uso.html "Anterior") 
+[&lt; Exemplo de uso](exemplos-de-uso.html "Anterior") 
 <span style="display: inline-block;width: 60%"></span>
