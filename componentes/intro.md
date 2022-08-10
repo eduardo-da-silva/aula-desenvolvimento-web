@@ -17,36 +17,35 @@ Material de apoio para a aula de componentes:
 
 # Tópicos de aula
 
-1. Criar e registrar componentes 
- 1.1. Registro global 
- 1.2. Registro local 
+1. Criar e registrar componentes    
+   1. Registro global  
+   2. Registro local  
 
 2. Propriedades  
-  2.1. Array de strings  
-  2.2. Objetos, sendo chave o nome da propriedade e valor o tipo da propriedade  
-    2.2.1. Tipos: String, Number, Boolean, Object, Array, Function, Promise    
-    2.2.2. Uso do v-bind, exceto no caso de strings    
-    2.2.3. Caso do Boolean    
-    2.2.4. Uso de v-bind = objeto para associar todas as propriedades    
-  2.3. Propriedades com valor padrão  
-  2.4. Fluxo unidirecional  
-    2.4.1. Valor inicial alterado via data ou manipulado via computed  
-    2.4.2. Importante: objetos e arrays são enviados por referência  
+    1. Array de strings  
+    2. Objetos, sendo chave o nome da propriedade e valor o tipo da propriedade  
+        1. Tipos: String, Number, Boolean, Object, Array, Function, Promise    
+        2. Uso do v-bind, exceto no caso de strings    
+        3. Caso do Boolean    
+        4. Uso de v-bind = objeto para associar todas as propriedades  
+    3. Propriedades com valor padrão  
+    4. Fluxo unidirecional  
+        1. Valor inicial alterado via data ou manipulado via computed  
+        2. Importante: objetos e arrays são enviados por referência  
 
 3. Atributos não-propriedade  
-  3.1. Associados ao elemento raiz  
-  3.2. Pode ser associado a um sub-elemento. Uso do `inheritAttts: false` e `v-bind="$attrs"`  
+    1. Associados ao elemento raiz  
+    2. Pode ser associado a um sub-elemento. Uso do `inheritAttts: false` e `v-bind="$attrs"`  
 
 4. Eventos  
-  4.1. Uso de $emit  
-  4.2. Definição dos emits para documentação  
+    1. Uso de $emit  
+    2. Definição dos emits para documentação  
 
 5. Slots  
-  5.1. Definição de slots  
-  5.2. Valor padrão  
-  5.3. Slots nomeados  
-  5.4. Uso de templates com v-slot e com abreviações  
- 
+    1. Definição de slots  
+    2. Valor padrão  
+    3. Slots nomeados  
+    4. Uso de templates com v-slot e com abreviações  
 
 
 [&lt; Início](../ "Início") 
