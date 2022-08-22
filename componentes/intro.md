@@ -24,14 +24,14 @@ Material de apoio para a aula de componentes:
 2. Propriedades  
     1. Array de strings  
     2. Objetos, sendo chave o nome da propriedade e valor o tipo da propriedade  
-        1. Tipos: String, Number, Boolean, Object, Array, Function, Promise    
-        2. Uso do v-bind, exceto no caso de strings    
-        3. Caso do Boolean    
-        4. Uso de v-bind = objeto para associar todas as propriedades  
+        * Tipos: String, Number, Boolean, Object, Array, Function, Promise    
+        * Uso do v-bind, exceto no caso de strings    
+        * Caso do Boolean    
+        * Uso de v-bind = objeto para associar todas as propriedades  
     3. Propriedades com valor padrão  
     4. Fluxo unidirecional  
-        1. Valor inicial alterado via data ou manipulado via computed  
-        2. Importante: objetos e arrays são enviados por referência  
+        * Valor inicial alterado via data ou manipulado via computed  
+        * Importante: objetos e arrays são enviados por referência  
 
 3. Atributos não-propriedade  
     1. Associados ao elemento raiz  
