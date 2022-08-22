@@ -30,16 +30,16 @@ Caso você ainda não tenha uma conta no Heroku, seguir os seguintes passos:
 * Acessar o [https://www.heroku.com/](https://www.heroku.com/)
 * Clicar no ícone `SignUp` para criar uma nova conta
 
-![](/assets/Heroku-Home.png)
+![](../assets/Heroku-Home.png)
 
 * Preencha o formulário de criação de conta
 
-![](/assets/Heroku-SignUpForm.png)
+![](../assets/Heroku-SignUpForm.png)
 
 * Um e-mail de confirmação será enviado para o email que você informou no cadastro. Confirme o recebimento.
 * Ao confirmar a criação da conta, será apresentado um formulário para a inserção da senha
 
-![](/assets/Heroku-AccountActivation.png)
+![](../assets/Heroku-AccountActivation.png)
 
 * Após a criação senha de acesso, será apresentada uma tela de aceitação dos termos de contrato. Com a aceitação, você será redirecionado para o dashboard de gerenciamento.
 
@@ -49,12 +49,12 @@ Caso você já tenha uma conta de acesso ao Heroku, acesse o endereço https://h
 
 Estando no *dashboard* de acesso, você deve criar uma nova aplicação, clicando em `Create new app`, como segue:
 
-![](/assets/image.png)
+![](../assets/image.png)
 
 
 Em seguida, basta escolher um nome para o aplicativo. É importante ressaltar que esse nome deve ser único. Então, certifique-se que a mensagem `is available` apareceu logo abaixo no nome escolhido.
 
-![](/assets/Heroku-AppName.png)
+![](../assets/Heroku-AppName.png)
 
 Com isso, a aplicação está criada e os recursos necessários serão alocados na plataforma do Heroku.
 
@@ -64,15 +64,15 @@ Após a criação da aplicação, você será redirecionado para uma tela de con
 
 A imagem a seguir mostra a tela de configuração do *deploy*. No que logo após a etapa 2 é necessário autorizar o acesso à conta do GitHub.
 
-![](/assets/Heroku-Deploy1.png)
+![](../assets/Heroku-Deploy1.png)
 
 Depois de conectada a aplicação com o repositório no GitHub, basta escolher a *branch* para monitoramento e fazer o *deploy*.
 
-![](/assets/Heroku-Deploy2.png)
+![](../assets/Heroku-Deploy2.png)
 
 Se tudo correr bem, você terá uma imagem similar à apresentada na figura abaixo.
 
-![](/assets/Heroku-Deploy3.png)
+![](../assets/Heroku-Deploy3.png)
 
 Note que, como o repositório no GitHub está integrado com a aplicação, sempre que for realizado um *push* para a *branch* escolhida, a aplicação no Heroku será atualizada.
 
