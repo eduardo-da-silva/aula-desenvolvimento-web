@@ -9,7 +9,7 @@ Criar um primeiro projeto usando o VueJS.
 
 ### Preparação
 
-* Garantir que os passos da [Aula 0](../ambiente/) foram executados.
+* Garantir que os passos da [Aula 0](../ambiente) foram executados.
 * Crie uma nova pasta para o seu projeto e abra no VSCode.
 * Abra a **pasta** do projeto no vscode (repita em voz alta: _"Nunca abra um arquivo, sempre abra a pasta."_).
 
