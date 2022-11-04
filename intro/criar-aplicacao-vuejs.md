@@ -103,8 +103,88 @@ O código a seguir mostra o arquivo `index.html`:
 
 Em geral, você não precisará alterar este arquivo. Contudo, alguns ajustes podem ser realizados. Por exemplo, você pode alterar o título da página, conforme o código a seguir:
 ```html
-    <del><title>Vite App</title></del>
     <title>Aplicação exemplo Vue3</title>
 ```
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Introdução](intro.html "Voltar")</span> <span>[Estrutura do projeto &gt;](estrutura-arquivos.html "Próximo")</span></span>
+Também, podem ser adicionados outras referências, como por exemplo, para um pacote de arquivos CSS.
+
+Note também que antes de fechar a tag `</body>`, há uma referência para o arquivo `main.js`. Este arquivo é o ponto de entrada da aplicação. 
+
+## O arquivo main.js
+
+Como comentando anteriormente, o arquivo `main.js` é o ponto de entrada da aplicação. Ele é responsável por carregar o VueJS e o componente raiz da aplicação. O código a seguir mostra o arquivo `main.js`:
+
+```javascript
+import { createApp } from 'vue'
+import App from './App.vue'
+
+import './assets/main.css'
+
+createApp(App).mount('#app')
+```
+
+Neste exemplo, o arquivo `main.js` importa o método `createApp` do pacote `vue`, responsável por criar a aplicação VueJS. Em seguida, o arquivo importa o componente raiz da aplicação, que é o arquivo `App.vue`. E, por fim, o arquivo importa o arquivo `main.css`, que é o arquivo de estilo da aplicação.
+
+Na última linha, o arquivo chama o método `createApp` passando o componente raiz da aplicação como parâmetro. O método `createApp` retorna um objeto que possui o método `mount`, responsável por montar a aplicação no elemento raiz da aplicação, que é o elemento `<div id="app">`. A div com o id `app` é definida no arquivo `index.html`.
+
+Ao longo das atividades, você irá alterar este arquivo para adicionar novos componentes e novas funcionalidades.
+
+## O arquivo App.vue
+
+O arquivo `App.vue` é o componente raiz da aplicação. Ele é responsável por carregar os demais componentes da aplicação. O código a seguir mostra a conteúdo padrão, que vem com a instalação, do arquivo `App.vue`:
+
+```html
+<script setup>
+import HelloWorld from './components/HelloWorld.vue'
+import TheWelcome from './components/TheWelcome.vue'
+</script>
+
+<template>
+  <header>
+    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+
+    <div class="wrapper">
+      <HelloWorld msg="You did it!" />
+    </div>
+  </header>
+
+  <main>
+    <TheWelcome />
+  </main>
+</template>
+
+<style scoped>
+header {
+  line-height: 1.5;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 2rem;
+}
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
+
+  .logo {
+    margin: 0 2rem 0 0;
+  }
+
+  header .wrapper {
+    display: flex;
+    place-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+</style>
+```
+
+Neste momento, você não precisa entender o código deste arquivo. Contudo, é importante que você saiba que este é o componente raiz da aplicação. Inicialmente, ele carrega dois componentes: `HelloWorld` e `TheWelcome`. Estes componentes são definidos nos arquivos `HelloWorld.vue` e `TheWelcome.vue`, respectivamente, ambos na pasta `./src/components`.
+
+Não nos deteremos neste arquivo, pois ele será alterado ao longo das atividades.
+
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Introdução](intro.html "Voltar")</span> <span>[Os componentes de arquivo único &gt;](single-file-components.html "Próximo")</span></span>
