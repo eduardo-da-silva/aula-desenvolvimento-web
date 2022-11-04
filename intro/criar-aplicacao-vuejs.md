@@ -24,10 +24,10 @@ npm init vue@latest .
 
 *Note que usamos a opção `.` para criar a aplicação na pasta atual. Caso você não queira criar a aplicação na pasta atual, basta informar o nome da pasta que deseja criar.*
 
-O comando anterior irá criar uma aplicação VueJS usando uma ferramenta de scaffolding chamada `create-vue`. Ele apresentará uma série de perguntas para você. Responda conforme a seguir:
+O comando anterior irá criar uma aplicação VueJS usando uma ferramenta de scaffolding chamada `create-vue`. Ele apresentará uma série de perguntas para você. Responda conforme a seguir (assumo que o nome da pasta e do projeto são iguais: `exemplo-inicial-vue3`):
 
 ```bash
-✔ Project name: … <your-project-name>
+✔ Project name: … exemplo-inicial-vue3
 ✔ Add TypeScript? … No
 ✔ Add JSX Support? … No
 ✔ Add Vue Router for Single Page Application development? … No
@@ -50,4 +50,61 @@ npm install
 npm run dev
 ```
 
-O primeiro comando instala as dependências do projeto. O segundo comando executa o servidor de desenvolvimento do VueJS.
+O primeiro comando instala as dependências do projeto. O segundo comando executa o servidor de desenvolvimento do VueJS. Em geral, o servidor estará em execução na porta 5173, caso esta esteja livre. Para acessar a aplicação, basta abrir o navegador e acessar a URL `http://localhost:5173`.
+
+```bash
+  VITE v3.2.2  ready in 500 ms
+
+  ➜  Local:   http://127.0.0.1:5173/
+  ➜  Network: use --host to expose
+```
+
+A imagem mostra a tela inicial da aplicação VueJS.
+
+![Tela inicial da aplicação VueJS](../assets/CriacaoProjeto-TelaInicial.png)
+
+## Estrutura de arquivos
+
+A imagem a seguir mostra a estrutura de arquivos inicial do projeto.
+
+![Estrutura de arquivos do projeto](../assets/CriacaoProjeto-EstruturaArquivos.png)
+
+Esta estrutura pode ser resumida da seguinte forma:
+* `node_modules`: pasta com as dependências do projeto.
+* `public`: pasta com os arquivos estáticos da aplicação.
+* `src`: pasta com os arquivos fonte da aplicação. Por padrão, o arquivo `App.vue` é o componente raiz da aplicação, enquanto o arquivo `main.js` é o ponto de entrada da aplicação. Em geral, esta é a pasta que você irá trabalhar.
+* `index.html`: arquivo raiz do projeto que define .
+* `package.json`: arquivo com as configurações do projeto.
+* `package-lock.json`: arquivo com as configurações de versões das dependências do projeto.
+* `README.md`: arquivo com as instruções de instalação e execução do projeto.
+* `vite.config.js`: arquivo com as configurações do servidor de desenvolvimento.
+
+### O arquivo index.html
+
+O arquivo `index.html` é o arquivo raiz da aplicação. Ele define o elemento raiz da aplicação, que é o elemento `<div id="app">`. Este elemento é o elemento que será substituído pelo VueJS. O arquivo `index.html` também define o arquivo `main.js` como o ponto de entrada da aplicação.
+
+O código a seguir mostra o arquivo `index.html`:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+```
+
+Em geral, você não precisará alterar este arquivo. Contudo, alguns ajustes podem ser realizados. Por exemplo, você pode alterar o título da página, conforme o código a seguir:
+```html
+    <del><title>Vite App</title></del>
+    <title>Aplicação exemplo Vue3</title>
+```
+
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Introdução](intro.html "Voltar")</span> <span>[Estrutura do projeto &gt;](estrutura-arquivos.html "Próximo")</span></span>
