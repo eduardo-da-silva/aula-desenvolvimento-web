@@ -40,12 +40,14 @@ O exemplo abaixo mostra um componente de arquivo único, sem a lógica (que ser�
   <button @click="incrementarContador">Incrementar</button>
   <button @click="decrementarContador">Decrementar</button>
   <p>Valor do contador é: {{ contador }}</p>
-<template>
+</template>
 
 <style scoped>
 button {
   font-weight: bold;
 }
+</style>
+
 ```
 
 No bloco de estilos, o atributo `scoped` indica que os estilos definidos neste bloco são aplicados apenas ao componente. Isso significa que os estilos definidos neste bloco não afetam outros componentes. Foi definido um estilo para o elemento `button` que indica que a fonte será apresentada em negrito.
@@ -159,3 +161,10 @@ A API de opções é centrada no conceito de uma instância de componente, que e
 A API de composição é centrada no conceito de funções, que em geral é mais adaptável aos desenvolvedores que preferem o modelo baseado em funções, oriundo da Programação Funcional. 
 
 Mas lembre, você não precisa usar uma API ou outra. Você pode usar as duas APIs em um mesmo projeto, dependendo da situação e complexidade do componente.
+
+A figura abaixo mostra o resultado da aplicação exemplo apresentada acima. Note que o valor inicial do contador é impresso no console.
+
+![Exemplo de aplicação com VueJs](../assets/CriacaoProjeto-IncrementadorDecrementador.png)
+
+
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Instalação e criação de um aplicação](criar-aplicacao-vuejs.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
