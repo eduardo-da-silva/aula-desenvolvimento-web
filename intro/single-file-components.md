@@ -1,6 +1,6 @@
 ---
 title: "Componentes de arquivo único (Sigle-file Components"
-permalink: /intro/sigle-file-components.html
+permalink: /intro/sigle-file-components
 ---
 
 # Componentes de arquivo único (Sigle-file Components)

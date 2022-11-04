@@ -1,6 +1,6 @@
 ---
 title: "Instalação e criação de um aplicação"
-permalink: /intro/criar-aplicacao-vuejs.html
+permalink: /intro/criar-aplicacao-vuejs
 ---
 
 ### Introdução
