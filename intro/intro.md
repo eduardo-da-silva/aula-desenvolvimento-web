@@ -5,7 +5,7 @@ permalink: /intro
 ---
 # Índice da aula
 1.1. [Criando um aplicação VueJS](intro/criar-aplicacao-vuejs.html)  
-1.2. [Componentes de arquivo único](intro/sigle-file-components.html)  
+1.2. [Componentes de arquivo único](intro/single-file-components.html)  
 
 
 # O framework VueJs
