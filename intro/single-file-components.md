@@ -167,4 +167,4 @@ A figura abaixo mostra o resultado da aplicação exemplo apresentada acima. Not
 ![Exemplo de aplicação com VueJs](../assets/CriacaoProjeto-IncrementadorDecrementador.png)
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Instalação e criação de um aplicação](criar-aplicacao-vuejs.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Instalação e criação de um aplicação](criar-aplicacao-vuejs.html "Voltar")</span> <span>[Deploy da aplicação &gt;](deploy-aplicacao.html "Próximo")</span></span>

@@ -4,8 +4,9 @@ description: Introdução ao framework VueJs
 permalink: /intro
 ---
 # Índice da aula
-1.1. [Criando um aplicação VueJS](intro/criar-aplicacao-vuejs.html)  
-1.2. [Componentes de arquivo único](intro/single-file-components.html)  
+1. [Criando um aplicação VueJS](intro/criar-aplicacao-vuejs.html)  
+2. [Componentes de arquivo único](intro/single-file-components.html)  
+3. [Deploy da aplicação](intro/deploy-aplicacao.html)  
 
 
 # O framework VueJs

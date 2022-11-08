@@ -4,9 +4,12 @@ permalink: /
 ---
 ## Sumário
 
-1. [Aula 0 - Configuração do ambiente de desenvolvimento](ambiente/intro.md)
+0. [Aula 0 - Configuração do ambiente de desenvolvimento](ambiente/intro.md)
 
-2. [Aula 1 - Conhecendo o VueJS](intro/intro.md)
+1. [Aula 1 - Conhecendo o VueJS](intro/intro.md)  
+  1.1. [Criando um aplicação VueJS](intro/criar-aplicacao-vuejs.html)  
+  1.2. [Componentes de arquivo único](intro/single-file-components.html)  
+  1.3. [Deploy da aplicação](intro/deploy-aplicacao.html)  
 
 2. [Aula 2 - Servidor REST API simples com json-server](json-server/intro.md)  
   2.1. [Configuração do ambiente](json-server/configuracao-do-ambiente.md)  
