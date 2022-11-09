@@ -1,9 +1,9 @@
 ---
-title: "Componentes de arquivo único (Sigle-file Components"
+title: "Componentes de arquivo único (Single-file Components"
 permalink: /intro/single-file-components
 ---
 
-# Componentes de arquivo único (Sigle-file Components)
+# Componentes de arquivo único (Single-file Components)
 
 Os componentes de arquivo único (Sigle-file Components) são uma forma de definir componentes no VueJs. São componentes que são definidos em um único arquivo (arquivos `.vue`), encapsulando os components lógicos (JavaScript), de template (HTML) e de estilos (CSS).
 
