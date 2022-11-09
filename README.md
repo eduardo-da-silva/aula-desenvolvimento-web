@@ -11,15 +11,17 @@ permalink: /
   1.2. [Componentes de arquivo único](intro/single-file-components.html)  
   1.3. [Deploy da aplicação](intro/deploy-aplicacao.html)  
 
-2. [Aula 2 - Servidor REST API simples com json-server](json-server/intro.md)  
-  2.1. [Configuração do ambiente](json-server/configuracao-do-ambiente.md)  
-  2.2. [Deploy no Heroku](json-server/deploy-no-heroku.md)  
+2. [Aula 2 - Sintaxe do templates](sintaxe-templates/intro.md)
 
-3. [Aula 3 - Usando o Axios](axios/intro.md)  
-  3.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
-  3.2. [Uso no projeto Times-Jogadores](axios/uso-time-jogadores.md)
+3. [Aula 3 - Servidor REST API simples com json-server](json-server/intro.md)  
+  3.1. [Configuração do ambiente](json-server/configuracao-do-ambiente.md)  
+  3.2. [Deploy no Heroku](json-server/deploy-no-heroku.md)  
 
-4. [Aula 4 - Revisão Geral de Componentes](componentes/intro.md)
+4. [Aula 4 - Usando o Axios](axios/intro.md)  
+  4.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
+  4.2. [Uso no projeto Times-Jogadores](axios/uso-time-jogadores.md)
+
+5. [Aula 4 - Revisão Geral de Componentes](componentes/intro.md)
 
 # Informações
 
