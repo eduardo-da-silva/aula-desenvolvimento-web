@@ -39,7 +39,7 @@ O exemplo abaixo mostra um componente de arquivo único, sem a lógica (que ser�
 <template>
   <button @click="incrementarContador">Incrementar</button>
   <button @click="decrementarContador">Decrementar</button>
-  <p>Valor do contador é: \{{ contador }}</p>
+  <p>Valor do contador é: \{\{ contador \}\}</p>
 </template>
 
 <style scoped>
