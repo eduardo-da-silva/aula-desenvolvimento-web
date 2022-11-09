@@ -86,7 +86,7 @@ Por fim, é possível invocar funções JavaScript em templates. Considere o exe
     }
 </script>
 <template>
-    <p>{{ inverter(mensagem) }}</p>
+    <p>{% raw %}{{ inverter(mensagem) }}{% endraw %}</p>
 </template>
 ```
 
