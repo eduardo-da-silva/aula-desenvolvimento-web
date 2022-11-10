@@ -50,4 +50,4 @@ Algumas dicas importantes:
 * Sempre que novas alterações forem feitas na aplicação, é necessário executar o comando `npm run build` para gerar os arquivos estáticos, e então executar o comando `surge` para publicar a aplicação.
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Componentes de arquivo único](single-file-components.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Componentes de arquivo único](single-file-components.html "Voltar")</span> <span>[Exercícios &gt;](exercicios.html "Próximo")</span></span>
