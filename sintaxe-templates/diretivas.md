@@ -1,7 +1,7 @@
 ---
 title: "Sintaxe de templates - Diretivas"
 description: Conceitos de diretivas no VueJs
-permalink: /sintaxe-templates/diretivas.html
+permalink: /sintaxe-templates/diretivas
 ---
 
 # Diretivas

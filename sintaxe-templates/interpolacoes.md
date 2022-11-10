@@ -1,7 +1,7 @@
 ---
 title: "Sintaxe de templates - Interpolações"
 description: Conceitos de interpolações no VueJs
-permalink: /sintaxe-templates/interpolacao.html
+permalink: /sintaxe-templates/interpolacoes
 ---
 
 # Interpolações

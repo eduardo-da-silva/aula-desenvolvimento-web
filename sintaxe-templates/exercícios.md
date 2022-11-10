@@ -1,6 +1,6 @@
 ---
 title: "Exercícios"
-permalink: /intro/exercicios
+permalink: /sintaxe-templates/exercicios
 ---
 
 Em breve, exercícios para praticar o que foi aprendido na aula.
