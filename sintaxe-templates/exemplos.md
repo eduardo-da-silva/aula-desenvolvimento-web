@@ -91,7 +91,7 @@ Por fim, no bloco de style, temos:
     * `font-weight: bold;` - declaração do peso da fonte do elemento `h1`.
     * `font-size: 1.5em;` - declaração do tamanho da fonte do elemento `h1`.
 
-Este é um exemplo completo de um componente Vue.js. Vamos ver como ele é mostrado na tela.
+Este é um exemplo completo para interpolação de variáveis, expressões e funções. Ao executar o VueJs, com o comando `npm run dev`, o resultado será:
 
 ![Exemplo 1 - Mostrando informações na tela](../assets/SintaxeTemplate-Exemplo1.png)
 
