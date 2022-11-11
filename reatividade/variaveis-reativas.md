@@ -23,11 +23,40 @@ function incrementar() {
 </script>
 
 <template>
-    <button @click="incrementar">{{ contador }}</button>
+    <button @click="incrementar">{% raw %}{{ contador }} {% endraw %}</button>
 </template>
 ```
 
 No exemplo acima, a variável `contador` é declarada usando a função `ref`. A variável `contador` é um objeto que possui uma propriedade `value` que contém o valor passado como parâmetro. Quando o botão é clicado, a função `incrementar` é chamada e o valor da propriedade `value` do objeto `contador` é incrementado. Como o objeto `contador` é reativo, o valor do botão é atualizado automaticamente.
+
+Abaixo, alguns exemplos de declaração de variáveis reativas usando a função `ref`:
+
+```js
+import { ref } from 'vue'
+const nome = ref('João')                // string
+const idade = ref(30)                   // number
+const preco = ref(10.5)                 // number
+const ativo = ref(true)                 // boolean
+const frutas = ref(['maçã', 'banana'])  // array de strings
+const pessoa = ref({                    // objeto
+  nome: 'João',
+  idade: 30,
+  ativo: true
+})
+
+const pessoa1 = {                       // objeto não reativo
+  nome: 'João',
+  idade: 30,
+  ativo: true
+}
+const pessoa2 = {                       // objeto não reativo
+  nome: 'Maria',
+  idade: 25,
+  ativo: true
+}
+
+const pessoas = ref([pessoa1, pessoa2])  // array de objetos
+```
 
 <!-- ## Declarando variável reativas usando $ref
 
