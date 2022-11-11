@@ -192,4 +192,4 @@ Neste momento, você não precisa entender o código deste arquivo. Contudo, é 
 
 Não nos deteremos neste arquivo, pois ele será alterado ao longo das atividades.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Introdução](intro.html "Voltar")</span> <span>[Os componentes de arquivo único &gt;](single-file-components.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Introdução](./ "Voltar")</span> <span>[Os componentes de arquivo único &gt;](single-file-components.html "Próximo")</span></span>

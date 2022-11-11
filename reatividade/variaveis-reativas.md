@@ -57,4 +57,4 @@ Embora já tenhamos apresentado exemplos anteriormente, note que para acessar o 
 
 <!-- Também, você pode usar as duas formas de declaração, tanto `ref()` quanto `$ref()`, em qualquer parte do componente. -->
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](../ "Início")</span> <span>[Propriedades Computadas &gt;](propreidades-computadas.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](./ "Início")</span> <span>[Propriedades Computadas &gt;](propriedades-computadas.html "Próximo")</span></span>
