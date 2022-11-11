@@ -63,6 +63,11 @@ A imagem mostra a tela inicial da aplicação VueJS.
 
 ![Tela inicial da aplicação VueJS](../assets/CriacaoProjeto-TelaInicial.png)
 
+## Manter um repositório Git
+
+É muito importante que logo após a criação do projeto você crie um repositório Git para o projeto. Para isso, você pode usar o próprio Visual Studio Code. Para isso, abra o menu `Source Control` e clique em `Initialize Repository`. Em seguida, clique em `Create Repository`. O Visual Studio Code irá criar um repositório Git na pasta do projeto. Isso requer que o usuário tenha o Git instalado e configurado. Para mais informações, consulte a [Aula 0](../ambiente).
+
+Também, é importante que a cada alteração que você fizer no projeto, você faça um commit. Para isso, abra o menu `Source Control` e clique em `Stage All Changes`. Em seguida, clique em `Commit`. O Visual Studio Code irá criar um commit com as alterações realizadas. Para mais informações, consulte a [Aula 0](../ambiente).
 ## Estrutura de arquivos
 
 A imagem a seguir mostra a estrutura de arquivos inicial do projeto.

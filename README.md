@@ -2,6 +2,12 @@
 title: "Desenvolvimento Web - Curso técnico em Informática"
 permalink: /
 ---
+
+# Informações
+
+Essas são notas de aula para o uso nas disciplinas de desenvolvimento web realizadas por mim. 
+
+Esse material ainda está em construção e o seu conteúdo é melhor absorvido durante as atividades realizadas em sala de aula.
 ## Sumário
 
 0. [Aula 0 - Configuração do ambiente de desenvolvimento](ambiente/intro.md)
@@ -17,6 +23,10 @@ permalink: /
   2.2. [Diretivas](sintaxe-templates/diretivas.html)  
   2.3. [Exercícios](sintaxe-templates/exercicios.html)  
 
+3. [Aula 3 - Reatividade](reatividade/intro.md)  
+  3.1. [Reatividade](reatividade/reatividade.html)  
+  3.2. [Exercícios](reatividade/exercicios.html)
+
 3. [Aula 3 - Servidor REST API simples com json-server](json-server/intro.md)  
   3.1. [Configuração do ambiente](json-server/configuracao-do-ambiente.md)  
   3.2. [Deploy no Heroku](json-server/deploy-no-heroku.md)  
@@ -27,8 +37,3 @@ permalink: /
 
 5. [Aula 5 - Revisão Geral de Componentes](componentes/intro.md)
 
-# Informações
-
-Essas são notas de aula para o uso nas disciplinas de desenvolvimento web realizadas por mim. 
-
-Esse material ainda está em construção e o seu conteúdo é melhor absorvido durante as atividades realizadas em sala de aula.
