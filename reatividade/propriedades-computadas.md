@@ -27,8 +27,8 @@ const possuiDisciplinas = computed(() => {
 <template>
     <div>
         <h1>Professor</h1>
-        <p>Nome: {{ professor.nome }}</p>
-        <p>Possui disciplinas: {{ possuiDisciplinas }}</p>
+        <p>Nome: {% raw %}{{ professor.nome }}{% endraw %}</p>
+        <p>Possui disciplinas: {% raw %}{{ possuiDisciplinas }}{% endraw %}</p>
     </div>
 </template>
 ```
@@ -80,8 +80,8 @@ function possuiDisciplinas() {
 <template>
     <div>
         <h1>Professor</h1>
-        <p>Nome: {{ professor.nome }}</p>
-        <p>Possui disciplinas: {{ possuiDisciplinas() }}</p>
+        <p>Nome: {% raw %}{{ professor.nome }}{% endraw %}</p>
+        <p>Possui disciplinas: {% raw %}{{ possuiDisciplinas() }}{% endraw %}</p>
     </div>
 </template>
 ```
