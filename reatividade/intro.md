@@ -17,4 +17,6 @@ De forma bem simplificada, podemos considerar que a reatividade é a forma de cr
 
 Recapitulando, podemos dizer que a reatividade é a forma de criar variáveis reativas no VueJS que, quando elas alteradas, o VueJS atualiza automaticamente a interface do usuário.
 
+Ainda existem as propriedades computadas, que são funções que são executadas automaticamente quando uma variável reativa é alterada. Essas funções são chamadas de propriedades computadas.
+
 <span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[Variáveis reativas &gt;](reatividade/variaveis-reativas.html "Próximo")</span></span>
