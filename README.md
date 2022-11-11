@@ -21,7 +21,8 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
 2. [Aula 2 - Sintaxe do templates](sintaxe-templates/intro.md)  
   2.1. [Interpolações](sintaxe-templates/interpolacoes.html)   
   2.2. [Diretivas](sintaxe-templates/diretivas.html)  
-  2.3. [Exercícios](sintaxe-templates/exercicios.html)  
+  2.3. [Exemplos](sintaxe-templates/exemplos.html)  
+  2.4. [Exercícios](sintaxe-templates/exercicios.html)  
 
 3. [Aula 3 - Reatividade](reatividade/intro.md)  
   3.1. [Variáveis reativas](reatividade/variaveis-reativas.html)  

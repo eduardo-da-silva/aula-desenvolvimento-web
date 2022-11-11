@@ -7,6 +7,8 @@ permalink: /sintaxe-templates
 # Índice da aula
 1. [Interpolações](sintaxe-templates/interpolacoes.html)  
 2. [Diretivas](sintaxe-templates/diretivas.html)  
+3. [Exemplos](sintaxe-templates/exemplos.html)  
+4. [Exercícios](sintaxe-templates/exercicios.html)  
 
 # Sintaxe de templates
 
