@@ -24,8 +24,8 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
   2.3. [Exercícios](sintaxe-templates/exercicios.html)  
 
 3. [Aula 3 - Reatividade](reatividade/intro.md)  
-  3.1. [Variáveis reativas](reatividade/variaveis-reativas.html)
-  3.2. [Propriedades computadas](reatividade/propriedades-computadas.html)
+  3.1. [Variáveis reativas](reatividade/variaveis-reativas.html)  
+  3.2. [Propriedades computadas](reatividade/propriedades-computadas.html)  
   3.2. [Exercícios](reatividade/exercicios.html)
 
 3. [Aula 3 - Servidor REST API simples com json-server](json-server/intro.md)  
