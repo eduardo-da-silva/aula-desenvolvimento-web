@@ -29,7 +29,7 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
   3.2. [Propriedades computadas](reatividade/propriedades-computadas.html)  
   3.2. [Exercícios](reatividade/exercicios.html)
 
-4. [Aula 4 - Interligação em formulários](embreve.md)
+4. [Aula 4 - Interligação em formulários](formularios/intro.md)
 
 5. [Aula 5 - Renderização condicional](embreve.md)
 
