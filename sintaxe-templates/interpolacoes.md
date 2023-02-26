@@ -39,7 +39,7 @@ O padrão de interpolação de texto não é adequado para renderizar HTML puro.
 O código acima renderiza o seguinte HTML:
 
 <div style="padding:10px;background-color: #f8f8f8;">
-Usando interpolação de textos: {% raw %} <span style="color: red"> Este é um texto em vermelho </span> {% endraw %}
+Usando interpolação de textos: {%raw%} <span style="color: red"> Este é um texto em vermelho </span>{%endraw%}
 <p>Usando v-html: <span style="color: red">Este é um texto em vermelho</span></p>
 </div>
 

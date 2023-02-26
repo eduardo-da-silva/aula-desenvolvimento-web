@@ -29,15 +29,15 @@ Nesse exemplo, vamos mostrar informações na tela. Para isso, vamos editar o ar
 <template>
     <div class="info">
         <h1>Exemplo 1 - Mostrando informações na tela</h1>
-        <p>Nome: {{ nome }}</p>
-        <p>Idade: {{ idade }} anos</p>
+        <p>Nome: {% raw %}{{ nome }} {% endraw %}</p>
+        <p>Idade: {% raw %}{{ idade }} {% endraw %} anos</p>
         <hr />
-        <p>Para completar 50 anos faltam: {{ 50 - idade }} anos</p>
-        <p>O nome tem {{ nome.length }} caracteres</p>
-        <p>O nome invertido é: {{ inverter(nome) }}</p>
+        <p>Para completar 50 anos faltam: {% raw %}{{ 50 - idade }} {% endraw %} anos</p>
+        <p>O nome tem {% raw %}{{ nome.length }} {% endraw %} caracteres</p>
+        <p>O nome invertido é: {% raw %}{{ inverter(nome) }} {% endraw %}</p>
         <hr />
         <p> Exemplo de saudação usando função</p>
-        <p> {{ saudacao() }} </p>
+        <p> {% raw %}{{ saudacao() }} {% endraw %} </p>
     </div>
 </template>
 
