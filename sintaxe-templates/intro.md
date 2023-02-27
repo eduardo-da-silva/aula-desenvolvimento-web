@@ -16,4 +16,4 @@ O VueJs permite a criação de *templates* HTML que são renderizados dinamicame
 
 Em linhas gerais, todas as templates do VueJs são compiladas para funções JavaScript puras, o que as torna muito rápidas. A seguir, veremos alguns exemplos de templates e o seu uso.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Sumário](../ "Início")</span> <span>[Interpolações &gt;](sintaxe-templates/interpolacoes.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[Interpolações &gt;](sintaxe-templates/interpolacoes.html "Próximo")</span></span>
