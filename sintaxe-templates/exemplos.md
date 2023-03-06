@@ -1,7 +1,7 @@
 ---
 title: "Sintaxe de templates - Exemplos"
 description: Exemplos práticos do uso de sintaxe de templates
-permalink: /sintaxe-templates/diretivas
+permalink: /sintaxe-templates/exemplos
 ---
 
 # Exemplos práticos
