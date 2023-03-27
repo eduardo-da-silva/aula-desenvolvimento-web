@@ -64,3 +64,5 @@ Por fim, podemos usar uma associação em dois sentidos, ou seja, o valor da var
 A partir deste ponto, vamos considerar sempre o uso da diretiva `v-model` para vincular variáveis reativas a elementos de formulários, a não ser que seja necessário utilizar a diretiva `v-bind:value` e `v-on:input` separadamente.
 
 As próximas seções vão apresentar mais detalhes sobre a interligação em formulários.
+
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[Uso básico &gt;](formularios/uso-basico.html "Próximo")</span></span>
