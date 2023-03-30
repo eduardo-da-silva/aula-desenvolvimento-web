@@ -4,9 +4,9 @@ description: Introdução aos conceitos de interligação em formulários
 permalink: /formularios
 ---
 # Índice da aula
-1. [Variáveis reativas](reatividade/variaveis-reativas.html)
-2. [Propriedades computadas](reatividade/propriedades-computadas.html)
-3. [Exercícios](reatividade/exercicios.html)
+1. [Uso básico](formularios/uso-basico.html)
+2. [Recursos Diversos](formularios/recursos-diversos.html)
+3. [Exercícios e Projeto 1](formularios/exercicios.html)
 
 # Interligação em formulários
 

@@ -27,9 +27,12 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
 3. [Aula 3 - Reatividade](reatividade/intro.md)  
   3.1. [Variáveis reativas](reatividade/variaveis-reativas.html)  
   3.2. [Propriedades computadas](reatividade/propriedades-computadas.html)  
-  3.2. [Exercícios](reatividade/exercicios.html)
+  3.2. [Exercícios](reatividade/exercicios.html)  
 
-4. [Aula 4 - Interligação em formulários](formularios/intro.md)
+4. [Aula 4 - Interligação em formulários](formularios/intro.md)  
+  4.1. [Uso básico](formularios/uso-basico.html)  
+  4.2. [Recursos Diversos](formularios/recursos-diversos.html)  
+  4.3. [Exercícios e Projeto 1](formularios/exercicios.html)  
 
 5. [Aula 5 - Renderização condicional](embreve.md)
 
