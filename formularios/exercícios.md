@@ -27,7 +27,7 @@ O projeto consiste na criação de um formulário para edição do perfil de um 
 - Linguagens de programação
 - Biografia
 
-Após salvar as informções, deve ser exibida uma `div` com as informações preenchidas pelo usuário.
+Após salvar as informações, deve ser exibida uma `div` com as informações preenchidas pelo usuário.
 
 Serão considerados os seguintes critérios de avaliação:
 
@@ -35,4 +35,4 @@ Serão considerados os seguintes critérios de avaliação:
 - Uso de HTML semântico
 - Uso de CSS e organização da apresentação visual do formulário
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Recusos Diversos](recusos-diversos.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Recursos Diversos](recursos-diversos.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
