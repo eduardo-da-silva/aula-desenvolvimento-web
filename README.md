@@ -32,7 +32,8 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
 4. [Aula 4 - Interligação em formulários](formularios/intro.md)  
   4.1. [Uso básico](formularios/uso-basico.html)  
   4.2. [Recursos Diversos](formularios/recursos-diversos.html)  
-  4.3. [Exercícios e Projeto 1](formularios/exercicios.html)  
+  4.3. [Upload de imagens](formularios/upload-imagens.html)  
+  4.4. [Exercícios e Projeto 1](formularios/exercicios.html)  
 
 5. [Aula 5 - Dicas diversas](dicas/intro.md)  
   5.1. [Integração com Bootstrap](dicas/integracao-bootstrap.html)  
