@@ -108,4 +108,4 @@ O modificador `number` converte o valor do campo para um número:
 ```
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](uso-basico.html "Anterior")</span> <span>[Exercícios &gt;](exercicios.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](uso-basico.html "Anterior")</span> <span>[Upload de imagens &gt;](upload-imagens.html "Próximo")</span></span>
