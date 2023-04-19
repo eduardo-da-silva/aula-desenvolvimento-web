@@ -36,7 +36,8 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
   4.4. [Exercícios e Projeto 1](formularios/exercicios.html)  
 
 5. [Aula 5 - Renderização de listas](listas/intro.md)  
-  5.1. [Manipulação básica de listas](listas/manipulacao-basica.html)  
+  5.1. [Renderização dos elementos de listas](listas/renderizacao-elementos.html)  
+  5.2. [Manipulação de listas](listas/manipulacao-listas.html)  
 
 6. [Aula 6 - Dicas diversas](dicas/intro.md)  
   6.1. [Integração com Bootstrap](dicas/integracao-bootstrap.html)  

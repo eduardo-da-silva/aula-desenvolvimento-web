@@ -1,9 +1,9 @@
 ---
-title: "Manipulação básica de listas"
-permalink: /dicas/manipulacao-basica
+title: "Renderização dos elementos de listas"
+permalink: /dicas/renderizacao-elementos
 ---
 
-# Manipulação básica de listas
+# Renderização dos elementos de listas
 
 Nessa aula, vamos aprender a renderizar listas de dados. Usamos esse termo para descrever a renderização de arrays e objetos, bem como arrays de objetos. 
 
@@ -176,4 +176,4 @@ Poderíamos ter feito duas iterações. A primeira iteração seria para iterar 
 ```
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Anterior")</span><span>[Manipulação de listas &gt;](manipulacao-lista.html "Próximo")</span></span>

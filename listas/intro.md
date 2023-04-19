@@ -4,7 +4,8 @@ description: Renderização de listas
 permalink: /listas
 ---
 # Índice da aula
-1. [Manipulação básica de listas](listas/manipulacao-basica.html)
+1. [Renderização dos elementos de listas](listas/renderizacao-elementos.html)
+2. [Manipulação de listas](listas/manipulacao-listas.html)
 
 # Renderização de listas
 
@@ -21,4 +22,4 @@ De forma geral, os dados em listas podem estar em um array ou em um objeto. Em u
 
 A manipulação de listas é um dos recursos mais importantes do VueJS. Nessa aula, vamos aprender a renderizar listas de dados.  
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[Manipulação básica de listas &gt;](listas/manipulacao-basica.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[Renderização do elementos de listas &gt;](listas/renderizacao-elementos.html "Próximo")</span></span>
