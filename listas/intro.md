@@ -4,8 +4,9 @@ description: Renderização de listas
 permalink: /listas
 ---
 # Índice da aula
-1. [Renderização dos elementos de listas](listas/renderizacao-elementos.html)
-2. [Manipulação de listas](listas/manipulacao-listas.html)
+1. [Renderização dos elementos de listas](listas/renderizacao-elementos.html)  
+2. [Manipulação de listas](listas/manipulacao-listas.html)  
+3. [Exercícios](listas/exercicios.html)  
 
 # Renderização de listas
 

@@ -38,6 +38,7 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
 5. [Aula 5 - Renderização de listas](listas/intro.md)  
   5.1. [Renderização dos elementos de listas](listas/renderizacao-elementos.html)  
   5.2. [Manipulação de listas](listas/manipulacao-listas.html)  
+  5.3. [Exercícios](listas/exercicios.html)  
 
 6. [Aula 6 - Dicas diversas](dicas/intro.md)  
   6.1. [Integração com Bootstrap](dicas/integracao-bootstrap.html)  
