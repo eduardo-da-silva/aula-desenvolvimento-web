@@ -1,6 +1,6 @@
 ---
 title: "Renderização dos elementos de listas"
-permalink: /dicas/renderizacao-elementos
+permalink: /listas/renderizacao-elementos
 ---
 
 # Renderização dos elementos de listas
