@@ -1,6 +1,6 @@
 ---
 title: "Manipulação de listas"
-permalink: /listas/manipulacao-elementos
+permalink: /listas/manipulacao-listas
 ---
 
 # Manipulação de listas
