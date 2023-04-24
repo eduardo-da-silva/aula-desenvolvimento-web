@@ -9,7 +9,7 @@ Para fixar o conteúdo, vamos resolver alguns exercícios.
 
 ## Exercício 1
 
-Faça uma tela renderize uma lista de cidades. O componente deve receber um array de cidades como propriedade. A lista deve ser renderizada em um elemento `ul`. Cada item da lista deve ser renderizado em um elemento `li`. As cidades iniciais devem ser:
+Faça uma tela que renderize uma lista de cidades. O componente deve receber um array de cidades como propriedade. A lista deve ser renderizada em um elemento `ul`. Cada item da lista deve ser renderizado em um elemento `li`. As cidades iniciais devem ser:
     
     ```js
     [
