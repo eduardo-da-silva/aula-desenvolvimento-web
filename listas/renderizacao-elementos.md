@@ -17,7 +17,7 @@ Nessa aula, vamos aprender a renderizar listas de dados. Usamos esse termo para 
 </script>
 <template>
   <ul>
-    <li v-for="(item, index) in items" :key="index">{{ item }}</li>
+    <li v-for="(item, index) in items" :key="index">{% raw %} {{ item }} {% endraw %}</li>
   </ul>
 </template>
 ```
@@ -35,7 +35,7 @@ Por fim, fizemos a iteração no elemento `<li>`, mas poderíamos ter feito com 
     const items = ['Item 1', 'Item 2', 'Item 3']
 </script>
 <template>
-    <p v-for="(item, index) in items" :key="index">{{ item }}</p>
+    <p v-for="(item, index) in items" :key="index">{% raw %}{{ item }}{% endraw %}</p>
 </template>
 ```
 
@@ -53,7 +53,7 @@ Vamos agora renderizar uma lista de objetos. Para isso, vamos criar um array de 
 </script>
 <template>
   <ul>
-    <li v-for="item in items" :key="item.id">{{ item.name }}</li>
+    <li v-for="item in items" :key="item.id">{% raw %}{{ item.name }}{% endraw %}</li>
   </ul>
 </template>
 ```
@@ -74,7 +74,7 @@ Por fim, fizemos a iteração no elemento `<li>`, mas poderíamos ter feito com 
 </script>
 <template>
     <div v-for="item in items" :key="item.id">
-        p>{{ item.name }}</p>
+        <p>{% raw %}{{ item.name }}{% endraw %}</p>
     </div>
 </template>
 ```
@@ -93,7 +93,7 @@ Vamos agora renderizar um objeto. Para isso, vamos criar um objeto e renderizar 
 </script>
 <template>
   <ul>
-    <li v-for="(value, key) in items" :key="key">{{ key }}: {{ value }}</li>
+    <li v-for="(value, key) in items" :key="key">{% raw %}{{ key }}: {{ value }}{% endraw %}</li>
   </ul>
 </template>
 ```
@@ -125,7 +125,7 @@ Por fim, fizemos a iteração no elemento `<li>`, mas poderíamos ter feito com 
     }
 </script>
 <template>
-    <p v-for="(value, key) in items" :key="key">{{ key }}: {{ value }}</p>
+    <p v-for="(value, key) in items" :key="key">{% raw %}{{ key }}: {{ value }}{% endraw %}</p>
 </template>
 ```
 
@@ -144,9 +144,9 @@ Vamos agora renderizar uma lista de objetos que contém objetos aninhados. Para 
 <template>
   <ul>
     <li v-for="item in items" :key="item.id">
-      <p>{{ item.name }}</p>
-      <p>{{ item.details.description }}</p>
-      <p>{{ item.details.price }}</p>
+      <p>{% raw %}{{ item.name }}{% endraw %}</p>
+      <p>{% raw %}{{ item.details.description }}{% endraw %}</p>
+      <p>{% raw %}{{ item.details.price }}{% endraw %}</p>
     </li>
   </ul>
 </template>
@@ -167,9 +167,9 @@ Poderíamos ter feito duas iterações. A primeira iteração seria para iterar 
 <template>
   <ul>
     <li v-for="item in items" :key="item.id">
-      <p>Nome: {{ item.name }}</p>
+      <p>{% raw %}Nome: {{ item.name }}{% endraw %}</p>
       <p>Detalhes</p>
-      <p v-for="(value, key) in item.details" :key="key">{{ key }}: {{ value }}</p>
+      <p v-for="(value, key) in item.details" :key="key">{% raw %}{{ key }}: {{ value }}{% endraw %}</p>
     </li>
   </ul>
 </template>
