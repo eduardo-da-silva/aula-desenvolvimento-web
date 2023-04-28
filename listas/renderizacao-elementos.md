@@ -176,4 +176,4 @@ Poderíamos ter feito duas iterações. A primeira iteração seria para iterar 
 ```
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Anterior")</span><span>[Manipulação de listas &gt;](manipulacao-listas.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](./ "Anterior")</span><span>[Manipulação de listas &gt;](manipulacao-listas.html "Próximo")</span></span>

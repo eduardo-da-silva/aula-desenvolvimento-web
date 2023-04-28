@@ -27,7 +27,7 @@ Para adicionar um elemento a uma lista, basta usar o método `push` do array. O 
   <input type="text" v-model="novoItem">
   <button @click="adicionar">Adicionar</button>
   <ul>
-    <li v-for="item in lista">{% raw %}{{ item }}{% endraw %}</li>
+    <li v-for="item in listaCompras">{% raw %}{{ item }}{% endraw %}</li>
   </ul>
 </template>
 ```
@@ -52,7 +52,7 @@ Para remover um elemento de uma lista, basta usar o método `splice` do array. O
 </script>
 <template>
   <ul>
-    <li v-for="(item, index) in lista">{% raw %}{{ item }} {% endraw %}<button @click="remover(index)">Remover</button></li>
+    <li v-for="(item, index) in listaCompras">{% raw %}{{ item }} {% endraw %}<button @click="remover(index)">Remover</button></li>
   </ul>
 </template>
 ```
@@ -77,7 +77,7 @@ Para atualizar um elemento de uma lista, basta atribuir um novo valor ao element
 </script>
 <template>
   <ul>
-    <li v-for="(item, index) in lista">{% raw %}{{ item.nome }} - {{ item.quantidade }} {% endraw %}<button @click="incrementar(index)">Incrementar</button></li>
+    <li v-for="(item, index) in listaCompras">{% raw %}{{ item.nome }} - {{ item.quantidade }} {% endraw %}<button @click="incrementar(index)">Incrementar</button></li>
   </ul>
 </template>
 ```
