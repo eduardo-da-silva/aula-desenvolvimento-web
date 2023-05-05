@@ -35,4 +35,8 @@ Serão considerados os seguintes critérios de avaliação:
 - Uso de HTML semântico
 - Uso de CSS e organização da apresentação visual do formulário
 
+## Discussão do projeto
+
+Um exemplo básico de implementação desse projeto está em [Editor de Perfil](https://eduardo-form-perfil.surge.sh/). O código fonte está disponível em [GitHub](https://github.com/eduardo-da-silva/formularioEditorPerfil)
+
 <span style="display: flex; justify-content: space-between;"><span>[&lt; Recursos Diversos](recursos-diversos.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
