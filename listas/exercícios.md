@@ -130,5 +130,8 @@ Dica2: o mesmo pode ser feito com o total da compra, que pode ser recalculado se
 
 Dica3: se você desejar, todos esses cálculos podem ser feitos em propriedades computadas, mas não é obrigatório.
 
+Dica 4: um modelo de resultado pode ser visto [aqui](https://ldmfabio-listaprodutos.surge.sh/).
+
+Importante:  A entrega é para o dia 12/5, via SIGAA. Não esquecer que é obrigatório entregar o link do repositório no GitHub e o link do projeto no Surge.
 
 <span style="display: flex; justify-content: space-between;"><span>[&lt; Manipulação de listas](manipulacao-listas.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
