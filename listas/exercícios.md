@@ -94,7 +94,7 @@ O usuário deve poder adicionar os produtos ao carrinho. Para isso, deve ser ren
 Uma sugestão para a estrutura do objeto do carrinho é:
 
 ```js
-const carrinho = [
+const carrinho = {
     items: [
         {
             id: 1,
@@ -119,7 +119,7 @@ const carrinho = [
         }
     ]
     total: 288.30
-]
+}
 ```
 
 Note que o objeto do carrinho possui um atributo `total` que é o valor total dos itens no carrinho. Ainda, note que cada item do carrinho possui um atributo `valorTotal` que é o valor total do item multiplicado pela quantidade. Ainda, esses dois valores não devem ser informados pelo usuário, mas sim calculados a partir dos valores informados. 
