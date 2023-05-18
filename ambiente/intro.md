@@ -48,6 +48,16 @@ e
 git config --global user.email "email@dominio.com"
 ```
 
+## Ambiente no windows
+
+Foi criada uma playlist no [Youtube] (https://www.youtube.com/watch?v=R9cgjP5HLzE&list=PL6u1VNwqZdJamJIpi0ajtFpopTWeUx5pK). Existem algumas dicas boas quanto à instalação e permissão de acesso.
+
+Um comando quase sempre necessário no Windows, para ser executado no Power Shell, é:
+
+```bash
+Set-ExecutionPolicy Unrestricted -Scope CurrentUser
+```
+
 ## Extensões recomendadas do Visual Studio Code
 
 Eu sugiro que você instale as seguintes extensões para o Visual Studio Code:
