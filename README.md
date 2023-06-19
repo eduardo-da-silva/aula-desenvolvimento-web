@@ -43,6 +43,9 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
 6. [Aula 6 - Dicas diversas](dicas/intro.md)  
   6.1. [Integração com Bootstrap](dicas/integracao-bootstrap.html)  
 
+7. [Aula 7 - Componentes]  
+  7.1. [Componentes com conteúdo](componentes/conteudo.html)  
+
 <!-- 6. [Aula 6 - Renderização condicional](embreve.md) -->
 
 <!-- 7. [Aula 8 - Manipulação de eventos](embreve.md) -->
