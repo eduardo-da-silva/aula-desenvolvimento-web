@@ -64,4 +64,8 @@ Sempre use os Docs do Tailwind CSS para seguiar pelo framework, tudo que você p
 
 [Docs](https://tailwindcss.com/docs/utility-first)
 
+É altamente recomendando você usar a extensao do VS Code da própia Tailwind, pois ela ira te auxiliar a usar o framework de forma dinâmica.
+
+[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+
 <span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
