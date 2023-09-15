@@ -31,4 +31,4 @@ Outras formas de instalação podem ser encontradas na [documentação](https://
 
 <span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span>
 <span> 
-[Exemplos de uso do Axios &gt;](axios/exemplos-de-uso "Próximo")  </span></span>
+[Exemplos de uso do Axios &gt;](exemplos-de-uso "Próximo")  </span></span>
