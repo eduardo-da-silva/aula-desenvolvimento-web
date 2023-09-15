@@ -4,8 +4,8 @@ description: Funcionamento básico do Axios no VueJS
 permalink: /axios/
 ---
 # Índice da aula
-2.1. [Exemplos de uso](axios/exemplos-de-uso.html)  
-2.2. [Uso no projeto Times-Jogadores](axios/uso-time-jogadores.html) 
+8.1. [Exemplos de uso](exemplos-de-uso)  
+8.2. [A API TMDB](tmdb-api) 
 
 # Introdução
 
