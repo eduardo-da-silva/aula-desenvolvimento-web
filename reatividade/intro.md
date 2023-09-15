@@ -1,7 +1,7 @@
 ---
 title: "Fundamentos de Reatividade"
 description: Introdução aos conceitos de reatividade
-permalink: /reatividade
+permalink: /reatividade/
 ---
 # Índice da aula
 1. [Variáveis reativas](reatividade/variaveis-reativas.html)

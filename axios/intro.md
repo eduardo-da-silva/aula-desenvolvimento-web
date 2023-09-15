@@ -1,7 +1,7 @@
 ---
 title: "A biblioteca Axios"
 description: Funcionamento básico do Axios no VueJS
-permalink: /axios
+permalink: /axios/
 ---
 # Índice da aula
 2.1. [Exemplos de uso](axios/exemplos-de-uso.html)  
@@ -29,6 +29,6 @@ npm install axios
 
 Outras formas de instalação podem ser encontradas na [documentação](https://axios-http.com/ptbr/docs/intro) da biblioteca
 
-[&lt; Início](../ "Início") 
-<span style="display: inline-block;width: 60%"></span>
-[Exemplos de uso do Axios &gt;](axios/exemplos-de-uso.html "Próximo")  
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span>
+<span> 
+[Exemplos de uso do Axios &gt;](axios/exemplos-de-uso "Próximo")  </span></span>

@@ -26,7 +26,7 @@ De forma resumida, os verbos HTTP são os métodos de requisição utilizados pa
 | PUT           | Atualiza um recurso              |
 | PATCH         | Atualiza parcialmente um recurso |
 
-Com base nisso, podemos considerar um exemplo com a manipulação (armazenado em memória, arquivo ou banco de dados) de um recurso chamado `categorias`. No nosso exemplo, Vamos considerar que ele já está sendo fornecido por um servidor REST, como o apresentado nas aulas anteriores (json-server).
+Com base nisso, podemos considerar um exemplo com a manipulação (armazenado em memória, arquivo ou banco de dados) de um recurso chamado `categorias`. No nosso exemplo, Vamos considerar que ele já está sendo fornecido por um servidor REST.
 
 Nesse caso, teríamos os seguintes _endpoints_:
 
@@ -40,13 +40,12 @@ Endpoint         | Método   | Descrição                                      
 /categorias/{id} | DELETE   | Remove a categoria com id = {id}                  |
 
 
-Em todos os nossos exemplos a seguir, consideraremos que estamos utilizando o `json-server` como servidor REST. Também, que este servidor está em execução em `http://localhost:4000` e que o arquivo de dados está armazenado em `db/db.json`, no repositório do projeto de backend. 
-
+Os exemplo a seguir são fictícios e não consideram um servidor REST real. Em aulas posteriores vamos consultar um servidor REST real.
 # O método GET
 
 O método GET é usado para buscar uma representação de um ou mais recursos. Em caso de sucesso, retorna uma representação em JSON e um código de resposta HTTP de 200 (_OK_). Em caso de erro, ele geralmente retorna um 404 (_NOT FOUND_) ou 400 (_BAD REQUEST_).
 
-Vamos considerar, nesse exemplo, que o servidor `json-server` tenha uma entrada de dados com os seguintes dados:
+Vamos considerar, nesse exemplo, que o servidor REST tenha uma entrada de dados com os seguintes dados:
 
 ```json
 "categorias": [
@@ -63,7 +62,7 @@ Caso desejássemos buscar todas as categorias em um servidor, poderíamos ter um
 ```javascript
 async function buscarTodasAsCategorias() {
     try {
-        const resposta = await axios.get('http://localhost:4000/categorias')
+        const resposta = await axios.get('http://ip_e_porta_do_servidor/categorias')
         return resposta.data
     } catch(error) {
         console.log(error)
@@ -89,7 +88,7 @@ Caso desejássemos buscar apenas uma categoria pelo seu `id`, poderíamos ter um
 ```javascript
 async function buscarCategoria(id) {
     try {
-        const resposta = await axios.get(`http://localhost:4000/categorias/${id}`)
+        const resposta = await axios.get(`http://ip_e_porta_do_servidor/categorias/${id}`)
         return resposta.data
     } catch(error) {
         console.log(error)
@@ -118,7 +117,7 @@ Neste caso, objeto `nova_categoria` deve conter os atributos do recurso `categor
 ```javascript
 async function adicionarCategoria(nova_categoria) {
     try {
-        const resposta = await axios.post('http://localhost:4000/categorias', {nova_categoria})
+        const resposta = await axios.post('http://ip_e_porta_do_servidor/categorias', {nova_categoria})
         return resposta.data
     } catch(error) {
         console.log(error)
@@ -134,7 +133,7 @@ Caso o objeto `nova_categoria` não seja válido, o servidor retornará um erro 
 
 ## Os métodos PUT e PATCH
 
-Os métodos PUT e PATCH são similares. Ambos são utilizados para a atualização de um recurso. No exemplo a seguir, vamos atualizar a categoria com id = 2. Contudo, em geral, usamos o método PUT para substituir todo o objeto, enquanto o método PATCH é utilizado para atualizar apenas alguns atributos. Contudo, o uso dos dois é similar e a diferença acontece principalmente na forma que é implementado no servidor REST. Em alguns caso, o servidor REST pode retornar um erro com _status_ 400 (BAD REQUEST) caso não sejam informados todos os atributos num método PUT. Em outros casos, caso o atributo não seja informado, ele será excluído no armazenamento do recurso (que é o caso do `json-server`) 
+Os métodos PUT e PATCH são similares. Ambos são utilizados para a atualização de um recurso. No exemplo a seguir, vamos atualizar a categoria com id = 2. Contudo, em geral, usamos o método PUT para substituir todo o objeto, enquanto o método PATCH é utilizado para atualizar apenas alguns atributos. Contudo, o uso dos dois é similar e a diferença acontece principalmente na forma que é implementado no servidor REST. Em alguns caso, o servidor REST pode retornar um erro com _status_ 400 (BAD REQUEST) caso não sejam informados todos os atributos num método PUT. 
 
 No nosso exemplo, modificaremos a descrição de uma nova categoria. Definiremos um objeto com os valores modificados. No nosso exemplo, a variável `categoria` terá o seguinte conteúdo:
     
@@ -150,7 +149,7 @@ Neste caso, objeto `categoria` deve conter os atributos do recurso `categoria`, 
 ```javascript
 async function alteraCategoria(categoria) {
     try {
-        const resposta = await axios.put(`http://localhost:4000/categorias/${categoria.id}`, {categoria})
+        const resposta = await axios.put(`http://ip_e_porta_do_servidor/categorias/${categoria.id}`, {categoria})
         return resposta.data
     } catch(error) {
         console.log(error)
@@ -173,7 +172,7 @@ Por fim, o método DELETE é utilizado para excluir um recurso. No exemplo a seg
 ```javascript
 async function excluirCategoria(id) {
     try {
-        const resposta = await axios.delete(`http://localhost:4000/categorias/${id}`)
+        const resposta = await axios.delete(`http://ip_e_porta_do_servidor/categorias/${id}`)
         return resposta.data
     } catch(error) {
         console.log(error)
@@ -183,6 +182,4 @@ async function excluirCategoria(id) {
 
 Neste caso, o servidor retornará um erro com _status_ 404 (não encontrada) caso o recurso não exista, ou com _status_ 204 (no content) caso a exclusão seja realizada com sucesso.
 
-[&lt; Intro](intro.html "Anterior") 
-<span style="display: inline-block;width: 40%"></span>
-[Uso no Time-Jogadores &gt;](uso-time-jogadores.html "Próximo") 
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[A API TMDB (Filmes) &gt;](tmdb-api "Próximo")</span></span>
