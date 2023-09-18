@@ -117,4 +117,4 @@ Já o **{path}** é o caminho da imagem que se deseja buscar. Por exemplo, no ca
 
 É muito importante navegar pela documentação da API TMDB para conhecer os recursos disponíveis. Além disso, é possível testar o uso da API diretamente na documentação, o que facilita o entendimento do funcionamento da API.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Exemplos de uso](exemplos-de-uso "Anterior")</span> <span>[Exercícios &gt;](exercicios.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Exemplos de uso](exemplos-de-uso "Anterior")</span> <span>[TMDB no Vue &gt;](tmdb-no-vue "Próximo")</span></span>

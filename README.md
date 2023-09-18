@@ -49,7 +49,7 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
 
 8. [Aula 8 - Usando o Axios](axios/intro.md)  
   8.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
-  8.2. [A API TMDB](axios/tmdb-api.md)
+  8.2. [A API TMDB](axios/tmdb-api.md)  
   8.3. [TMDB no vue](axios/tmdb-no-vue.md)
 
 <!-- 5. [Aula 5 - Revisão Geral de Componentes](componentes/intro.md) -->

@@ -6,6 +6,7 @@ permalink: /axios/
 # Índice da aula
 8.1. [Exemplos de uso](exemplos-de-uso)  
 8.2. [A API TMDB](tmdb-api) 
+8.3. [TMDB no Vue](tmdb-no-vue) 
 
 # Introdução
 
