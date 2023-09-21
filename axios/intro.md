@@ -11,13 +11,7 @@ permalink: /axios/
 
 # Introdução
 
-**Objetivo:** Utilizar a biblioteca axios para acessar o servidor json-server, instalado nas aulas anteriores.
-
-### Preparação
-
-* Utilizar o projeto em andamento do gerenciamento de times e jogadores.
-* Abra a **pasta** do projeto no vscode (repita em voz alta: _"Nunca abra um arquivo, sempre abra a pasta."_).
-* Verifique se o `node` está instalado com uma versão igual ou superior a 16.
+**Objetivo:** Compreender o funcionamento do axios, integrado com Vue-Router e Pinia, no desenvolvimento de aplicações web.
 
 # A biblioteca `axios` e sua instalação
 
