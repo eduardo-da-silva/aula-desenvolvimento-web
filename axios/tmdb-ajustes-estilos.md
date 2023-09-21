@@ -138,7 +138,7 @@ Vamos adicionar um estilo no componente `MoviesView.vue` para apresentar a lista
   <h1>Filmes</h1>
   <ul class="genre-list">
     <li v-for="genre in genres" :key="genre.id" class="genre-item">
-        {% raw %}{{ genre.name }}{% raw %}
+        {% raw %}{{ genre.name }}{% endraw %}
     </li>
   </ul>
 </template>
@@ -201,7 +201,7 @@ As alterações no arquivo `TvView.vue` são muito semelhantes às alterações 
   <h1>Programas de TV</h1>
   <ul class="genre-list">
     <li v-for="genre in genres" :key="genre.id" class="genre-item">
-        {% raw %}{{ genre.name }}{% raw %}
+        {% raw %}{{ genre.name }}{% endraw %}
     </li>
   </ul>
 </template>
