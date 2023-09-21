@@ -61,14 +61,14 @@ onMounted(async () => {
   <h1>Gêneros de filmes</h1>
   <ul>
     <li v-for="genre in moviesGenres" :key="genre.id">
-      {{ genre.name }}
+      {% raw %}{{ genre.name }} {% endraw %}
     </li>
   </ul>
   <hr />
   <h1>Gêneros de programas de TV</h1>
   <ul>
     <li v-for="genre in TVGenres" :key="genre.id">
-      {{ genre.name }}
+      {% raw %}{{ genre.name }}{% endraw %}
     </li>
   </ul>
 </template>
