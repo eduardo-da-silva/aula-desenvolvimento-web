@@ -142,4 +142,4 @@ Note que o arquivo ficou mais sucinto, facilitando a leitura e a manutenção do
 
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; A API TMDB](tmdb-api "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; A API TMDB](tmdb-api "Anterior")</span> <span>[Adicionar Vue-router &gt;](tmdb-adicionar-vue-router "Próximo")</span></span>
