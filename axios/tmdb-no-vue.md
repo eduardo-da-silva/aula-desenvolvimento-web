@@ -93,4 +93,53 @@ Por isso utilizamos `response.data` para acessar apenas o corpo da resposta. Nes
 
 Por isso, utilizamos `response.data.genres` para acessar apenas o array de gêneros.
 
+# Configurando o Axios
+
+Note que no código acima, a chave de leitura da API foi inserida diretamente no código. Isso não é uma boa prática, pois a chave de leitura é um dado sensível que não deve ser exposto. Esse é um dado sensível que deve ser armazenado em um arquivo de configuração, que não deve ser enviado para o repositório. Vamos resolver esse detalhe em aulas posteriores.
+
+No entanto, um outro detalhe no código acima é que em todas as chamadas à API, foi necessário informar o _endpoint_ completo, bem como o cabeçalho _Authorization_. Para evitar repetir essas informações em todas as chamadas à API, vamos configurar o Axios para que ele já inclua essas informações em todas as chamadas à API.
+
+Para isso, vamos criar um arquivo chamado `axios.js` na pasta `src/plugins` (Se a pasta plugins não existir, crie dentro da pasta src). Em seguida, vamos adicionar o seguinte conteúdo:
+
+```js
+import axios from 'axios'
+
+const api = axios.create({
+  baseURL: 'https://api.themoviedb.org/3/',
+  headers: {
+    Authorization: `Bearer COLOQUE AQUI A CHAVE DE LEITURA DA API`
+  }
+})
+
+export default api
+```
+
+Nesse arquivo, importamos o Axios e criamos uma instância do Axios com o método `create`. Esse método recebe um objeto com as configurações da instância. Nesse caso, definimos a URL base da API e o cabeçalho _Authorization_. Em seguida, exportamos essa instância, chamada de `api`.
+
+## Utilizando o Axios modificado nas chamadas à API
+
+Agora, vamos alterar o arquivo `App.vue` para utilizar o Axios modificado. Para isso, vamos alterar a parte de `script` do arquivo `App.vue` para o seguinte:
+
+```html
+<script setup>
+import { ref, onMounted } from 'vue'
+import api from './plugins/axios'
+
+const moviesGenres = ref([])
+const TVGenres = ref([])
+
+onMounted(async () => {
+  let response = await api.get('genre/movie/list?language=pt-BR')
+  moviesGenres.value = response.data.genres
+  response =  await api.get('genre/tv/list?language=pt-BR')
+  TVGenres.value = response.data.genres
+})
+</script>
+```
+
+Note que o arquivo ficou mais sucinto, facilitando a leitura e a manutenção do código.
+
+
+
+
 <span style="display: flex; justify-content: space-between;"><span>[&lt; A API TMDB](tmdb-api "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
