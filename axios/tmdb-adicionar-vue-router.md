@@ -173,4 +173,4 @@ nav {
 
 Note que estamos utilizando o componente `RouterLink` para criar os links de navegação. Também estamos utilizando o componente `RouterView` para indicar onde o conteúdo da página será exibido. Ainda, fizemos uma pequena estilização para o menu de navegação, para que os links fiquem alinhados à esquerda e com um espaçamento entre eles. Note que usamos o atributo `scoped` para que o estilo seja aplicado apenas ao componente atual. 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMBD no Vue](tmdb-no-vue "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMBD no Vue](tmdb-no-vue "Anterior")</span> <span>[Ajustes de estilos CSS &gt;](tmdb-ajustes-estilos "Próximo")</span></span>
