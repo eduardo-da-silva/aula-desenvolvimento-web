@@ -14,7 +14,7 @@ A construção será progressiva, de forma que novas formas de organizar os arqu
 Para criar o projeto, vamos utilizar o Vite. Para isso, vamos criar uma pasta para esse projeto, por exemplo com o nome `filmes-tmdb`. Em seguida, vamos abrir essa pasta no Visual Studio Code e, no terminal, vamos executar o seguinte comando:
 
 ```
-npm init vite@latest .
+npm init vue@latest .
 ```
 
 Vamos responder às perguntas como já apresentado em aulas anteriores. Neste momento, não adicione ainda nem o Vue Router e nem o Pinia. Faremos isso mais adiante.
