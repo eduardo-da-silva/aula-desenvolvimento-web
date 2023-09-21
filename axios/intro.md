@@ -7,6 +7,7 @@ permalink: /axios/
 8.1. [Exemplos de uso](exemplos-de-uso)  
 8.2. [A API TMDB](tmdb-api) 
 8.3. [TMDB no Vue](tmdb-no-vue) 
+8.4. [TMDB: adicionar o vue-router](tmdb-adicionar-vue-router) 
 
 # Introdução
 
