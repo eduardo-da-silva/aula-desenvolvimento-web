@@ -88,7 +88,7 @@ Para criar a página para gêneros de filmes, vamos criar o arquivo `src/views/M
 ```html
 <script setup>
 import { ref, onMounted } from 'vue'
-import api from './plugins/axios'
+import api from '@/plugins/axios'
 
 const genres = ref([])
 
@@ -118,7 +118,7 @@ Para criar a página para gêneros de programas de TV, vamos criar o arquivo `sr
 ```html
 <script setup>
 import { ref, onMounted } from 'vue'
-import api from './plugins/axios'
+import api from '@/plugins/axios'
 
 const genres = ref([])
 
