@@ -25,12 +25,12 @@ const routes = [
   {
     path: '/filmes',
     name: 'Movies',
-    component: () => import('../views/Movies.vue')
+    component: () => import('../views/MoviesView.vue')
   },
   {
     path: '/tv',
     name: 'TV',
-    component: () => import('../views/TV.vue')
+    component: () => import('../views/TvView.vue')
   }
 ]
 
@@ -83,7 +83,7 @@ Nesta etapa, vamos separar a listagem de gêneros em duas views: uma para filmes
 
 ## Criando a página para gêneros de filmes
 
-Para criar a página para gêneros de filmes, vamos criar o arquivo `src/views/Movies.vue` com o seguinte conteúdo:
+Para criar a página para gêneros de filmes, vamos criar o arquivo `src/views/MoviesView.vue` com o seguinte conteúdo:
 
 ```html
 <script setup>
@@ -113,7 +113,7 @@ Note que estamos utilizando o `axios` como um plugin, conforme apresentado em au
 
 ## Criando a página para gêneros de programas de TV
 
-Para criar a página para gêneros de programas de TV, vamos criar o arquivo `src/views/TV.vue` com o seguinte conteúdo:
+Para criar a página para gêneros de programas de TV, vamos criar o arquivo `src/views/TvView.vue` com o seguinte conteúdo:
 
 ```html
 <script setup>
