@@ -10,9 +10,11 @@ Vamos agora listar os filmes ao clicar no gênero. Para isso, vamos alterar o co
 ```html
 <template>
 ...
-<li v-for="genre in genres" :key="genre.id" @click="listMovies(genre.id)">
+{% raw %}
+<li v-for="genre in genres" :key="genre.id" @click="listMovies(genre.id)" class="genre-item">
     {{ genre.name }}
 </li>
+{% endraw %}
 ... 
 </template>
 ```

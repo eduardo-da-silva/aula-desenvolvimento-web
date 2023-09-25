@@ -5,11 +5,11 @@ permalink: /axios/
 ---
 # Índice da aula
 8.1. [Exemplos de uso](exemplos-de-uso)  
-8.2. [A API TMDB](tmdb-api) 
-8.3. [TMDB no Vue](tmdb-no-vue) 
-8.4. [TMDB: adicionar o vue-router](tmdb-adicionar-vue-router) 
-8.5. [TMDB: ajustes de estilos](tmdb-ajustes-estilos)
-8.5. [TMDB: listando filmes](tmdb-listando-filmes)
+8.2. [A API TMDB](tmdb-api)  
+8.3. [TMDB no Vue](tmdb-no-vue)  
+8.4. [TMDB: adicionar o vue-router](tmdb-adicionar-vue-router)  
+8.5. [TMDB: ajustes de estilos](tmdb-ajustes-estilos)  
+8.5. [TMDB: listando filmes](tmdb-listando-filmes)  
 
 # Introdução
 
