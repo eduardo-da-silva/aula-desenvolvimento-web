@@ -53,6 +53,7 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
   8.3. [TMDB no vue](axios/tmdb-no-vue.md)  
   8.4. [TMDB: adicionar o vue-router](axios/tmdb-adicionar-vue-router.md)   
   8.5. [TMDB: ajustes de estilos](axios/tmdb-ajustes-estilos.md)  
+  8.6. [TMDB: listando filmes](axios/tmdb-listando-filmes.md)  
 
 <!-- 5. [Aula 5 - Revisão Geral de Componentes](componentes/intro.md) -->
 

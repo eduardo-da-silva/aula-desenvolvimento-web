@@ -236,4 +236,4 @@ As alterações no arquivo `TvView.vue` são muito semelhantes às alterações 
 
 Note que as únicas diferenças em relaçao ao exemplo do `MovieView.vue` são as cores utilizadas.
 
-    <span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: adicionar o vue-router](tmdb-adicionar-vue-router "Anterior")</span> <span>[TMDB: Listando os filmes &gt;](tmdb-listando-filmes "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: adicionar o vue-router](tmdb-adicionar-vue-router "Anterior")</span> <span>[TMDB: Listando os filmes &gt;](tmdb-listando-filmes "Próximo")</span></span>
