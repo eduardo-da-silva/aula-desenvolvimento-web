@@ -144,4 +144,4 @@ Note que nesse caso adicionamos a propriedade `margin-bottom` com o valor `2rem`
 
 Fazer a listagem de programas de TV ao clicar no gênero. Note que no caso dos programas de TV, a rota da API é `discover/tv` e o parâmetro para filtrar por gênero é `with_genres`. Além disso, o nome do campo que contém o título do programa de TV é `name`, o nome original é `original_name` e o nome do campo que contém a data de lançamento é `first_air_date`.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: ajustes nos estilos](tmdb-ajustes-estilos "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: ajustes nos estilos](tmdb-ajustes-estilos "Anterior")</span> <span>[TMDB: Visualizar como carregando &gt;](tmdb-visualizar-carregando "Próximo")</span></span>
