@@ -35,7 +35,7 @@ Agora, vamos alterar a listagem de filmes para que ele substitua o `id` do gêne
 ```html
 <p class="movie-genres">
   <span v-for="genre_id in movie.genre_ids" :key="genre_id" @click="listMovies(genre_id)">
-    {% raw %}{{ getGenreById(genre_id) }} {% endraw %}
+    {% raw %}{{ getGenreName(genre_id) }} {% endraw %}
   </span>
 </p>
 ```
