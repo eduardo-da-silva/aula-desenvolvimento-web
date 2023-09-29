@@ -35,12 +35,12 @@ Agora, vamos alterar a listagem de filmes para que ele substitua o `id` do gêne
 ```html
 <p class="movie-genres">
   <span v-for="genre_id in movie.genre_ids" :key="genre_id" @click="listMovies(genre_id)">
-    {{ getGenreById(genre_id) }}
+    {% raw %}{{ getGenreById(genre_id) }} {% endraw %}
   </span>
 </p>
 ```
 
-Note que localizamos a tag `p` com a classe `movie-genres` e substituímos o conteúdo `{{ movie.genre_ids }}` pela tag `span` acima. No caso do exemplo, a tag `span` é criada para cada `id` de gênero do filme (comportamento garantido pelo `v-for`). Além disso, adicionamos um `listener` ao evento `click` da tag `span` que chama o método `listMovies` passando o `id` do gênero como parâmetro. Por fim, adicionamos o conteúdo `{{ getGenreById(genre_id) }}` que exibe o nome do gênero a partir do `id` do gênero.
+Note que localizamos a tag `p` com a classe `movie-genres` e substituímos o conteúdo `{% raw %}{{ movie.genre_ids }} {% endraw %}` pela tag `span` acima. No caso do exemplo, a tag `span` é criada para cada `id` de gênero do filme (comportamento garantido pelo `v-for`). Além disso, adicionamos um `listener` ao evento `click` da tag `span` que chama o método `listMovies` passando o `id` do gênero como parâmetro. Por fim, adicionamos o conteúdo `{% raw %}{{ getGenreById(genre_id) }}{% endraw %}` que exibe o nome do gênero a partir do `id` do gênero.
 
 Por fim, vamos fazer uma estilização para a exibição dos gêneros. Para tal, vamos editar o bloco `style` do arquivo `MoviesView.vue` e adicionar o seguinte conteúdo:
 
@@ -78,10 +78,12 @@ Note que a classe `.movie-genres` já existia no bloco `style` do arquivo `Movie
 Neste exemplo, vamos alterar a forma como a data de lançamento dos filmes é exibida. Para isso, vamos abrir o arquivo `MoviesView.vue` e alterar o seguinte conteúdo no bloco `template`:
 
 ```html
+{% raw %}
 <p class="movie-release-date">{{ formatDate(movie.release_date) }}</p>
+{% endraw %}
 ```
 
-Note que localizamos a tag `p` com a classe `.movie-release-date` e substituímos o conteúdo `{{ movie.release_date }}` pelo conteúdo `{{ formatDate(movie.release_date) }}`. Além disso, vamos adicionar o seguinte conteúdo no bloco `script`:
+Note que localizamos a tag `p` com a classe `.movie-release-date` e substituímos o conteúdo `{{ movie.release_date }}` pelo conteúdo `{% raw %}{{ formatDate(movie.release_date) }}{% endraw %}`. Além disso, vamos adicionar o seguinte conteúdo no bloco `script`:
 
 ```javascript
 const formatDate = (date) => new Date(date).toLocaleDateString('pt-BR')
