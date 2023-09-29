@@ -54,7 +54,7 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
   8.4. [TMDB: adicionar o vue-router](axios/tmdb-adicionar-vue-router.md)   
   8.5. [TMDB: ajustes de estilos](axios/tmdb-ajustes-estilos.md)  
   8.6. [TMDB: listando filmes](axios/tmdb-listando-filmes.md)  
-  8.7. [TMDB: visualizar ícone de carregando](tmdb-visualizar-carregando)  
-  8.8. [TMDB: mostrando a tag gêneros](tmdb-mostrando-tag-generos)  
+  8.7. [TMDB: visualizar ícone de carregando](axios/tmdb-visualizar-carregando)  
+  8.8. [TMDB: mostrando a tag gêneros](axios/tmdb-mostrando-tag-generos)  
 <!-- 5. [Aula 5 - Revisão Geral de Componentes](componentes/intro.md) -->
 
