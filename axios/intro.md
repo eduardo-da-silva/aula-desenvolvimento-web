@@ -11,6 +11,7 @@ permalink: /axios/
 8.5. [TMDB: ajustes de estilos](tmdb-ajustes-estilos)  
 8.6. [TMDB: listando filmes](tmdb-listando-filmes)  
 8.7. [TMDB: visualizar ícone de carregando](tmdb-visualizar-carregando)  
+8.8. [TMDB: mostrando a tag gêneros](tmdb-mostrando-tag-generos)    
 
 # Introdução
 

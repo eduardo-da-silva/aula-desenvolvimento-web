@@ -61,4 +61,4 @@ Note que apenas fizemos uma pequena alteração na função, adicionando a linha
 
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: ajustes nos estilos](tmdb-ajustes-estilos "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: ajustes nos estilos](tmdb-ajustes-estilos "Anterior")</span> <span>[TMDB: mostrando a tag gênros &gt;](tmdb-mostrando-tag-generos "Próximo")</span></span>
