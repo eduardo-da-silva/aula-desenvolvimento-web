@@ -91,4 +91,4 @@ const formatDate = (date) => new Date(date).toLocaleDateString('pt-BR')
 
 Note que criamos uma função `formatDate` que recebe a data de lançamento como parâmetro e retorna a data formatada para o padrão brasileiro. Para isso, usamos a função `toLocaleDateString` do JavaScript para formatar a data para o padrão brasileiro. Sugiro colocar a função `formatDate` logo após a função `getGenreName`.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: visualizar carregando](tmdb-visualizar-carregando "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: visualizar carregando](tmdb-visualizar-carregando "Anterior")</span> <span>[TMDB: Gerenciamento de estados com Pinia &gt;](tmdb-gerenciamento-estados-com-pinia "Próximo")</span></span>

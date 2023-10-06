@@ -12,7 +12,7 @@ permalink: /axios/
 8.6. [TMDB: listando filmes](tmdb-listando-filmes)  
 8.7. [TMDB: visualizar ícone de carregando](tmdb-visualizar-carregando)  
 8.8. [TMDB: mostrando a tag gêneros](tmdb-mostrando-tag-generos)    
-
+8.9. [TMDB: gerenciamento de estados com Pinia](tmdb-gerenciamento-estados-com-pinia)  
 # Introdução
 
 **Objetivo:** Compreender o funcionamento do axios, integrado com Vue-Router e Pinia, no desenvolvimento de aplicações web.

@@ -56,5 +56,7 @@ Esse material ainda está em construção e o seu conteúdo é melhor absorvido 
   8.6. [TMDB: listando filmes](axios/tmdb-listando-filmes.md)  
   8.7. [TMDB: visualizar ícone de carregando](axios/tmdb-visualizar-carregando)  
   8.8. [TMDB: mostrando a tag gêneros](axios/tmdb-mostrando-tag-generos)  
+  8.9. [TMDB: gerenciamento de estados com Pinia](axios/tmdb-gerenciamento-estados-com-pinia)  
+
 <!-- 5. [Aula 5 - Revisão Geral de Componentes](componentes/intro.md) -->
 
