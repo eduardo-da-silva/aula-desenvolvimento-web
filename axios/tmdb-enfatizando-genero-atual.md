@@ -90,7 +90,7 @@ e também
   v-for="genre_id in movie.genre_ids"
   :key="genre_id"
   @click="listMovies(genre_id)"
-  :class="{ active: genre.id === genreStore.currentGenreId }"
+  :class="{ active: genre_id === genreStore.currentGenreId }"
 >
   {{ genreStore.getGenreName(genre_id) }}
 </span>
