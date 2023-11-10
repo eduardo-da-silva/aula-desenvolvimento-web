@@ -34,7 +34,19 @@ const setCurrentGenreId = (genreId) => {
 };
 ```
 
-Nesse exemplo, estamos usando uma função para alterar o valor da propriedade `currentGenreId` para o valor passado como parâmetro.
+Nesse exemplo, estamos usando uma função para alterar o valor da propriedade `currentGenreId` para o valor passado como parâmetro. Agora, basta substituir o retorno da função `defineStore` pelo seguinte:
+
+```js
+return {
+  genres,
+  getAllGenres,
+  getGenreName,
+  currentGenreId,
+  setCurrentGenreId,
+};
+```
+
+Note que estamos retornando a propriedade computada `currentGenreId` e a função `setCurrentGenreId`.
 
 ## Alterando o componente MoviesView.vue
 
