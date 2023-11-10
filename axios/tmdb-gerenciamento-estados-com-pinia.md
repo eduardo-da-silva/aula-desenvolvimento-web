@@ -103,7 +103,7 @@ Por fim, exportamos a _store_ usando o método `useGenreStore`. Esse método é 
 Para usar a _store_, vamos editar o arquivo `src/views/MoviesView.vue`. Inicialmente vamos editar o bloco `script` e adicionar o seguinte código:
 
 ```js
-import genreStore from '@/stores/genres'
+import genreStore from '@/stores/genre'
 ```
 
 Note que importamos a _store_ usando o método `useGenreStore` que criamos anteriormente. No mesmo bloco `script` vamos alterar o método `onMounted` para que ele chame a função `getAllGenres` da _store_:
@@ -152,4 +152,4 @@ Nesse exemplo, usamos a função `getGenreName` para buscar o nome do gênero co
 1. Fazer as alterações necessárias em `TvView.vue` para que a listagem de gêneros seja feita usando a _store_ `genre`. Note que ao chamar a função `getAllGenres` da _store_ `genre`, é necessário passar o parâmetro `'tv'` para que a listagem de gêneros seja feita com base nos filmes.
 
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: Mostrando a tag gêneros](tmdb-mostrando-tag-generos "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: Mostrando a tag gêneros](tmdb-mostrando-tag-generos "Anterior")</span> <span>[TMDB: Enfatizando o gênero atual &gt;](tmdb-enfatizando-genero-atual "Próximo")</span></span>
