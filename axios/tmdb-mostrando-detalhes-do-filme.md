@@ -161,8 +161,4 @@ Vamos editar o arquivo `src/router/index.js` e adicionar a seguinte rota:
 },
 ```
 
-<span style="display: flex; justify-content: space-between;"> <span> [&lt; TMDB: Enfatizando o gênero atual](tmdb-enfatizando-genero-atual 'Anterior')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span
-
-```
-
-```
+<span style="display: flex; justify-content: space-between;"> <span> [&lt; TMDB: Enfatizando o gênero atual](tmdb-enfatizando-genero-atual 'Anterior')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>
