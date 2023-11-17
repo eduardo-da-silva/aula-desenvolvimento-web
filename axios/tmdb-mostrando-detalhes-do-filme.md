@@ -14,7 +14,6 @@ Vamos criar um arquivo chamado `src/stores/movie.js` e adicionar o seguinte cód
 ```js
 import { reactive, computed } from 'vue';
 import { defineStore } from 'pinia';
-import { useTemplateStore } from './template';
 import api from '@/plugins/axios';
 
 export const useMovieStore = defineStore('movie', () => {
@@ -25,11 +24,8 @@ export const useMovieStore = defineStore('movie', () => {
   const currentMovie = computed(() => state.currentMovie);
 
   const getMovieDetail = async (movieId) => {
-    const templateStore = useTemplateStore();
-    templateStore.setIsLoading(true);
     const response = await api.get(`movie/${movieId}`);
     state.currentMovie = response.data;
-    templateStore.setIsLoading(false);
   };
 
   return { currentMovie, getMovieDetail };
@@ -156,7 +152,7 @@ Vamos editar o arquivo `src/router/index.js` e adicionar a seguinte rota:
 {
   path: '/movie/:movieId',
   name: 'MovieDetails',
-  component: () => import('@/views/MovieDetailsView.vue'),
+  component: () => import('../views/MovieDetailsView.vue'),
   props: true,
 },
 ```
