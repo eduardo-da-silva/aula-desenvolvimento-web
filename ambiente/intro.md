@@ -1,11 +1,8 @@
 ---
-title: "Ambiente de desenvolvimento"
+title: 'Ambiente de desenvolvimento'
 description: Configuração do ambiente de desenvolvimento no Linux
 permalink: /ambiente
 ---
-<!-- # Índice da aula
-2.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
-2.2. [Uso no projeto Times-Jogadores](axios/uso-times-jogadores.md)  -->
 
 # Introdução
 
@@ -21,7 +18,7 @@ Para instalar ou atualizar o o `nvm`, execute o comando abaixo:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 ```
 
-Em seguida, edite o arquivo `~/.zshrc` e adicione as seguintes linhas:
+Caso você esteja utilizando o ambiente `zsh`, é necessário editar o arquivo `~/.zshrc` e adicione as seguintes linhas:
 
 ```bash
 export NVM_DIR="$HOME/.nvm"
@@ -42,13 +39,14 @@ Considerando que o `git` já esteja instalado em seu ambiente, sugiro configurar
 ```bash
 git config --global user.name "Nome do usuário"
 ```
-e 
+
+e
 
 ```bash
 git config --global user.email "email@dominio.com"
 ```
 
-## Ambiente no windows
+## Ambiente no Microsoft Windows
 
 Foi criada uma playlist no [Youtube] (https://www.youtube.com/watch?v=R9cgjP5HLzE&list=PL6u1VNwqZdJamJIpi0ajtFpopTWeUx5pK). Existem algumas dicas boas quanto à instalação e permissão de acesso.
 
@@ -62,14 +60,13 @@ Set-ExecutionPolicy Unrestricted -Scope CurrentUser
 
 Eu sugiro que você instale as seguintes extensões para o Visual Studio Code:
 
-* [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
-* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-* [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-* [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client)
-* [Portuguese (Brazil) Language Pack](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-pt-BR)
-* [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=code-spell-checker.code-spell-checker)
-* [Brazilian Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
-* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons)
+- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar)
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [Portuguese (Brazil) Language Pack](https://marketplace.visualstudio.com/items?itemName=MS-CEINTL.vscode-language-pack-pt-BR)
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=code-spell-checker.code-spell-checker)
+- [Brazilian Portuguese - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-portuguese-brazilian)
+- [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons)
 
 Você pode instalar outras extensões e fazer configurações adicionais, conforme a sua preferência.
 
@@ -122,9 +119,9 @@ Linting é uma forma de analisar o código e apontar problemas. O ESLint é uma 
 
 É importante ressaltar que problemas de regras de negócio não são detectados pelo ESLint. Por exemplo, se você tiver uma função que faz uma divisão por zero, o ESLint não vai detectar isso. Ele vai apenas apontar problemas de sintaxe e de estilo de código.
 
-Ainda, o ESLint não é apenas capaz de detectar erros no seu código, mas em muitos casos, pode até mesmo corrigi-los automaticamente. Ele pode ser executado como uma ferramenta de linha de comando e também está integrado na maioria dos IDEs comuns, como o Visual Studio Code, o que permite que os erros detectados pelo ESLint sejam revelados diretamente no arquivo que está sendo editado. 
+Ainda, o ESLint não é apenas capaz de detectar erros no seu código, mas em muitos casos, pode até mesmo corrigi-los automaticamente. Ele pode ser executado como uma ferramenta de linha de comando e também está integrado na maioria dos IDEs comuns, como o Visual Studio Code, o que permite que os erros detectados pelo ESLint sejam revelados diretamente no arquivo que está sendo editado.
 
-Em geral, quando criamos um projeto no Vue, já é possível escolher para que o ESLint seja instalado e configurado. No entanto, é importante que você entenda como ele funciona e como ele pode ser configurado. 
+Em geral, quando criamos um projeto no Vue, já é possível escolher para que o ESLint seja instalado e configurado. No entanto, é importante que você entenda como ele funciona e como ele pode ser configurado.
 
 Caso o seu projeto não tenha sido criado com o ESLint, você pode instalá-lo e configurá-lo manualmente. Para isso, execute o comando abaixo:
 
@@ -148,9 +145,7 @@ module.exports = {
 }
 ``` -->
 
+[&lt; Início](../ 'Início')
 
-
-
-[&lt; Início](../ "Início") 
 <!-- <span style="display: inline-block;width: 60%"></span>
 [Exemplos de uso do Axios &gt;](exemplos-de-uso.html "Próximo")   -->
