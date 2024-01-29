@@ -145,7 +145,7 @@ module.exports = {
 }
 ``` -->
 
-[&lt; Início](../ 'Início')
+[&lt; Início](. 'Início')
 
 <!-- <span style="display: inline-block;width: 60%"></span>
 [Exemplos de uso do Axios &gt;](exemplos-de-uso.html "Próximo")   -->
