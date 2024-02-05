@@ -59,8 +59,8 @@ O VueJs permite a renderização de expressões JavaScript. Para isso, basta usa
 </script>
 
 <template>
-  {% raw %} {{ numero + 1 }} <span><br /></span> {{ ok ? 'Sim' : 'Não' }}
-  <span><br /></span>
+  {% raw %}{{ numero + 1 }} <br />
+  {{ ok ? 'Sim' : 'Não' }} <br />
   {{mensagem.split('').reverse().join('') }} {% endraw %}
 </template>
 ```
