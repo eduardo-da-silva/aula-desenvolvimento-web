@@ -59,9 +59,11 @@ O VueJs permite a renderização de expressões JavaScript. Para isso, basta usa
 </script>
 
 <template>
-  {% raw %}{{ numero + 1 }} <br />
-  {{ ok ? 'Sim' : 'Não' }} <br />
-  {{mensagem.split('').reverse().join('') }} {% endraw %}
+  {% raw %}
+  <p>{{ numero + 1 }}</p>
+  <p>{{ ok ? 'Sim' : 'Não' }}</p>
+  <p>{{mensagem.split('').reverse().join('') }}</p>
+  {% endraw %}
 </template>
 ```
 
@@ -91,4 +93,4 @@ Por fim, é possível invocar funções JavaScript em templates. Considere o exe
 
 No exemplo acima, a função `inverter()` é invocada em um template. O resultado é renderizado no elemento `<p>`. Nesse caso, o resultado é `ramargorp`.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](intro.html 'Início')</span> <span>[Diretivas &gt;](diretivas.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Sintaxe de templates](. 'Voltar')</span> <span>[Diretivas &gt;](diretivas.html 'Próximo')</span></span>
