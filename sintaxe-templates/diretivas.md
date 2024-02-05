@@ -1,5 +1,5 @@
 ---
-title: "Sintaxe de templates - Diretivas"
+title: 'Sintaxe de templates - Diretivas'
 description: Conceitos de diretivas no VueJs
 permalink: /sintaxe-templates/diretivas
 ---
@@ -14,11 +14,11 @@ Considere o exemplo abaixo:
 
 ```html
 <script setup>
-    const ok = true
+  const ok = true;
 </script>
 
 <template>
-    <div v-if="ok">Mostrar</div>
+  <div v-if="ok">Mostrar</div>
 </template>
 ```
 
@@ -32,11 +32,11 @@ Algumas diretivas permitem que sejam passados parâmetros ou argumentos. Por exe
 
 ```html
 <script setup>
-    const url = 'https://vuejs.org/'
+  const url = 'https://vuejs.org/';
 </script>
 
 <template>
-    <a v-bind:href="url">Mais informações...</a>
+  <a v-bind:href="url">Mais informações...</a>
 </template>
 ```
 
@@ -46,27 +46,38 @@ A diretiva `v-bind` pode ser usada de forma abreviada, usando apenas o prefixo `
 
 ```html
 <script setup>
-    const url = 'https://vuejs.org/'
+  const url = 'https://vuejs.org/';
 </script>
 
 <template>
-    <a :href="url">Mais informações...</a>
+  <a :href="url">Mais informações...</a>
 </template>
 ```
 
 Outro exemplo de diretiva que permite parâmetros é a diretiva `v-on`. Essa diretiva é usada para associar um evento de um elemento a uma expressão. Por exemplo:
 
 ```html
+<script setup>
+  function mostrarAlerta {
+    alert('Botão clicado!');
+  };
+</script>
+
 <template>
-    <button v-on:click="algumaFuncao">Clique aqui</button>
+  <button v-on:click="mostrarAlerta">Clique aqui</button>
 </template>
 ```
 
-Nesse exemplo, a função `algumaFuncao` é executada sempre que o botão for clicado. A diretiva `v-on` pode ser usada de forma abreviada, usando apenas o prefixo `@`. Por exemplo:
+Nesse exemplo, a função `mostrarAlerta` é executada sempre que o botão for clicado. A diretiva `v-on` pode ser usada de forma abreviada, usando apenas o prefixo `@`. Por exemplo:
 
 ```html
+<script setup>
+  function mostrarAlerta {
+    alert('Botão clicado!');
+  };
+</script>
 <template>
-    <button @click="algumaFuncao">Clique aqui</button>
+  <button @click="mostrarAlerta">Clique aqui</button>
 </template>
 ```
 
@@ -76,12 +87,12 @@ Algumas diretivas permitem que sejam passados argumentos dinâmicos. Por exemplo
 
 ```html
 <script setup>
-    const url = 'https://vuejs.org/'
-    const nomeAtributo = 'href'
+  const url = 'https://vuejs.org/';
+  const nomeAtributo = 'href';
 </script>
 
 <template>
-    <a v-bind:[atribnomeAtributouto]="url">Mais informações...</a>
+  <a v-bind:[atribnomeAtributouto]="url">Mais informações...</a>
 </template>
 ```
 
@@ -91,36 +102,46 @@ Esse tipo de associação é muito útil quando se deseja associar um atributo a
 
 ```html
 <script setup>
-    const nomeEvento = 'click'
+  const nomeEvento = 'click';
+
+  function mostrarAlerta {
+    alert('Botão clicado!');
+  };
 </script>
 
 <template>
-    <button v-on:[nomeEvento]="algumaFuncao">Clique aqui</button>
+  <button v-on:[nomeEvento]="mostrarAlerta">Clique aqui</button>
 </template>
 ```
 
-Aqui, `nomeEvento` é uma variável que contém o nome do evento que será associado à expressão. Nesse caso, o valor da variável é `click`, mas poderia ser qualquer outro valor, como `mouseover`, `mouseout`, etc. A função `algumaFuncao` será executada sempre que o evento for disparado. No caso do exemplo, essa associação será equivalente a `v-on:click="algumaFuncao"`.
+Aqui, `nomeEvento` é uma variável que contém o nome do evento que será associado à expressão. Nesse caso, o valor da variável é `click`, mas poderia ser qualquer outro valor, como `mouseover`, `mouseout`, etc. A função `mostrarAlerta` será executada sempre que o evento for disparado. No caso do exemplo, essa associação será equivalente a `v-on:click="mostrarAlerta"`.
 
 ## Modificadores
 
 Algumas diretivas permitem que sejam passados modificadores. Por exemplo, a diretiva `v-on` permite que sejam passados modificadores, como no exemplo abaixo:
 
 ```html
+<script setup>
+  function mostrarAlerta {
+    alert('Botão clicado!');
+  };
+</script>
+
 <template>
-    <button v-on:click.stop="algumaFuncao">Clique aqui</button>
+  <button v-on:click.stop="mostrarAlerta">Clique aqui</button>
 </template>
 ```
 
-Nesse exemplo, a função `algumaFuncao` é executada sempre que o botão for clicado. No entanto, o evento `click` não será propagado para os elementos pais. Isso significa que o evento não será disparado para os elementos pais, mesmo que esses elementos tenham um evento associado ao evento `click`. 
+Nesse exemplo, a função `mostrarAlerta` é executada sempre que o botão for clicado. No entanto, o evento `click` não será propagado para os elementos pais. Isso significa que o evento não será disparado para os elementos pais, mesmo que esses elementos tenham um evento associado ao evento `click`.
 
 Um outro exemplo comum é o uso do modificador `.prevent`:
 
 ```html
 <template>
-    <form v-on:submit.prevent="algumaFuncao">...</form>
+  <form v-on:submit.prevent="mostrarAlerta">...</form>
 </template>
 ```
 
-Nesse exemplo, a função `algumaFuncao` é executada sempre que o formulário for submetido. Contudo, o modificador `.prevent` informa ao Vue para chamar o método `event.preventDefault()` no evento `submit`, evitando que o formulário seja submetido.
+Nesse exemplo, a função `mostrarAlerta` é executada sempre que o formulário for submetido. Contudo, o modificador `.prevent` informa ao Vue para chamar o método `event.preventDefault()` no evento `submit`, evitando que o formulário seja submetido.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Interpolações](interpolacoes.html "Início")</span> <span>[Exercícios &gt;](exemplos.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Interpolações](interpolacoes.html 'Início')</span> <span>[Exercícios &gt;](exemplos.html 'Próximo')</span></span>
