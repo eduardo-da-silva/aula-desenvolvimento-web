@@ -93,4 +93,4 @@ Por fim, é possível invocar funções JavaScript em templates. Considere o exe
 
 No exemplo acima, a função `inverter()` é invocada em um template. O resultado é renderizado no elemento `<p>`. Nesse caso, o resultado é `ramargorp`.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Sintaxe de templates](. 'Voltar')</span> <span>[Diretivas &gt;](diretivas.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Sintaxe de templates](/sintaxe-templates 'Voltar')</span> <span>[Diretivas &gt;](diretivas.html 'Próximo')</span></span>
