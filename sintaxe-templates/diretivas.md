@@ -144,4 +144,4 @@ Um outro exemplo comum é o uso do modificador `.prevent`:
 
 Nesse exemplo, a função `mostrarAlerta` é executada sempre que o formulário for submetido. Contudo, o modificador `.prevent` informa ao Vue para chamar o método `event.preventDefault()` no evento `submit`, evitando que o formulário seja submetido.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Interpolações](interpolacoes.html 'Início')</span> <span>[Exercícios &gt;](exemplos.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Interpolações](interpolacoes.html 'Início')</span> <span>[Exemplos &gt;](exemplos.html 'Próximo')</span></span>
