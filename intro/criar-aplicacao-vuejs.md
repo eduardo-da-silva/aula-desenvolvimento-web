@@ -1,5 +1,5 @@
 ---
-title: "Instalação e criação de um aplicação"
+title: 'Instalação e criação de um aplicação'
 permalink: /intro/criar-aplicacao-vuejs
 ---
 
@@ -9,10 +9,9 @@ Criar um primeiro projeto usando o VueJS.
 
 ### Preparação
 
-* Garantir que os passos da [Aula 0](../ambiente) foram executados.
-* Crie uma nova pasta para o seu projeto e abra no VSCode.
-* Abra a **pasta** do projeto no vscode (repita em voz alta: _"Nunca abra um arquivo, sempre abra a pasta."_).
-
+- Garantir que os passos da [Aula 0](../ambiente) foram executados.
+- Crie uma nova pasta para o seu projeto e abra no VSCode.
+- Abra a **pasta** do projeto no vscode (repita em voz alta: _"Nunca abra um arquivo, sempre abra a pasta."_).
 
 # Criação de uma aplicação VueJS
 
@@ -22,7 +21,7 @@ Supondo que você esteja em um projeto vazio no VSCode. Para criar uma aplicaç�
 npm init vue@latest .
 ```
 
-*Note que usamos a opção `.` para criar a aplicação na pasta atual. Caso você não queira criar a aplicação na pasta atual, basta informar o nome da pasta que deseja criar.*
+_Note que usamos a opção `.` para criar a aplicação na pasta atual. Caso você não queira criar a aplicação na pasta atual, basta informar o nome da pasta que deseja criar._
 
 O comando anterior irá criar uma aplicação VueJS usando uma ferramenta de scaffolding chamada `create-vue`. Ele apresentará uma série de perguntas para você. Responda conforme a seguir (assumo que o nome da pasta e do projeto são iguais: `exemplo-inicial-vue3`):
 
@@ -68,6 +67,7 @@ A imagem mostra a tela inicial da aplicação VueJS.
 É muito importante que logo após a criação do projeto você crie um repositório Git para o projeto. Para isso, você pode usar o próprio Visual Studio Code. Para isso, abra o menu `Source Control` e clique em `Initialize Repository`. Em seguida, clique em `Create Repository`. O Visual Studio Code irá criar um repositório Git na pasta do projeto. Isso requer que o usuário tenha o Git instalado e configurado. Para mais informações, consulte a [Aula 0](../ambiente).
 
 Também, é importante que a cada alteração que você fizer no projeto, você faça um commit. Para isso, abra o menu `Source Control` e clique em `Stage All Changes`. Em seguida, clique em `Commit`. O Visual Studio Code irá criar um commit com as alterações realizadas. Para mais informações, consulte a [Aula 0](../ambiente).
+
 ## Estrutura de arquivos
 
 A imagem a seguir mostra a estrutura de arquivos inicial do projeto.
@@ -75,14 +75,15 @@ A imagem a seguir mostra a estrutura de arquivos inicial do projeto.
 ![Estrutura de arquivos do projeto](../assets/CriacaoProjeto-EstruturaArquivos.png)
 
 Esta estrutura pode ser resumida da seguinte forma:
-* `node_modules`: pasta com as dependências do projeto.
-* `public`: pasta com os arquivos estáticos da aplicação.
-* `src`: pasta com os arquivos fonte da aplicação. Por padrão, o arquivo `App.vue` é o componente raiz da aplicação, enquanto o arquivo `main.js` é o ponto de entrada da aplicação. Em geral, esta é a pasta que você irá trabalhar.
-* `index.html`: arquivo raiz do projeto que define .
-* `package.json`: arquivo com as configurações do projeto.
-* `package-lock.json`: arquivo com as configurações de versões das dependências do projeto.
-* `README.md`: arquivo com as instruções de instalação e execução do projeto.
-* `vite.config.js`: arquivo com as configurações do servidor de desenvolvimento.
+
+- `node_modules`: pasta com as dependências do projeto.
+- `public`: pasta com os arquivos estáticos da aplicação.
+- `src`: pasta com os arquivos fonte da aplicação. Por padrão, o arquivo `App.vue` é o componente raiz da aplicação, enquanto o arquivo `main.js` é o ponto de entrada da aplicação. Em geral, esta é a pasta que você irá trabalhar.
+- `index.html`: arquivo raiz do projeto que define .
+- `package.json`: arquivo com as configurações do projeto.
+- `package-lock.json`: arquivo com as configurações de versões das dependências do projeto.
+- `README.md`: arquivo com as instruções de instalação e execução do projeto.
+- `vite.config.js`: arquivo com as configurações do servidor de desenvolvimento.
 
 ### O arquivo index.html
 
@@ -94,9 +95,9 @@ O código a seguir mostra o arquivo `index.html`:
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <link rel="icon" href="/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
   <body>
@@ -107,25 +108,26 @@ O código a seguir mostra o arquivo `index.html`:
 ```
 
 Em geral, você não precisará alterar este arquivo. Contudo, alguns ajustes podem ser realizados. Por exemplo, você pode alterar o título da página, conforme o código a seguir:
+
 ```html
-    <title>Aplicação exemplo Vue3</title>
+<title>Aplicação exemplo Vue3</title>
 ```
 
 Também, podem ser adicionados outras referências, como por exemplo, para um pacote de arquivos CSS.
 
-Note também que antes de fechar a tag `</body>`, há uma referência para o arquivo `main.js`. Este arquivo é o ponto de entrada da aplicação. 
+Note também que antes de fechar a tag `</body>`, há uma referência para o arquivo `main.js`. Este arquivo é o ponto de entrada da aplicação.
 
 ## O arquivo main.js
 
 Como comentando anteriormente, o arquivo `main.js` é o ponto de entrada da aplicação. Ele é responsável por carregar o VueJS e o componente raiz da aplicação. O código a seguir mostra o arquivo `main.js`:
 
 ```javascript
-import { createApp } from 'vue'
-import App from './App.vue'
+import { createApp } from 'vue';
+import App from './App.vue';
 
-import './assets/main.css'
+import './assets/main.css';
 
-createApp(App).mount('#app')
+createApp(App).mount('#app');
 ```
 
 Neste exemplo, o arquivo `main.js` importa o método `createApp` do pacote `vue`, responsável por criar a aplicação VueJS. Em seguida, o arquivo importa o componente raiz da aplicação, que é o arquivo `App.vue`. E, por fim, o arquivo importa o arquivo `main.css`, que é o arquivo de estilo da aplicação.
@@ -140,13 +142,19 @@ O arquivo `App.vue` é o componente raiz da aplicação. Ele é responsável por
 
 ```html
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+  import HelloWorld from './components/HelloWorld.vue';
+  import TheWelcome from './components/TheWelcome.vue';
 </script>
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <img
+      alt="Vue logo"
+      class="logo"
+      src="./assets/logo.svg"
+      width="125"
+      height="125"
+    />
 
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
@@ -159,32 +167,32 @@ import TheWelcome from './components/TheWelcome.vue'
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
   header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+    line-height: 1.5;
   }
 
   .logo {
-    margin: 0 2rem 0 0;
+    display: block;
+    margin: 0 auto 2rem;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
+  @media (min-width: 1024px) {
+    header {
+      display: flex;
+      place-items: center;
+      padding-right: calc(var(--section-gap) / 2);
+    }
+
+    .logo {
+      margin: 0 2rem 0 0;
+    }
+
+    header .wrapper {
+      display: flex;
+      place-items: flex-start;
+      flex-wrap: wrap;
+    }
   }
-}
 </style>
 ```
 
@@ -192,4 +200,4 @@ Neste momento, você não precisa entender o código deste arquivo. Contudo, é 
 
 Não nos deteremos neste arquivo, pois ele será alterado ao longo das atividades.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Introdução](./ "Voltar")</span> <span>[Os componentes de arquivo único &gt;](single-file-components.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Introdução](. 'Voltar')</span> <span>[Os componentes de arquivo único &gt;](single-file-components.html 'Próximo')</span></span>
