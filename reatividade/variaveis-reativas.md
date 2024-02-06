@@ -1,11 +1,11 @@
 ---
-title: "Variáveis reativas"
+title: 'Variáveis reativas'
 permalink: /reatividade/variaveis-reativas
 ---
 
 # Declarando variáveis reativas
 
-Como vimos anteriormente, existem três formas de declarar reatividade em um componente VueJS: `reactive`, `ref` e `$ref`. Nesta etapa, vamos estudar cada uma dessas formas. A primeira forma, `reactive`, embora seja muito comum não é a mais recomendada, devido a algumas restrições que ela possui. Por outro lado, embora o uso da função `$ref()` seja o mais simples e direto, ainda está em fase experimental. Por isso, neste curso, vamos focar no uso da função `ref()`.
+Como vimos anteriormente, existem duas formas de declarar reatividade em um componente VueJS: `reactive` e `ref`. Nesta etapa, vamos estudar cada uma dessas formas. A primeira forma, `reactive`, embora seja muito comum não é a mais recomendada, embora seja interessante em alguns cenários. Por isso, neste curso, vamos focar no uso da função `ref()`.
 
 ## Declarando variável reativas usando ref
 
@@ -13,17 +13,17 @@ A função `ref` é a forma mais usual de declarar uma variável reativa. Ela re
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const contador = ref(0)
+  const contador = ref(0);
 
-function incrementar() {
-  contador.value++
-}
+  function incrementar() {
+    contador.value++;
+  }
 </script>
 
 <template>
-    <button @click="incrementar">{% raw %}{{ contador }} {% endraw %}</button>
+  <button @click="incrementar">{% raw %}{{ contador }} {% endraw %}</button>
 </template>
 ```
 
@@ -32,58 +32,48 @@ No exemplo acima, a variável `contador` é declarada usando a função `ref`. A
 Abaixo, alguns exemplos de declaração de variáveis reativas usando a função `ref`:
 
 ```js
-import { ref } from 'vue'
-const nome = ref('João')                // string
-const idade = ref(30)                   // number
-const preco = ref(10.5)                 // number
-const ativo = ref(true)                 // boolean
-const frutas = ref(['maçã', 'banana'])  // array de strings
-const pessoa = ref({                    // objeto
-  nome: 'João',
-  idade: 30,
-  ativo: true
-})
-
-const pessoa1 = {                       // objeto não reativo
-  nome: 'João',
-  idade: 30,
-  ativo: true
-}
-const pessoa2 = {                       // objeto não reativo
-  nome: 'Maria',
-  idade: 25,
-  ativo: true
-}
-
-const pessoas = ref([pessoa1, pessoa2])  // array de objetos
+import { ref } from 'vue';
+const nome = ref('João'); // string
+const idade = ref(30); // number
+const preco = ref(10.5); // number
+const ativo = ref(true); // boolean
+const frutas = ref(['maçã', 'banana']); // array de strings
 ```
 
-<!-- ## Declarando variável reativas usando $ref
+## O uso da função reactive
 
-Uma desvantagem do uso de funções `ref()` é que elas requerem o uso das propriedades `value` para acessar o valor da variável reativa. Para evitar esse problema, podemos usar a função `$ref()`, também conhecido como transformação de reatividade. O uso de funções `$ref` é muito semelhante ao uso de funções ref. Veja o exemplo abaixo:
+Embora seja possível declarar objetos reativos usando `ref`, a função `reactive` é mais recomendada para esse tipo de situação. Nesse caso, para acessar o valor do atributo não é necessário usar a propriedade `value`. Veja o exemplo do objeto `pessoa` com uma função para alterar a idade:
 
 ```html
 <script setup>
-let contador = $ref(0)
+  import { reactive } from 'vue';
 
-function incrementar() {
-  contador++
-}
+  const pessoa = reactive({
+    nome: 'João',
+    idade: 30,
+    ativo: true,
+  });
+
+  function aniversario() {
+    pessoa.idade++;
+  }
 </script>
 
 <template>
-    <button @click="incrementar">{{ contador }}</button>
+  <div>
+    <p>
+      {% raw %}{{ pessoa.nome }}{% endraw %} tem {% raw %} {{ pessoa.idade }} {%
+      endraw %} anos
+    </p>
+    <button @click="aniversario">Fazer aniversário</button>
+  </div>
 </template>
 ```
 
-No exemplo acima, a variável `contador` é declarada usando a função `$ref`. Note que a variável foi criada usando o comando `let` e não o `const`. Diferente do exemplo anterior, usando `ref()` ao invocar a função `$ref()`, não é necessário acessar a propriedade `value` para acessar o valor da variável reativa. Isso deixa o código mais simples e mais fácil de entender.
-
-Além disso, não é necessário importar a função `$ref` do VueJS, pois ela é uma função global. Isso significa que ela pode ser usada em qualquer componente VueJS. -->
+No exemplo acima, a variável `pessoa` é declarada usando a função `reactive`. A variável `pessoa` é um objeto que possui três propriedades: `nome`, `idade` e `ativo`. Quando o botão é clicado, a função `aniversario` é chamada e a propriedade `idade` do objeto `pessoa` é incrementada. Como o objeto `pessoa` é reativo, o valor da propriedade `idade` é atualizado automaticamente.
 
 ## Uso nas templates e outras considerações
 
-Embora já tenhamos apresentado exemplos anteriormente, note que para acessar o valor de uma variável reativa, é necessário usar simplesmente a sintaxe `{{ variavel }}`, como qualquer variável. Mesmo no caso das variáveis definidas usando `ref()`, não é necessário acessar a propriedade `value` para acessar o valor da variável reativa, na parte de template.
+Embora já tenhamos apresentado exemplos anteriormente, note que para acessar o valor de uma variável reativa, é necessário usar simplesmente a sintaxe `{% raw %}{{ variavel }}{% endraw %}`, como qualquer variável. Mesmo no caso das variáveis definidas usando `ref()`, não é necessário acessar a propriedade `value` para acessar o valor da variável reativa, na parte de template.
 
-<!-- Também, você pode usar as duas formas de declaração, tanto `ref()` quanto `$ref()`, em qualquer parte do componente. -->
-
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[Propriedades Computadas &gt;](propriedades-computadas.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Início')</span> <span>[Propriedades Computadas &gt;](propriedades-computadas.html 'Próximo')</span></span>
