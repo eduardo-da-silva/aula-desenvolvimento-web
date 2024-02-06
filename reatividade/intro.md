@@ -20,4 +20,4 @@ Recapitulando, podemos dizer que a reatividade, no VueJS, é a forma de criar va
 
 Outro conceito importante é o de propriedades computadas, que são funções que são executadas automaticamente quando uma variável reativa é alterada. Essas funções também serão apresentadas nesta aula.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Início')</span> <span>[Variáveis reativas &gt;](reatividade/variaveis-reativas.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Início')</span> <span>[Variáveis reativas &gt;](variaveis-reativas.html 'Próximo')</span></span>
