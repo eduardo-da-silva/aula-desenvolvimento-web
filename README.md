@@ -19,6 +19,8 @@ Esse curso é parte de uma trilha de aprendizado. Siga os links abaixo para aces
   - Desenvolvimento front-end com VueJS
 - **[Desenvolvimento Web III](https://github.com/marrcandre/django-drf-tutorial)** ([Prof. Marco André Lopes Mendes](https://github.com/marrcandre))
   - Desenvolvimento back-end com Django e DRF.
+- **[Desenvolvimento Dispositivos móveis III](https://eduardo-da-silva.github.io/aula-desenvolvimento-mobile/)** ([Prof. Eduardo da Silva](https://github.com/eduardo-da-silva/))
+  - Desenvolvimento para dispositivos móveis com Vue + Vite + PWA.
 
 Bons estudos!
 
