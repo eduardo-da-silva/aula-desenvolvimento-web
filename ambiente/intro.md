@@ -18,18 +18,20 @@ Para instalar ou atualizar o o `nvm`, execute o comando abaixo:
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
 ```
 
+Após a instalação, é necessário atualizar as variáveis de ambiente do seu terminal. Para tal, sugiro fechar o terminal e abrir novamente. Em seguida, você pode instalar a versão LTS do NodeJS:
+
+```bash
+nvm install --lts
+```
+
+### Importante: se você usa zsh
+
 Caso você esteja utilizando o ambiente `zsh`, é necessário editar o arquivo `~/.zshrc` e adicione as seguintes linhas:
 
 ```bash
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
-```
-
-Após a instalação, é necessário atualizar as variáveis de ambiente do seu terminal. Para tal, sugiro fechar o terminal e abrir novamente. Em seguida, você pode instalar a versão LTS do NodeJS:
-
-```bash
-nvm install --lts
 ```
 
 ## Configuração das variáveis de ambiente do GIT
