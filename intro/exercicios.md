@@ -12,4 +12,4 @@ Para exercitar o que foi aprendido, segue uma lista de exercícios para serem re
 
 Sugiro que ambos os exercícios sejam realizados usando a API de composição e API de opções.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Deploy da aplicação](deploy-aplicacao.html 'Voltar')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Deploy da aplicação](deploy-aplicacao.html 'Voltar')</span> <span>[Correção dos exercícios &gt;](correcao-exercicios.html 'Próximo')</span></span>
