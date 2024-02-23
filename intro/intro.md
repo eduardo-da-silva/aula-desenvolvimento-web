@@ -10,6 +10,7 @@ permalink: /intro/
 2. [Componentes de arquivo único](single-file-components.html)
 3. [Deploy da aplicação](deploy-aplicacao.html)
 4. [Exercícios](exercicios.html)
+5. [Correção dos Exercícios](correcao-exercicios.html)
 
 # O framework VueJs
 

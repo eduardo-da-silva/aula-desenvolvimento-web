@@ -32,7 +32,8 @@ Bons estudos!
    1.1. [Criando um aplicação VueJS](intro/criar-aplicacao-vuejs.html)  
    1.2. [Componentes de arquivo único](intro/single-file-components.html)  
    1.3. [Deploy da aplicação](intro/deploy-aplicacao.html)  
-   1.4. [Exercícios](intro/exercicios.html)
+   1.4. [Exercícios](intro/exercicios.html)  
+   1.5. [Correção dos Exercícios](intro/correcao-exercicios.html)
 
 2. [Aula 2 - Sintaxe do templates](sintaxe-templates/intro.md)  
    2.1. [Interpolações](sintaxe-templates/interpolacoes.html)  
