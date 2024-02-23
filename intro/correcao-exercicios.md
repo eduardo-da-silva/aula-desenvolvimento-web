@@ -78,4 +78,4 @@ Agora, vamos corrigir os exercícios usando a API de composição.
 </template>
 ```
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Exercícios](exercicios.html 'Voltar')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Exercícios](exercicios.html 'Voltar')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>
