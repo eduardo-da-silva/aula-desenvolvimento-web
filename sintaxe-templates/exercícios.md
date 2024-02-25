@@ -1,5 +1,5 @@
 ---
-title: "Exercícios"
+title: 'Exercícios'
 permalink: /sintaxe-templates/exercicios
 ---
 
@@ -9,8 +9,8 @@ Para fixar o conteúdo apresentado, resolva os exercícios abaixo:
 
 1. Altere os valores de nome e idade para os seus.
 2. Mostre o nome invertido em letras maiúsculas.
-3. No exemplo do contador, com incrementar e decrementar, faça uma `div` aparecer quando o valor for maior que 10 e outra quando for menor que 10.
-4. No exemplo anterior, faça que a `div` para valores maiores que 10 tenha a cor verde e a outra vermelha.
+3. Adicione mais um quadro, com o exemplo do contador que fizemos nas aulas anteriores.
+4. Dentro desse quadro, além do contador, faça uma `div` aparecer quando o valor for maior que 10 e outra quando for menor que 10.
+5. Ainda, faça que a `div` para valores maiores que 10 tenha a cor verde e a outra vermelha.
 
-
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Exemplos](exemplos.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Exemplos](exemplos.html 'Voltar')</span> <span>[Correção dos exercícios &gt;](correcao-exercicios.html 'Próximo')</span></span>
