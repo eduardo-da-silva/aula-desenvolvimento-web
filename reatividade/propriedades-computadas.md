@@ -20,7 +20,7 @@ As propriedades computadas são funções que são executadas automaticamente se
   });
 
   const possuiDisciplinas = computed(() => {
-    return professor.disciplinas.length > 0 ? 'Sim' : 'Não';
+    return professor.disciplinas.length > 0;
   });
 </script>
 
@@ -28,7 +28,15 @@ As propriedades computadas são funções que são executadas automaticamente se
   <div>
     <h1>Professor</h1>
     <p>Nome: {% raw %}{{ professor.nome }}{% endraw %}</p>
-    <p>Possui disciplinas: {% raw %}{{ possuiDisciplinas }}{% endraw %}</p>
+    <p v-if="!possuiDisciplinas">O professor não possui disciplinas.</p>
+    <div v-else>
+      <p>O professor possui disciplinas.</p>
+      <ul>
+        <li v-for="disciplina in professor.disciplinas" :key="disciplina">
+          {% raw %}{{ disciplina }}{% endraw %}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 ```
@@ -45,7 +53,13 @@ Ainda, o resultado da propriedade computada `possuiDisciplinas` é exibido na in
 ```html
 <h1>Professor</h1>
 <p>Nome: Eduardo da Silva</p>
-<p>Possui disciplinas: Sim</p>
+<div>
+  <p>O professor possui disciplinas.</p>
+  <ul>
+    <li>Desenvolvimento Web II</li>
+    <li>Desenvolvimento de Aplicativos para Dispositivos Móveis</li>
+  </ul>
+</div>
 ```
 
 Note que se a propriedade `disciplinas` do objeto `professor` for alterada para um array vazio, o resultado da propriedade computada `possuiDisciplinas` será alterado automaticamente para `Não`, como o exemplo abaixo.
@@ -53,7 +67,7 @@ Note que se a propriedade `disciplinas` do objeto `professor` for alterada para 
 ```html
 <h1>Professor</h1>
 <p>Nome: Eduardo da Silva</p>
-<p>Possui disciplinas: Não</p>
+<p>O professor não possui disciplinas.</p>
 ```
 
 ## Por que usar propriedades computadas e não métodos?
@@ -73,7 +87,7 @@ A principal diferença entre propriedades computadas e métodos é que as propri
   });
 
   function possuiDisciplinas() {
-    return professor.value.disciplinas.length > 0 ? 'Sim' : 'Não';
+    return professor.value.disciplinas.length > 0;
   }
 </script>
 
@@ -81,7 +95,15 @@ A principal diferença entre propriedades computadas e métodos é que as propri
   <div>
     <h1>Professor</h1>
     <p>Nome: {% raw %}{{ professor.nome }}{% endraw %}</p>
-    <p>Possui disciplinas: {% raw %}{{ possuiDisciplinas() }}{% endraw %}</p>
+    <p v-if="!possuiDisciplinas">O professor não possui disciplinas.</p>
+    <div v-else>
+      <p>O professor possui disciplinas.</p>
+      <ul>
+        <li v-for="disciplina in professor.disciplinas" :key="disciplina">
+          {% raw %}{{ disciplina }}{% endraw %}
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 ```

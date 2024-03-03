@@ -39,12 +39,14 @@ Bons estudos!
    2.1. [Interpolações](sintaxe-templates/interpolacoes.html)  
    2.2. [Diretivas](sintaxe-templates/diretivas.html)  
    2.3. [Exemplos](sintaxe-templates/exemplos.html)  
-   2.4. [Exercícios](sintaxe-templates/exercicios.html)
+   2.4. [Exercícios](sintaxe-templates/exercicios.html)  
+   2.5. [Correção dos Exercícios](sintaxe-templates/correcao-exercicios.html)
 
 3. [Aula 3 - Reatividade](reatividade/intro.md)  
    3.1. [Variáveis reativas](reatividade/variaveis-reativas.html)  
    3.2. [Propriedades computadas](reatividade/propriedades-computadas.html)  
-   3.2. [Exercícios](reatividade/exercicios.html)
+   3.2. [Exercícios](reatividade/exercicios.html)  
+   3.3. [Correção dos Exercícios](reatividade/correcao-exercicios.html)
 
 4. [Aula 4 - Interligação em formulários](formularios/intro.md)  
    4.1. [Uso básico](formularios/uso-basico.html)  
