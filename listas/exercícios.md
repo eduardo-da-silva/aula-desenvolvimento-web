@@ -30,7 +30,7 @@ Faça uma tela que renderize uma lista de cidades. O componente deve receber um 
 
 Usando o mesmo Array do exercício anterior, deve ser renderizada uma lista deve ser renderizada em ordem alfabética. A lista deve ser renderizada em um elemento `ul`. Cada item da lista deve ser renderizado em um elemento `li`. _Dica_: para ordenar um array, você pode usar o método `sort` do array, preferencialmente em uma propriedade computada.
 
-# Projeto 1
+<!-- # Projeto 1
 
 Faça um protótipo de um carrinho de compras. Nesse caso, crie uma lista fixa de produtos, como descrito abaixo:
 
@@ -130,7 +130,7 @@ Dica2: o mesmo pode ser feito com o total da compra, que pode ser recalculado se
 
 Dica3: se você desejar, todos esses cálculos podem ser feitos em propriedades computadas, mas não é obrigatório.
 
-Dica 4: um modelo de resultado pode ser visto [aqui](https://ldmfabio-listaprodutos.surge.sh/).
+Dica 4: um modelo de resultado pode ser visto [aqui](https://ldmfabio-listaprodutos.surge.sh/). -->
 
 <!-- Importante:  A entrega é para o dia 12/5, via SIGAA. Não esquecer que é obrigatório entregar o link do repositório no GitHub e o link do projeto no Surge. -->
 
