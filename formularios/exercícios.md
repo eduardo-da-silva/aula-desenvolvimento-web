@@ -1,5 +1,5 @@
 ---
-title: "Exercícios"
+title: 'Exercícios'
 permalink: /formularios/exercicios
 ---
 
@@ -11,7 +11,7 @@ permalink: /formularios/exercicios
 
 # Projeto 1
 
-Você deve desenvolver o seguinte projeto, para ser entregue até o dia 14/04/2023 (Sexta-Feira), às 23:59, via SIGAA.
+<!-- Você deve desenvolver o seguinte projeto, para ser entregue até o dia 14/04/2023 (Sexta-Feira), às 23:59, via SIGAA. -->
 
 O projeto consiste na criação de um formulário para edição do perfil de um usuário. O formulário deve conter os pelo menos os seguintes campos:
 
@@ -39,4 +39,4 @@ Serão considerados os seguintes critérios de avaliação:
 
 Um exemplo básico de implementação desse projeto está em [Editor de Perfil](https://eduardo-form-perfil.surge.sh/). O código fonte está disponível em [GitHub](https://github.com/eduardo-da-silva/formularioEditorPerfil)
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Recursos Diversos](recursos-diversos.html "Voltar")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Recursos Diversos](recursos-diversos.html 'Voltar')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>
