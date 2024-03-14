@@ -134,4 +134,4 @@ Dica 4: um modelo de resultado pode ser visto [aqui](https://ldmfabio-listaprodu
 
 <!-- Importante:  A entrega é para o dia 12/5, via SIGAA. Não esquecer que é obrigatório entregar o link do repositório no GitHub e o link do projeto no Surge. -->
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Manipulação de listas](manipulacao-listas.html 'Voltar')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Manipulação de listas](manipulacao-listas.html 'Voltar')</span> <span>[Correção dos exercicios &gt;](correcao-exercicios.html 'Próximo')</span></span>
