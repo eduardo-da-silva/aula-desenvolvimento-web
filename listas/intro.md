@@ -27,4 +27,4 @@ De forma geral, os dados em listas podem estar em um array ou em um objeto. Em u
 
 A manipulação de listas é um dos recursos mais importantes do VueJS. Nessa aula, vamos aprender a renderizar listas de dados.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Início')</span> <span>[Renderização do elementos de listas &gt;](listas/renderizacao-elementos.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](../ 'Início')</span> <span>[Renderização do elementos de listas &gt;](renderizacao-elementos.html 'Próximo')</span></span>
