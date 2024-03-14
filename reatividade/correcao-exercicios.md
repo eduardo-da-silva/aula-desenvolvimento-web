@@ -43,13 +43,13 @@ Faremos a correção dos exercícios usando a API de composição. Vamos, além 
       <h2>Contador 1</h2>
       <button @click="incrementar(contador1)">Incrementar</button>
       <button @click="decrementar(contador1)">Decrementar</button>
-      <p>Valor: {{ contador1 }}</p>
+      <p>Valor: {% raw %}{{ contador1 }}{% endraw %}</p>
     </div>
     <div class="contador">
       <h2>Contador 2</h2>
       <button @click="incrementar(contador2)">Incrementar</button>
       <button @click="decrementar(contador2)">Decrementar</button>
-      <p>Valor: {{ contador2 }}</p>
+      <p>Valor: {% raw %}{{ contador2 }}{% endraw %}</p>
     </div>
     <div class="soma">
       <h2>Soma</h2>
