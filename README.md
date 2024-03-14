@@ -51,7 +51,8 @@ Bons estudos!
 5. [Aula 5 - Renderização de listas](listas/intro.md)  
    5.1. [Renderização dos elementos de listas](listas/renderizacao-elementos.html)  
    5.2. [Manipulação de listas](listas/manipulacao-listas.html)  
-   5.3. [Exercícios](listas/exercicios.html)
+   5.3. [Exercícios](listas/exercicios.html)  
+   5.4. [Correção dos Exercícios](listas/correcao-exercicios.html)
 
 6. [Aula 6 - Interligação em formulários](formularios/intro.md)  
    6.1. [Uso básico](formularios/uso-basico.html)  

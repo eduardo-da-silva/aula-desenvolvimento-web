@@ -9,6 +9,7 @@ permalink: /listas/
 1. [Renderização dos elementos de listas](listas/renderizacao-elementos.html)
 2. [Manipulação de listas](listas/manipulacao-listas.html)
 3. [Exercícios](listas/exercicios.html)
+4. [Correção dos exercícios](listas/correcao-exercicios.html)
 
 # Renderização de listas
 
