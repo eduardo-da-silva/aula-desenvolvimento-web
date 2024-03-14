@@ -1,23 +1,25 @@
 ---
-title: "Renderização dos elementos de listas"
+title: 'Renderização dos elementos de listas'
 permalink: /listas/renderizacao-elementos
 ---
 
 # Renderização dos elementos de listas
 
-Nessa aula, vamos aprender a renderizar listas de dados. Usamos esse termo para descrever a renderização de arrays e objetos, bem como arrays de objetos. 
+Nessa aula, vamos aprender a renderizar listas de dados. Usamos esse termo para descrever a renderização de arrays e objetos, bem como arrays de objetos.
 
-## Renderização de arrays de strings 
+## Renderização de arrays de strings
 
- Para isso, inicialmente vamos criar um array de strings e renderizar cada item da lista em uma tag `<li>`.
+Para isso, inicialmente vamos criar um array de strings e renderizar cada item da lista em uma tag `<li>`.
 
 ```html
 <script setup>
-    const items = ['Item 1', 'Item 2', 'Item 3']
+  const items = ['Item 1', 'Item 2', 'Item 3'];
 </script>
 <template>
   <ul>
-    <li v-for="(item, index) in items" :key="index">{% raw %} {{ item }} {% endraw %}</li>
+    <li v-for="(item, index) in items" :key="index">
+      {% raw %} {{ item }} {% endraw %}
+    </li>
   </ul>
 </template>
 ```
@@ -32,10 +34,12 @@ Por fim, fizemos a iteração no elemento `<li>`, mas poderíamos ter feito com 
 
 ```html
 <script setup>
-    const items = ['Item 1', 'Item 2', 'Item 3']
+  const items = ['Item 1', 'Item 2', 'Item 3'];
 </script>
 <template>
-    <p v-for="(item, index) in items" :key="index">{% raw %}{{ item }}{% endraw %}</p>
+  <p v-for="(item, index) in items" :key="index">
+    {% raw %}{{ item }}{% endraw %}
+  </p>
 </template>
 ```
 
@@ -45,15 +49,17 @@ Vamos agora renderizar uma lista de objetos. Para isso, vamos criar um array de 
 
 ```html
 <script setup>
-    const items = [
-        { id: 1, name: 'Item 1' },
-        { id: 2, name: 'Item 2' },
-        { id: 3, name: 'Item 3' }
-    ]
+  const items = [
+    { id: 1, name: 'Item 1' },
+    { id: 2, name: 'Item 2' },
+    { id: 3, name: 'Item 3' },
+  ];
 </script>
 <template>
   <ul>
-    <li v-for="item in items" :key="item.id">{% raw %}{{ item.name }}{% endraw %}</li>
+    <li v-for="item in items" :key="item.id">
+      {% raw %}{{ item.name }}{% endraw %}
+    </li>
   </ul>
 </template>
 ```
@@ -66,16 +72,16 @@ Por fim, fizemos a iteração no elemento `<li>`, mas poderíamos ter feito com 
 
 ```html
 <script setup>
-    const items = [
-        { id: 1, name: 'Item 1' },
-        { id: 2, name: 'Item 2' },
-        { id: 3, name: 'Item 3' }
-    ]   
+  const items = [
+    { id: 1, name: 'Item 1' },
+    { id: 2, name: 'Item 2' },
+    { id: 3, name: 'Item 3' },
+  ];
 </script>
 <template>
-    <div v-for="item in items" :key="item.id">
-        <p>{% raw %}{{ item.name }}{% endraw %}</p>
-    </div>
+  <div v-for="item in items" :key="item.id">
+    <p>{% raw %}{{ item.name }}{% endraw %}</p>
+  </div>
 </template>
 ```
 
@@ -85,15 +91,17 @@ Vamos agora renderizar um objeto. Para isso, vamos criar um objeto e renderizar 
 
 ```html
 <script setup>
-    const items = {
-        id: 1,
-        description: 'Item 1',
-        price: 10.00
-    }
+  const items = {
+    id: 1,
+    description: 'Item 1',
+    price: 10.0,
+  };
 </script>
 <template>
   <ul>
-    <li v-for="(value, key) in items" :key="key">{% raw %}{{ key }}: {{ value }}{% endraw %}</li>
+    <li v-for="(value, key) in items" :key="key">
+      {% raw %}{{ key }}: {{ value }}{% endraw %}
+    </li>
   </ul>
 </template>
 ```
@@ -118,14 +126,16 @@ Por fim, fizemos a iteração no elemento `<li>`, mas poderíamos ter feito com 
 
 ```html
 <script setup>
-    const items = {
-        id: 1,
-        description: 'Item 1',
-        price: 10.00
-    }
+  const items = {
+    id: 1,
+    description: 'Item 1',
+    price: 10.0,
+  };
 </script>
 <template>
-    <p v-for="(value, key) in items" :key="key">{% raw %}{{ key }}: {{ value }}{% endraw %}</p>
+  <p v-for="(value, key) in items" :key="key">
+    {% raw %}{{ key }}: {{ value }}{% endraw %}
+  </p>
 </template>
 ```
 
@@ -135,11 +145,23 @@ Vamos agora renderizar uma lista de objetos que contém objetos aninhados. Para 
 
 ```html
 <script setup>
-    const items = [
-        { id: 1, name: 'Item 1', details: { description: 'Item 1 description', price: 10.00 } },
-        { id: 2, name: 'Item 2', details: { description: 'Item 2 description', price: 20.00 } },
-        { id: 3, name: 'Item 3', details: { description: 'Item 3 description', price: 30.00 } }
-    ]
+  const items = [
+    {
+      id: 1,
+      name: 'Item 1',
+      details: { description: 'Item 1 description', price: 10.0 },
+    },
+    {
+      id: 2,
+      name: 'Item 2',
+      details: { description: 'Item 2 description', price: 20.0 },
+    },
+    {
+      id: 3,
+      name: 'Item 3',
+      details: { description: 'Item 3 description', price: 30.0 },
+    },
+  ];
 </script>
 <template>
   <ul>
@@ -158,22 +180,35 @@ Poderíamos ter feito duas iterações. A primeira iteração seria para iterar 
 
 ```html
 <script setup>
-    const items = [
-        { id: 1, name: 'Item 1', details: { description: 'Item 1 description', price: 10.00 } },
-        { id: 2, name: 'Item 2', details: { description: 'Item 2 description', price: 20.00 } },
-        { id: 3, name: 'Item 3', details: { description: 'Item 3 description', price: 30.00 } }
-    ]
+  const items = [
+    {
+      id: 1,
+      name: 'Item 1',
+      details: { description: 'Item 1 description', price: 10.0 },
+    },
+    {
+      id: 2,
+      name: 'Item 2',
+      details: { description: 'Item 2 description', price: 20.0 },
+    },
+    {
+      id: 3,
+      name: 'Item 3',
+      details: { description: 'Item 3 description', price: 30.0 },
+    },
+  ];
 </script>
 <template>
   <ul>
     <li v-for="item in items" :key="item.id">
       <p>{% raw %}Nome: {{ item.name }}{% endraw %}</p>
       <p>Detalhes</p>
-      <p v-for="(value, key) in item.details" :key="key">{% raw %}{{ key }}: {{ value }}{% endraw %}</p>
+      <p v-for="(value, key) in item.details" :key="key">
+        {% raw %}{{ key }}: {{ value }}{% endraw %}
+      </p>
     </li>
   </ul>
 </template>
 ```
 
-
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](./ "Anterior")</span><span>[Manipulação de listas &gt;](manipulacao-listas.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Anterior')</span><span>[Manipulação de listas &gt;](manipulacao-listas.html 'Próximo')</span></span>
