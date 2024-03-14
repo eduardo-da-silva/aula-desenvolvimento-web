@@ -1,6 +1,6 @@
 ---
 title: 'Correção dos Exercícios'
-permalink: /sintaxe-templates/correcao-exercicios
+permalink: /reatividade/correcao-exercicios
 ---
 
 # Correção dos exercícios
