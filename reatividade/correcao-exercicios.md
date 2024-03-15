@@ -37,8 +37,14 @@ Faremos a correção dos exercícios usando a API de composição. Vamos, além 
 </script>
 
 <template>
-  <div>
-    <h1>Correção dos exercícios</h1>
+  <h1>Correção dos exercícios</h1>
+  <div class="booleano">
+    <button @click="valorBooleano = !valorBooleano">
+      {% raw %} {{ valorBooleano ? 'Esconder Resultado' : 'Mostrar Resultado' }}
+      {% endraw %}
+    </button>
+  </div>
+  <div v-if="valorBooleano">
     <div class="contador">
       <h2>Contador 1</h2>
       <button @click="incrementar('contador1')">Incrementar</button>
@@ -49,11 +55,11 @@ Faremos a correção dos exercícios usando a API de composição. Vamos, além 
       <h2>Contador 2</h2>
       <button @click="incrementar('contador2')">Incrementar</button>
       <button @click="decrementar('contador2')">Decrementar</button>
-      <p>Valor: {% raw %}{{ contador2 }}{% endraw %}</p>
+      <p>Valor: {{ contador2 }}</p>
     </div>
     <div class="soma">
       <h2>Soma</h2>
-      <p>Valor: {{ soma }}</p>
+      <p>Valor: {% raw %} {{ soma }} {% endraw %}</p>
       <div v-if="somaMaiorQue10">
         <p>A soma é maior que 10</p>
       </div>
@@ -65,16 +71,6 @@ Faremos a correção dos exercícios usando a API de composição. Vamos, além 
       </div>
       <div v-else>
         <p>A soma é ímpar</p>
-      </div>
-    </div>
-    <div class="booleano">
-      <h2>Valor booleano</h2>
-      <button @click="valorBooleano = !valorBooleano">Alterar valor</button>
-      <div v-if="valorBooleano">
-        <p>Verdadeiro</p>
-      </div>
-      <div v-else>
-        <p>Falso</p>
       </div>
     </div>
   </div>
