@@ -22,12 +22,12 @@ Faremos a correção dos exercícios usando a API de composição. Vamos, além 
   const valorBooleano = ref(true);
 
   function incrementar(contador) {
-    contador.value++;
+    eval(contador).value++;
   }
 
   function decrementar(contador) {
-    if (contador.value > 0) {
-      contador.value--;
+    if (eval(contador).value > 0) {
+      eval(contador).value--;
     }
   }
 
@@ -41,14 +41,14 @@ Faremos a correção dos exercícios usando a API de composição. Vamos, além 
     <h1>Correção dos exercícios</h1>
     <div class="contador">
       <h2>Contador 1</h2>
-      <button @click="incrementar(contador1)">Incrementar</button>
-      <button @click="decrementar(contador1)">Decrementar</button>
+      <button @click="incrementar('contador1')">Incrementar</button>
+      <button @click="decrementar('contador1')">Decrementar</button>
       <p>Valor: {% raw %}{{ contador1 }}{% endraw %}</p>
     </div>
     <div class="contador">
       <h2>Contador 2</h2>
-      <button @click="incrementar(contador2)">Incrementar</button>
-      <button @click="decrementar(contador2)">Decrementar</button>
+      <button @click="incrementar('contador2')">Incrementar</button>
+      <button @click="decrementar('contador2')">Decrementar</button>
       <p>Valor: {% raw %}{{ contador2 }}{% endraw %}</p>
     </div>
     <div class="soma">
