@@ -1,5 +1,5 @@
 ---
-title: "Uso básico"
+title: 'Uso básico'
 permalink: /formularios/uso-basico
 ---
 
@@ -9,14 +9,14 @@ Em formulários, a entrada de dados é feita através de campos de texto. Para c
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const nome = ref('')
+  const nome = ref('');
 </script>
 
 <template>
   <input v-model="nome" />
-  <p>Nome digitado é: {{ nome }}</p>
+  <p>Nome digitado é: {% raw %} {{ nome }} {% endraw %}</p>
 </template>
 ```
 
@@ -57,21 +57,22 @@ O atributo `minlength` define o número mínimo de caracteres que podem ser digi
 <input type="text" v-model="nome" minlength="3" />
 ```
 
-
 # Textos em múltiplas linhas
 
 Para a inserção de textos em múltiplas linhas, usa-se a tag `textarea`:
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const texto = ref('')
+  const texto = ref('');
 </script>
 
 <template>
   <textarea v-model="texto" />
-  <p style="white-space: pre-line;">Texto digitado é: {{ texto }}</p>
+  <p style="white-space: pre-line;">
+    Texto digitado é: {% raw %} {{ texto }} {% endraw %}
+  </p>
 </template>
 ```
 
@@ -97,16 +98,15 @@ O componente `input` pode ser usado para criar um checkbox:
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const aceitaTermos = ref(false)
-
+  const aceitaTermos = ref(false);
 </script>
 
 <template>
   <label for="aceitaTermos">Aceito os termos</label>
   <input type="checkbox" v-model="aceitaTermos" />
-  <p>Aceita os termos: {{ aceitaTermos }}</p>
+  <p>Aceita os termos: {% raw %} {{ aceitaTermos }} {% endraw %}</p>
 </template>
 ```
 
@@ -124,9 +124,9 @@ Para criar um checkbox que permite a seleção de múltiplos valores, usa-se a d
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const cores = ref([])
+  const cores = ref([]);
 </script>
 
 <template>
@@ -134,7 +134,7 @@ const cores = ref([])
   <input type="checkbox" v-model="cores" value="vermelho" /> Vermelho
   <input type="checkbox" v-model="cores" value="verde" /> Verde
   <input type="checkbox" v-model="cores" value="azul" /> Azul
-  <p>Cores favoritas: {{ cores }}</p>
+  <p>Cores favoritas: {% raw %} {{ cores }} {% endraw %}</p>
 </template>
 ```
 
@@ -144,16 +144,16 @@ O componente `input` pode ser usado para criar um radio button:
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const sexo = ref('')
+  const sexo = ref('');
 </script>
 
 <template>
   <label for="sexo">Sexo</label>
   <input type="radio" v-model="sexo" value="masculino" /> Masculino
   <input type="radio" v-model="sexo" value="feminino" /> Feminino
-  <p>Sexo: {{ sexo }}</p>
+  <p>Sexo: {% raw %}{{ sexo }}{% endraw %}</p>
 </template>
 ```
 
@@ -163,9 +163,9 @@ O componente `select` pode ser usado para criar um campo de seleção:
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const sexo = ref('')
+  const sexo = ref('');
 </script>
 
 <template>
@@ -174,7 +174,7 @@ const sexo = ref('')
     <option value="masculino">Masculino</option>
     <option value="feminino">Feminino</option>
   </select>
-  <p>Sexo: {{ sexo }}</p>
+  <p>Sexo: {% raw %}{{ sexo }}{% endraw %}</p>
 </template>
 ```
 
@@ -184,9 +184,9 @@ Para criar um campo de seleção que permite a seleção de múltiplos valores, 
 
 ```html
 <script setup>
-import { ref } from 'vue'
+  import { ref } from 'vue';
 
-const cores = ref([])
+  const cores = ref([]);
 </script>
 
 <template>
@@ -196,8 +196,8 @@ const cores = ref([])
     <option value="verde">Verde</option>
     <option value="azul">Azul</option>
   </select>
-  <p>Cores favoritas: {{ cores }}</p>
+  <p>Cores favoritas: {% raw %}{{ cores }}{% endraw %}</p>
 </template>
 ```
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Anterior")</span> <span>[Recursos diversos &gt;](recursos-diversos.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Anterior')</span> <span>[Recursos diversos &gt;](recursos-diversos.html 'Próximo')</span></span>
