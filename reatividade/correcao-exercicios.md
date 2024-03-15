@@ -15,7 +15,7 @@ Faremos a correção dos exercícios usando a API de composição. Vamos, além 
 
 ```html
 <script setup>
-  import { ref } from 'vue';
+  import { computed, ref } from 'vue';
 
   const contador1 = ref(0);
   const contador2 = ref(0);
