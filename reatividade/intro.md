@@ -6,9 +6,9 @@ permalink: /reatividade/
 
 # Índice da aula
 
-1. [Variáveis reativas](reatividade/variaveis-reativas.html)
-2. [Propriedades computadas](reatividade/propriedades-computadas.html)
-3. [Exercícios](reatividade/exercicios.html)
+1. [Variáveis reativas](variaveis-reativas.html)
+2. [Propriedades computadas](propriedades-computadas.html)
+3. [Exercícios](exercicios.html)
 
 # Reatividade
 

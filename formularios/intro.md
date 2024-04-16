@@ -1,9 +1,11 @@
 ---
-title: "Interligação em formulários"
+title: 'Interligação em formulários'
 description: Introdução aos conceitos de interligação em formulários
 permalink: /formularios
 ---
+
 # Índice da aula
+
 1. [Uso básico](formularios/uso-basico.html)
 2. [Recursos Diversos](formularios/recursos-diversos.html)
 3. [Exercícios e Projeto 1](formularios/exercicios.html)
@@ -18,36 +20,44 @@ De forma bem resumida, pois o assunto será melhor explorado nas próximas seç�
 
 ```html
 <script setup>
-import { ref } from 'vue'
-const texto = ref('')
+  import { ref } from 'vue';
+  const texto = ref('');
 </script>
 
 <template>
-    <div>
-        <input type="text" v-bind:value="texto" v-on:input="event => texto = event.target.value" />
-        <p>Texto digitado: {% raw %}{{ texto }}{% endraw %}</p>
-    </div>
+  <div>
+    <input
+      type="text"
+      v-bind:value="texto"
+      v-on:input="event => texto = event.target.value"
+    />
+    <p>Texto digitado: {% raw %}{{ texto }}{% endraw %}</p>
+  </div>
 </template>
 ```
 
 Neste exemplo, algumas coisas importantes acontecem:
 
-* a variável reativa `texto` é vinculada ao elemento de formulário `<input>`, usando a diretiva `v-bind:value`. 
-* é importante relembrar que o elemento `input` possui um atributo `value` que é utilizado para definir o valor inicial do elemento. Quando o usuário interage com o elemento, o valor do atributo `value` é alterado.  
-* a diretiva `v-on:input` é utilizada para vincular o evento `input` ao elemento de formulário. Quando o evento `input` é disparado, o valor da variável reativa `texto` é alterado.
-* ao acontecer uma alteração no elemento `input`, é executada a função anônima que altera o valor da variável reativa `texto`. 
-* a função anônima recebe como parâmetro o evento `event`, que é o evento que ocorreu no elemento `input`. O evento `event` possui uma propriedade `target`, que é o elemento que disparou o evento. A propriedade `target` possui uma propriedade `value`, que é o valor atual do elemento `input`. 
-* assim, o valor da variável reativa `texto` é alterado para o valor atual do elemento `input`.
-* por fim, o valor da variável reativa `texto` é exibido na tela, usando a sintaxe de interpolação `{{ texto }}`.
+- a variável reativa `texto` é vinculada ao elemento de formulário `<input>`, usando a diretiva `v-bind:value`.
+- é importante relembrar que o elemento `input` possui um atributo `value` que é utilizado para definir o valor inicial do elemento. Quando o usuário interage com o elemento, o valor do atributo `value` é alterado.
+- a diretiva `v-on:input` é utilizada para vincular o evento `input` ao elemento de formulário. Quando o evento `input` é disparado, o valor da variável reativa `texto` é alterado.
+- ao acontecer uma alteração no elemento `input`, é executada a função anônima que altera o valor da variável reativa `texto`.
+- a função anônima recebe como parâmetro o evento `event`, que é o evento que ocorreu no elemento `input`. O evento `event` possui uma propriedade `target`, que é o elemento que disparou o evento. A propriedade `target` possui uma propriedade `value`, que é o valor atual do elemento `input`.
+- assim, o valor da variável reativa `texto` é alterado para o valor atual do elemento `input`.
+- por fim, o valor da variável reativa `texto` é exibido na tela, usando a sintaxe de interpolação `{{ texto }}`.
 
 É importante relembrar que as diretivas `v-bind:value` e `v-on:input` podem ser abreviadas para `:value` e `@input`, respectivamente. Assim, o bloco de templates do exemplo acima pode ser escrito da seguinte forma:
 
 ```html
 <template>
-    <div>
-        <input type="text" :value="texto" @input="event => texto = event.target.value" />
-        <p>Texto digitado: {% raw %}{{ texto }}{% endraw %}</p>
-    </div>
+  <div>
+    <input
+      type="text"
+      :value="texto"
+      @input="event => texto = event.target.value"
+    />
+    <p>Texto digitado: {% raw %}{{ texto }}{% endraw %}</p>
+  </div>
 </template>
 ```
 
@@ -55,14 +65,15 @@ Por fim, podemos usar uma associação em dois sentidos, ou seja, o valor da var
 
 ```html
 <template>
-    <div>
-        <input type="text" v-model="texto" />
-        <p>Texto digitado: {% raw %}{{ texto }}{% endraw %}</p>
-    </div>
+  <div>
+    <input type="text" v-model="texto" />
+    <p>Texto digitado: {% raw %}{{ texto }}{% endraw %}</p>
+  </div>
 </template>
 ```
+
 A partir deste ponto, vamos considerar sempre o uso da diretiva `v-model` para vincular variáveis reativas a elementos de formulários, a não ser que seja necessário utilizar a diretiva `v-bind:value` e `v-on:input` separadamente.
 
 As próximas seções vão apresentar mais detalhes sobre a interligação em formulários.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span> <span>[Uso básico &gt;](formularios/uso-basico.html "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Início')</span> <span>[Uso básico &gt;](formularios/uso-basico.html 'Próximo')</span></span>
