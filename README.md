@@ -60,9 +60,9 @@ Bons estudos!
    6.3. [Upload de imagens](formularios/upload-imagens.html)  
    6.4. [Exercícios](formularios/exercicios.html)
 
-7. [Aula 7 - Dicas diversas](dicas/intro.md)  
-   7.1. [Integração com Bootstrap](dicas/integracao-bootstrap.html)  
-   7.2. [Integração com Tailwind CSS](dicas/integracao-tailwind.html)
+7. [Aula 7 - Integração com frameworks CSS](integracao-frameworks-css/intro.md)  
+   7.1. [Integração com Bootstrap](integracao-frameworks-css/integracao-bootstrap.html)  
+   7.2. [Integração com Tailwind CSS](integracao-frameworks-css/integracao-tailwind.html)
 
 8. [Aula 7 - Componentes]  
    8.1. [Componentes com conteúdo](componentes/conteudo.html)

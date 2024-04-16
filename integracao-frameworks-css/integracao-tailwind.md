@@ -1,6 +1,6 @@
 ---
-title: "Integração com o Tailwind CSS"
-permalink: /dicas/integracao-tailwind
+title: 'Integração com o Tailwind CSS'
+permalink: /integracao-frameworks-css/integracao-tailwind
 ---
 
 # Integração com o Tailwind CSS
@@ -26,7 +26,7 @@ npx tailwindcss init -p
 No arquivo `tailwind.config.js`, adicione dentro dos colchetes de "content", o caminho de seus arquivos para o framework saber aonde ele deve procurar pelas classes, para poder aplica-las.
 
 ```js
-"./index.html",  "./src/**/*.{vue,js,ts,jsx,tsx}"
+'./index.html', './src/**/*.{vue,js,ts,jsx,tsx}';
 ```
 
 Aqui, você especificou para ele procurar pelas suas classes no index.html, e em todos os arquivos que estiverem dentro da pasta src.
@@ -41,18 +41,17 @@ dentro do arquivo, inclua o seguinte código para importas as bibliotecas do Tai
 @tailwind utilities;
 ```
 
-E entao, na `main.js`, importe o arquivo criado.
+E então, na arquivo `main.js`, importe o arquivo criado.
 
 ```js
-import './assets/tailwind.css'
+import './assets/tailwind.css';
 ```
 
 Agora, o vue deve estar pronto para receber classes do Tailwind CSS.
 
-
 ## Uso
 
-Para utilizar o  Tailwind CSS no projeto VueJS, basta adicionar as classes CSS do Tailwind CSS nos elementos HTML.
+Para utilizar o Tailwind CSS no projeto VueJS, basta adicionar as classes CSS do Tailwind CSS nos elementos HTML.
 
 ```html
 <button class="bg-black text-white">Botão</button>
@@ -60,12 +59,10 @@ Para utilizar o  Tailwind CSS no projeto VueJS, basta adicionar as classes CSS d
 
 Esse código acima pode ser utilizado em qualquer componente VueJS, no bloco `template`.
 
-Sempre use os Docs do Tailwind CSS para seguiar pelo framework, tudo que você precisa esta lá.
+Sempre use a documentação do Tailwind CSS para utilizar bem o framework: tudo que você precisa está [aqui](https://tailwindcss.com/docs/utility-first)
 
-[Docs](https://tailwindcss.com/docs/utility-first)
+É altamente recomendando você usar a extensão do VS Code da própria Tailwind, pois ela ira te auxiliar a usar o framework de forma dinâmica.
 
-É altamente recomendando você usar a extensao do VS Code da própia Tailwind, pois ela ira te auxiliar a usar o framework de forma dinâmica.
+- [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
-[Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Integração com Bootstrap](integracao-bootstrap.html 'Anterior')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>

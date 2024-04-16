@@ -1,6 +1,6 @@
 ---
-title: "Integração com o Bootstrap"
-permalink: /dicas/integracao-bootstrap
+title: 'Integração com o Bootstrap'
+permalink: /integracao-frameworks-css/integracao-bootstrap
 ---
 
 # Integração com o Bootstrap
@@ -23,8 +23,8 @@ npm install @popperjs/core
 Para configurar o Bootstrap no projeto VueJS, basta adicionar o código abaixo no arquivo `main.js`:
 
 ```js
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap'
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap';
 ```
 
 ## Uso
@@ -39,5 +39,4 @@ Por exemplo, para criar um botão com o Bootstrap, basta adicionar a classe `btn
 
 Esse código acima pode ser utilizado em qualquer componente VueJS, no bloco `template`.
 
-
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Anterior")</span> <span>[Sumário &gt;](../ "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Anterior')</span> <span>[Integração com Tailwind &gt;](integracao-bootstrap.html 'Próximo')</span></span>
