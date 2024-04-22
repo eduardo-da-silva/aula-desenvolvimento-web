@@ -76,7 +76,7 @@ Vamos criar a estrutura básica do formulário. Edite o arquivo `src/App.vue` e 
 
 ```html
 <script setup>
-  import { ref } from 'vue';
+  import { ref, reactive } from 'vue';
   const titulo = ref('Formulário de Cadastro de Produtos');
 </script>
 
@@ -90,7 +90,7 @@ Vamos criar a estrutura básica do formulário. Edite o arquivo `src/App.vue` e 
 </template>
 ```
 
-Até esse ponto, o formulário exibe um título e um campo de texto para alterar o título. O título é uma variável reativa que é vinculada ao elemento `h1` e ao campo de texto. Quando o campo de texto é alterado, o título é atualizado automaticamente.
+Até esse ponto, o formulário exibe um título e um campo de texto para alterar o título. O título é uma variável reativa que é vinculada ao elemento `h1` e ao campo de texto. Quando o campo de texto é alterado, o título é atualizado automaticamente. Também importamos as funções `ref` e `reactive` do VueJS. A função `reactive` ainda não está sendo utilizada, mas será utilizada posteriormente.
 
 Vamos fazer uma estilização básica da classe `altera-titulo`. Adicione o bloco `style scoped` neste arquivo de componente, com o seguinte conteúdo:
 
@@ -156,7 +156,7 @@ O código acima cria um formulário com os campos de nome, preço, quantidade, u
 Para ter um funcionamento básico, precisamos proceder com a estilização e com a criação das variáveis reativas. Adicione o código a seguir no bloco `setup` (pode estar logo abaixo da declaração da variável `titulo`):
 
 ```javascript
-const produto = ref({
+const produto = reactive({
   nome: '',
   preco: 0,
   quantidade: 0,

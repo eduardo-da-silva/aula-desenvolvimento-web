@@ -7,7 +7,8 @@ permalink: /integracao-frameworks-css/
 # Índice da aula
 
 1. [Integração com o Bootstrap](integracao-bootstrap.html)
-2. [Integração com o Tailwind CSS](integracao-tailwind.html)
+2. [Tutorial para construção de um formulário com Bootstrap](tutorial-bootstrap.html)
+3. [Integração com o Tailwind CSS](integracao-tailwind.html)
 
 # Integração com frameworks CSS
 

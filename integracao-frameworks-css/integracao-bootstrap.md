@@ -39,4 +39,4 @@ Por exemplo, para criar um botão com o Bootstrap, basta adicionar a classe `btn
 
 Esse código acima pode ser utilizado em qualquer componente VueJS, no bloco `template`.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Anterior')</span> <span>[Integração com Tailwind &gt;](integracao-tailwind.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Anterior')</span> <span>[Tutorial para formulário com Bootstrap &gt;](tutorial-bootstrap.html 'Próximo')</span></span>
