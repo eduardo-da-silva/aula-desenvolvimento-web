@@ -1,44 +1,42 @@
 ---
-title: "Criação de componentes"
+title: 'Criação de componentes'
 permalink: /componentes/criacao
 ---
 
 # Criação de um componentes
 
-É importante ressaltar que os componentes podem ser criados de formas simples, diretamente em um arquivo `.html` ou dentro de um outro componente `Vue`. Aqui, nesses exemplos, abordaremos os componentes Single-File (SFC - _Single-File Components_) do Vue, em que cada componente é descrito dentro de um arquivo `.vue` independente. Este é um formato de arquivo especial que nos permite encapsular o _template_, lógica e estilização de um componente Vue em um único arquivo.
+É importante ressaltar que os componentes podem ser criados de formas simples, diretamente em um arquivo `.html` ou dentro de um outro componente `Vue`. Aqui, nesses exemplos, abordaremos os componentes Single-File (SFC - _Single-File Components_) do Vue, em que cada componente é descrito dentro de um arquivo `.vue` independente. Como já estudado em tópicos anteriores, este é um formato de arquivo especial que nos permite encapsular o _template_, lógica e estilização de um componente Vue em um único arquivo.
 
-Aqui está um exemplo de um componente Vue, em um arquivo chamado `ExpandBox.vue` armazenado no diretório `src/components`:
+Aqui está um exemplo de um componente Vue, em um arquivo chamado `  ExpandBox.vue` armazenado no diretório `src/components`:
 
 ```html
 <script>
-export default {
+  export default {
     data() {
-        return {
-            expanded: false
-        }
+      return {
+        expanded: false,
+      };
     },
     computed: {
-        buttonText() {
-            return this.expanded ? 'Esconder' : 'Mostrar'
-        }
-    }
-}
+      buttonText() {
+        return this.expanded ? 'Esconder' : 'Mostrar';
+      },
+    },
+  };
 </script>
 <template>
-    <button @click="expanded=!expanded">{{buttonText}}</button>
-    <div v-if="expanded" class="expand-box">
-        Conteúdo
-    </div>
+  <button @click="expanded=!expanded">{{buttonText}}</button>
+  <div v-if="expanded" class="expand-box">Conteúdo</div>
 </template>
 
 <style scoped>
-.expand-box {
+  .expand-box {
     height: 100%;
     padding: 20px;
     border: 1px solid gray;
     border-radius: 5px;
     box-shadow: 3px 3px 2px 2px gray;
-}
+  }
 </style>
 ```
 
@@ -53,3 +51,5 @@ Por fim, um bloco de estilos CSS (_style scoped_) foi definido para os elementos
 Para que possam ser utilizados (e reutilizados) em outros lugares do código. Existem duas formas de registro: global e local. Se o registro for global, ele poderá ser acesso em todos os componentes diretamente, sem precisar de configurações adicionais. Para o registro global de um componente (considerando o componente `ExpandBox` criado anteriormente), basta adicionar o seguinte comando no arquivo `main.js`:
 
 ```js
+
+```

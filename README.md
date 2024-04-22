@@ -64,7 +64,7 @@ Bons estudos!
    7.1. [Integração com Bootstrap](integracao-frameworks-css/integracao-bootstrap.html)  
    7.2. [Integração com Tailwind CSS](integracao-frameworks-css/integracao-tailwind.html)
 
-8. [Aula 7 - Componentes]  
+8. [Aula 8 - Componentes](componentes/intro.md)  
    8.1. [Componentes com conteúdo](componentes/conteudo.html)
 
 9. [Aula 9 - Usando o Axios](axios/intro.md)  
