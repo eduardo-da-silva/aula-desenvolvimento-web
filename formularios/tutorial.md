@@ -299,6 +299,33 @@ function buscarNome(id) {
 
 No código acima, a função `formatarPreco` recebe um número e retorna uma string formatada como um valor monetário. A função `buscarNome` recebe um id de categoria e retorna o nome da categoria correspondente.
 
+## Alguns ajustes finais de estilização
+
+Para finalizar, vamos editar o arquivo `src/assets/main.css` e adicionar o código abaixo:
+
+```css
+input {
+  width: 400px;
+  padding: 10px;
+  font-size: 24px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px;
+}
+
+input:hover {
+  border: 1px solid black;
+}
+```
+
+Com isso, a estilização do formulário está completa. Agora, você pode testar o formulário e ver o resultado.
+
 O código completo do projeto está disponível no [repositório do GitHub](https://github.com/eduardo-da-silva/formulario-basico-2infos-2024).
 
 <span style="display: flex; justify-content: space-between;"> <span>[&lt; Upload de imagens](upload-imagens.html 'Anterior')</span> <span>[Exercícios &gt;](exercicios.html 'Próximo')</span></span
