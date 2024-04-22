@@ -71,4 +71,4 @@ O exemplo completo desse código para upload e exibição de imagens está abaix
 </template>
 ```
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Recursos Diversos](recursos-diversos.html 'Anterior')</span> <span>[Exercícios &gt;](exercicios.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Recursos Diversos](recursos-diversos.html 'Anterior')</span> <span>[Tutorial de Formulários &gt;](tutorial.html 'Próximo')</span></span>

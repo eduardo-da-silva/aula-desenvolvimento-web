@@ -8,7 +8,9 @@ permalink: /formularios
 
 1. [Uso básico](formularios/uso-basico.html)
 2. [Recursos Diversos](formularios/recursos-diversos.html)
-3. [Exercícios e Projeto 1](formularios/exercicios.html)
+3. [Upload de imagens](formularios/upload-imagens.html)
+4. [Tutorial de Formulários](formularios/tutorial.html
+5. [Exercícios e Projeto 1](formularios/exercicios.html)
 
 # Interligação em formulários
 

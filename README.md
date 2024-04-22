@@ -58,7 +58,8 @@ Bons estudos!
    6.1. [Uso básico](formularios/uso-basico.html)  
    6.2. [Recursos Diversos](formularios/recursos-diversos.html)  
    6.3. [Upload de imagens](formularios/upload-imagens.html)  
-   6.4. [Exercícios](formularios/exercicios.html)
+   6.4. [Tutorial de Formulários](formularios/tutorial.html)  
+   6.5. [Exercícios](formularios/exercicios.html)
 
 7. [Aula 7 - Integração com frameworks CSS](integracao-frameworks-css/intro.md)  
    7.1. [Integração com Bootstrap](integracao-frameworks-css/integracao-bootstrap.html)  
