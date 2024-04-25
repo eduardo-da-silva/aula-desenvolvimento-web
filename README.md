@@ -63,7 +63,9 @@ Bons estudos!
 
 7. [Aula 7 - Integração com frameworks CSS](integracao-frameworks-css/intro.md)  
    7.1. [Integração com Bootstrap](integracao-frameworks-css/integracao-bootstrap.html)  
-   7.2. [Integração com Tailwind CSS](integracao-frameworks-css/integracao-tailwind.html)
+   7.2. [Tutorial de criação de formulários com Bootstrap](integracao-frameworks-css/tutorial-bootstrap.html)  
+   7.3. [Integração com Tailwind CSS](integracao-frameworks-css/integracao-tailwind.html)  
+   7.4. [Tutorial de criação de formulários com Tailwind CSS](integracao-frameworks-css/tutorial-tailwind.html)
 
 8. [Aula 8 - Componentes](componentes/intro.md)  
    8.1. [Componentes com conteúdo](componentes/conteudo.html)
