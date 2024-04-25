@@ -283,4 +283,4 @@ Com isso, a criação de um formulário usando Bootstrap está completa. Agora, 
 
 O código completo do projeto está disponível no [repositório do GitHub](https://github.com/eduardo-da-silva/formularios-2info-bootstrap).
 
-<span style="display: flex; justify-content: space-between;"> <span>[&lt; Integração com Bootstrap](integracao-bootstrap.html 'Anterior')</span> <span>[Integração com Tailwind &gt;](integracao-bootstrap.html 'Próximo')</span></span
+<span style="display: flex; justify-content: space-between;"> <span>[&lt; Integração com Bootstrap](integracao-bootstrap.html 'Anterior')</span> <span>[Integração com Tailwind &gt;](integracao-tailwind.html 'Próximo')</span></span>
