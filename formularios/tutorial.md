@@ -81,6 +81,7 @@ Vamos criar a estrutura básica do formulário. Edite o arquivo `src/App.vue` e 
 </script>
 
 <template>
+  {% raw %}
   <h1>{{ titulo }}</h1>
 
   <div class="altera-titulo">
@@ -88,6 +89,7 @@ Vamos criar a estrutura básica do formulário. Edite o arquivo `src/App.vue` e 
     <input type="text" v-model="titulo" />
   </div>
 </template>
+{% endraw %}
 ```
 
 Até esse ponto, o formulário exibe um título e um campo de texto para alterar o título. O título é uma variável reativa que é vinculada ao elemento `h1` e ao campo de texto. Quando o campo de texto é alterado, o título é atualizado automaticamente. Também importamos as funções `ref` e `reactive` do VueJS. A função `reactive` ainda não está sendo utilizada, mas será utilizada posteriormente.
@@ -142,7 +144,7 @@ Vamos criar uma `div` que conterá o formulário. Adicione o código abaixo entr
             :value="categoria.id"
             v-model="produto.categorias"
           />
-          {{ categoria.nome }}
+          {% raw %} {{ categoria.nome }} {% endraw %}
         </template>
       </div>
     </fieldset>
@@ -271,6 +273,7 @@ Note que a estilização define a largura e a altura dos elementos `formulario` 
 Vamos adicionar a exibição do resultado do formulário. Vamos editar o bloco `template` do arquivo `src/App.vue` e adicionar o código abaixo, dentro da `div` com a classe `container`, logo após a `div` com a classe `formulario`:
 
 ```html
+{% raw %}
 <div v-if="mostrarResultado" class="resultado">
   <h2>Dados do produto</h2>
   <p>Nome: {{ produto.nome }}</p>
@@ -283,6 +286,7 @@ Vamos adicionar a exibição do resultado do formulário. Vamos editar o bloco `
     - {{ buscarNome(categoria_id) }}
   </p>
 </div>
+{% endraw %}
 ```
 
 O código acima exibe os dados do produto, incluindo o nome, o preço, a quantidade, a medida e as categorias. As categorias são exibidas como uma lista de itens. Para exibir o resultado, precisamos criar duas funções auxiliares: `formatarPreco` e `buscarNome`. Adicione o código a seguir no bloco `setup` (pode estar logo abaixo da declaração da variável `mostrarResultado`):

@@ -181,6 +181,7 @@ Da mesma forma, o bloco de estilização ficará bem mais simples, visto que uti
 Por fim, vamos alterar o bloco `template` do arquivo `src/App.vue` e adicionar o código abaixo:
 
 ```html
+{% raw %}
 <template>
   <h1>{{ titulo }}</h1>
   <div class="container d-flex flex-row gap-3">
@@ -271,6 +272,7 @@ Por fim, vamos alterar o bloco `template` do arquivo `src/App.vue` e adicionar o
     <input class="form-control" type="text" v-model="titulo" />
   </div>
 </template>
+{% endraw %}
 ```
 
 Note que o bloco `template` está bem diferente do que já vimos. Agora, estamos utilizando classes do Bootstrap para estilizar o formulário. A classe `container` é utilizada para centralizar o formulário na tela. A classe `d-flex` é utilizada para definir o display flexível, e a classe `flex-row` é utilizada para definir o alinhamento dos itens em linha. A classe `gap-3` é utilizada para definir um espaçamento entre os itens.
