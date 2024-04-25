@@ -31,9 +31,7 @@ No arquivo `tailwind.config.js`, adicione dentro dos colchetes de "content", o c
 
 Aqui, você especificou para ele procurar pelas suas classes no index.html, e em todos os arquivos que estiverem dentro da pasta src.
 
-Agora, vá na pasta assets(que está dentro de src), apague todos os arquivos dentro dela, e crie um arquivo chamado `tailwind.css`
-
-dentro do arquivo, inclua o seguinte código para importas as bibliotecas do Tailwind CSS.
+Agora, vá na pasta assets(que está dentro de src), apague todos os arquivos dentro dela, e crie um arquivo chamado `tailwind.css` dentro do arquivo, inclua o seguinte código para importas as bibliotecas do Tailwind CSS.
 
 ```css
 @tailwind base;
@@ -65,4 +63,4 @@ Sempre use a documentação do Tailwind CSS para utilizar bem o framework: tudo 
 
 - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Integração com Bootstrap](integracao-bootstrap.html 'Anterior')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Tutorial de integração com o Bootstrap](tutorial-bootstrap.html 'Anterior')</span> <span>[Tutorial de integração com o Tailwind &gt;](tutorial-tailwind.html 'Próximo')</span></span>
