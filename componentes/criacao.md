@@ -89,7 +89,7 @@ import App from './App.vue';
 import ExpandBox from './components/ExpandBox.vue';
 
 const app = createApp(App);
-app.component('expand-box', ExpandBox);
+app.component('ExpandBox', ExpandBox);
 app.mount('#app');
 ```
 
