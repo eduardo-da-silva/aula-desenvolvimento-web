@@ -68,7 +68,9 @@ Bons estudos!
    7.4. [Tutorial de criação de formulários com Tailwind CSS](integracao-frameworks-css/tutorial-tailwind.html)
 
 8. [Aula 8 - Componentes](componentes/intro.md)  
-   8.1. [Componentes com conteúdo](componentes/conteudo.html)
+   8.1. [Criação de componentes](componentes/criacao.html)  
+   8.2. [Propriedades](componentes/propriedades.html)
+   <!-- 8.1. [Componentes com conteúdo](componentes/conteudo.html) -->
 
 9. [Aula 9 - Usando o Axios](axios/intro.md)  
    9.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
