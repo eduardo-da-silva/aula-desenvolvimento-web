@@ -73,17 +73,15 @@ Bons estudos!
    8.3. [Propriedades - outros recursos](componentes/propriedades-outros-recursos.html)
    <!-- 8.1. [Componentes com conteúdo](componentes/conteudo.html) -->
 
-9. [Aula 9 - Usando o Axios](axios/intro.md)  
-   9.1. [Exemplos de uso](axios/exemplos-de-uso.md)  
-   9.2. [A API TMDB](axios/tmdb-api.md)  
-   9.3. [TMDB no vue](axios/tmdb-no-vue.md)  
-   9.4. [TMDB: adicionar o vue-router](axios/tmdb-adicionar-vue-router.md)  
-   9.5. [TMDB: ajustes de estilos](axios/tmdb-ajustes-estilos.md)  
-   9.6. [TMDB: listando filmes](axios/tmdb-listando-filmes.md)  
-   9.7. [TMDB: visualizar ícone de carregando](axios/tmdb-visualizar-carregando)  
-   9.8. [TMDB: mostrando a tag gêneros](axios/tmdb-mostrando-tag-generos)  
-   9.9. [TMDB: gerenciamento de estados com Pinia](axios/tmdb-gerenciamento-estados-com-pinia)  
-   9.10. [TMDB: enfatizando o gênero atual](axios/tmdb-enfatizando-genero-atual)  
-   9.11. [TMDB: mostrando detalhes do filme](axios/tmdb-mostrando-detalhes-do-filme)
-
-<!-- 5. [Aula 5 - Revisão Geral de Componentes](componentes/intro.md) -->
+<!-- 9. [Aula 9 - Usando o Axios](axios/intro.md)
+   9.1. [Exemplos de uso](axios/exemplos-de-uso.md)
+   9.2. [A API TMDB](axios/tmdb-api.md)
+   9.3. [TMDB no vue](axios/tmdb-no-vue.md)
+   9.4. [TMDB: adicionar o vue-router](axios/tmdb-adicionar-vue-router.md)
+   9.5. [TMDB: ajustes de estilos](axios/tmdb-ajustes-estilos.md)
+   9.6. [TMDB: listando filmes](axios/tmdb-listando-filmes.md)
+   9.7. [TMDB: visualizar ícone de carregando](axios/tmdb-visualizar-carregando)
+   9.8. [TMDB: mostrando a tag gêneros](axios/tmdb-mostrando-tag-generos)
+   9.9. [TMDB: gerenciamento de estados com Pinia](axios/tmdb-gerenciamento-estados-com-pinia)
+   9.10. [TMDB: enfatizando o gênero atual](axios/tmdb-enfatizando-genero-atual)
+   9.11. [TMDB: mostrando detalhes do filme](axios/tmdb-mostrando-detalhes-do-filme) -->
