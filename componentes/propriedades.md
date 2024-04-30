@@ -136,4 +136,4 @@ Para enviar as propriedades `title` e `content` para o componente `ExpandBox`, b
 
 Vimos a parte inicial de como passar propriedades para um componente. Na próxima aula, vamos ver como passar propriedades com valores padrão e como passar propriedades com tipos específicos.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Propriedades de componentes](propriedades.html 'Anterior')</span><span>[Propriedades de componentes - outros recursos &gt;](propriedades-outros-recursos.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Criação de componentes](criacao.html 'Anterior')</span><span>[Propriedades de componentes - outros recursos &gt;](propriedades-outros-recursos.html 'Próximo')</span></span>

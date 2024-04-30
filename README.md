@@ -69,7 +69,8 @@ Bons estudos!
 
 8. [Aula 8 - Componentes](componentes/intro.md)  
    8.1. [Criação de componentes](componentes/criacao.html)  
-   8.2. [Propriedades](componentes/propriedades.html)
+   8.2. [Propriedades](componentes/propriedades.html)  
+   8.3. [Propriedades - outros recursos](componentes/propriedades-outros-recursos.html)
    <!-- 8.1. [Componentes com conteúdo](componentes/conteudo.html) -->
 
 9. [Aula 9 - Usando o Axios](axios/intro.md)  
