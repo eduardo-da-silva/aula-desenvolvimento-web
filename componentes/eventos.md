@@ -43,13 +43,13 @@ Crie um novo componente chamado `ProductList.vue` no diretório `src/components`
     </thead>
     <tbody>
       <tr v-for="produto in props.produtos" :key="produto.id">
-        {{ %raw% }}
+        {% raw %}
         <td>{{ produto.nome }}</td>
         <td>{{ produto.preco }}</td>
         <td>
           <i class="mdi mdi-delete" @click="$emit('remove', produto.id)" />
         </td>
-        {{ %endraw% }}
+        {% endraw %}
       </tr>
     </tbody>
   </table>
