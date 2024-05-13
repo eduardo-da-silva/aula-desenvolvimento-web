@@ -205,5 +205,4 @@ Nesse caso, o bloco header será renderizado, mas o bloco footer não será rend
 
 Nesta aula, vimos como passar conteúdo para um componente por meio de slots. Vimos como definir um slot padrão, um slot com conteúdo padrão, slots nomeados e slots condicionais. Com slots, é possível criar componentes mais flexíveis e reutilizáveis. Em resumo, slots são uma forma de passar conteúdo para um componente de forma dinâmica e flexível. Na próxima aula, veremos como enviar eventos de um componente filho para um componente pai.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Propriedades de componentes - Recursos diversos
-(propriedades-outros-recursos.html 'Anterior')</span><span>[Eventos &gt;](eventos.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Propriedades de componentes - Recursos diversos](propriedades-outros-recursos.html 'Anterior')</span><span>[Eventos &gt;](eventos.html 'Próximo')</span></span>
