@@ -192,4 +192,24 @@ npm run dev
 
 Acesse do projeto no navegador e navegue entre as páginas da aplicação. Você verá o layout básico com o cabeçalho, a barra lateral e o conteúdo principal, além das páginas `Home`, `Projetos`, `Contato` e `Sobre nós`.
 
+Um detalhe importante é que, ao criar o projeto escolhendo a opção de adicionar o vue-router no momento da criação, algumas configurações já foram realizadas automaticamente. Isso inclui a instalação do Vue Router, a criação do arquivo `src/router/index.js` e a configuração do Vue Router no arquivo `src/main.js`. Essas configurações automáticas facilitam o início do desenvolvimento com o Vue Router.
+
+Por exemplo, no que no arquivo `src/main.js` foi adicionado o Vue Router:
+
+```javascript
+import './assets/main.css';
+
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
+
+const app = createApp(App);
+
+app.use(router);
+
+app.mount('#app');
+```
+
+IMPORTANTE: Nós nao precisamos realizar as alterações no arquivo `src/main.js` pois o Vue Router já foi adicionado automaticamente durante a criação do projeto.
+
 <span style="display: flex; justify-content: space-between;"><span>[&lt; Roteamento](. 'Início')</span> <span>[Definição do Layout &gt;](layout.html 'Próximo')</span></span>
