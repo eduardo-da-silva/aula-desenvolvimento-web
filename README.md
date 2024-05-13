@@ -71,7 +71,9 @@ Bons estudos!
    8.1. [Criação de componentes](componentes/criacao.html)  
    8.2. [Propriedades](componentes/propriedades.html)  
    8.3. [Propriedades - outros recursos](componentes/propriedades-outros-recursos.html)  
-   8.4. [Slots](componentes/slots.html)
+   8.4. [Slots](componentes/slots.html)  
+   8.5. [Eventos](componentes/eventos.html)  
+   8.6. [Exercícios](componentes/exercicios.html)
    <!-- 8.1. [Componentes com conteúdo](componentes/conteudo.html) -->
 
 <!-- 9. [Aula 9 - Usando o Axios](axios/intro.md)
