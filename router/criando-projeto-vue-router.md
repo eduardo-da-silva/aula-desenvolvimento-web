@@ -30,7 +30,7 @@ Em seguida, vamos criar o layout básico do projeto. Para isso, edite o arquivo 
     <aside>
       <nav>
         <router-link to="/" exact>Home</router-link>
-        <router-link to="/projects">Projetos</router-link>
+        <router-link to="/products">Produtos</router-link>
         <router-link to="/contact">Contato</router-link>
         <router-link to="/about">Sobre nós</router-link>
       </nav>
@@ -96,16 +96,16 @@ Na medida em que usarmos mais esses dois componentes, vamos entender melhor o se
 
 # Criando as páginas
 
-Agora, vamos criar os componentes para as páginas `Home`, `Projetos`, `Contato` e `Sobre nós`. Por padrão, o Vue Router sugere que os componentes das páginas sejam armazenados no diretório `src/views/`. Vamos seguir essa convenção. Note que do ponto de vista funcional, não existe diferença entre um componente armazenado em `src/components/` e um componente armazenado em `src/views/`. A diferença é apenas semântica e organizacional.
+Agora, vamos criar os componentes para as páginas `Home`, `Produtos`, `Contato` e `Sobre nós`. Por padrão, o Vue Router sugere que os componentes das páginas sejam armazenados no diretório `src/views/`. Vamos seguir essa convenção. Note que do ponto de vista funcional, não existe diferença entre um componente armazenado em `src/components/` e um componente armazenado em `src/views/`. A diferença é apenas semântica e organizacional.
 
 Vamos criar os seguinte arquivos:
 
 - `src/views/HomeView.vue`: página inicial da aplicação, que será exibida quando o usuário acessar a URL `/`.
-- `src/views/ProjectsView.vue`: página que exibe os projetos da aplicação, que será exibida quando o usuário acessar a URL `/projects`.
+- `src/views/ProductsView.vue`: página que exibe os produtos da aplicação, que será exibida quando o usuário acessar a URL `/products`.
 - `src/views/ContactView.vue`: página de contato, que será exibida quando o usuário acessar a URL `/contact`.
 - `src/views/AboutView.vue`: página que exibe informações sobre a aplicação, que será exibida quando o usuário acessar a URL `/about`.
 
-Crie os arquivos `src/views/HomeView.vue`, `src/views/ProjectsView.vue`, `src/views/ContactView.vue` e `src/views/AboutView.vue` com o seguinte conteúdo:
+Crie os arquivos `src/views/HomeView.vue`, `src/views/ProductsView.vue`, `src/views/ContactView.vue` e `src/views/AboutView.vue` com o seguinte conteúdo:
 
 - `src/views/HomeView.vue`:
 
@@ -115,11 +115,11 @@ Crie os arquivos `src/views/HomeView.vue`, `src/views/ProjectsView.vue`, `src/vi
 </template>
 ```
 
-- `src/views/ProjectsView.vue`:
+- `src/views/ProductsView.vue`:
 
 ```html
 <template>
-  <h1>Esta é a página de projetos</h1>
+  <h1>Esta é a página de produtos</h1>
 </template>
 ```
 
@@ -212,4 +212,4 @@ app.mount('#app');
 
 IMPORTANTE: Nós nao precisamos realizar as alterações no arquivo `src/main.js` pois o Vue Router já foi adicionado automaticamente durante a criação do projeto.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Roteamento](. 'Início')</span> <span>[Definição do Layout &gt;](layout.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Roteamento](. 'Início')</span> <span>[Exercícios de fixação &gt;](exercícios-rotas-componentes.html 'Próximo')</span></span>
