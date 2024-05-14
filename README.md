@@ -75,9 +75,13 @@ Bons estudos!
    8.5. [Eventos](componentes/eventos.html)  
    8.6. [Exercícios](componentes/exercicios.html)
 
-9. [Aula 9 - Roteamento com Vue Router](router/intro.md)  
-    9.1. [Conceitos de roteamento](router/conceitos-roteamento.html)  
-    9.2. [Criando um projeto com Vue Router](router/criando-projeto-vue-router.html)
+9. [Aula 9 - Roteamento com Vue Router](roteamento/intro.md)  
+    9.1. [Criando um projeto com Vue Router](roteamento/criando-projeto-vue-router.html)  
+    9.2. [Exercícios de fixação](roteamento/exercícios-rotas-componentes.html)  
+    9.3. [Rotas dinâmicas](roteamento/rotas-dinamicas.html)  
+    9.4. [Navegação programática](roteamento/navegacao-programatica.html)  
+    9.5. [Exercícios](roteamento/exercicios.html)
+
       <!-- 9.3. [Definição do Layout](router/layout.html)  
       9.4. [Criando as páginas](router/criando-paginas.html)  
       9.5. [Configurando as rotas](router/configurando-rotas.html)  

@@ -16,4 +16,4 @@ permalink: /roteamento/exercícios-rotas-componentes
 
 2. Desafio: na página de produtos, faça a listagem de produtos, como feito nas aulas de `components`. Edite o componente `ProductsView` para exibir uma lista de produtos. Cada produto deve conter um `id`, `nome` e `preco`. Utilize o componente `ProductList` para exibir a listagem dos produtos. Garanta que o método para remover o produto esteja funcionando.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Criando um projeto com Vue Router](criando-projeto-vue-router.html 'Voltar')</span> <span>[Sumário &gt;](../ 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Criando um projeto com Vue Router](criando-projeto-vue-router.html 'Voltar')</span> <span>[Rotas dinâmicas (Listagem de produtos) &gt;](rotas-dinamicas.html 'Próximo')</span></span>

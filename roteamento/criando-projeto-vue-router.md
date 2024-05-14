@@ -147,7 +147,7 @@ Por fim, vamos configurar as rotas da aplicação. Edite o arquivo `src/router/i
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ContactView from '../views/ContactView.vue';
-import ProjectView from '../views/ProjectView.vue';
+import ProductView from '../views/ProductView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -168,9 +168,9 @@ const router = createRouter({
       component: ContactView,
     },
     {
-      path: '/projects',
-      name: 'projects',
-      component: ProjectView,
+      path: '/products',
+      name: 'products',
+      component: ProductView,
     },
   ],
 });
