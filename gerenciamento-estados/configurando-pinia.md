@@ -1,6 +1,6 @@
 ---
 title: 'Instalando e configurando o Pinia'
-permalink: /gerenciamento-estados/configuracao-pinia
+permalink: /gerenciamento-estados/configurando-pinia
 ---
 
 # Instalando o Pinia
