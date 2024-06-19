@@ -1,6 +1,6 @@
 ---
 title: 'Exercícios'
-permalink: /componentes/exercícios
+permalink: /componentes/exercicios
 ---
 
 # Exercícios

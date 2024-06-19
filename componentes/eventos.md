@@ -139,4 +139,4 @@ Neste capítulo, você aprendeu como manipular eventos em componentes Vue.js. A 
 
 Com esses conceitos, você pode criar interfaces de usuário interativas e dinâmicas com Vue.js.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Slots - conteúdo](slots.html 'Anterior')</span><span>[Exercícios &gt;](exercícios.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Slots - conteúdo](slots.html 'Anterior')</span><span>[Exercícios &gt;](exercicios.html 'Próximo')</span></span>
