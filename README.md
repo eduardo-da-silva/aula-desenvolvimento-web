@@ -82,10 +82,11 @@ Bons estudos!
    9.4. [Navegação programática](roteamento/navegacao-programatica.html)  
    9.5. [Exercícios](roteamento/exercicios.html)
 
-      <!-- 9.3. [Definição do Layout](router/layout.html)  
-      9.4. [Criando as páginas](router/criando-paginas.html)  
-      9.5. [Configurando as rotas](router/configurando-rotas.html)  
-      9.6. [Exercícios](router/exercicios.html) -->
+10. [Aula 10 - Gerenciamento de estados com Pinia](gerenciamento-estados/intro.md)  
+    10.1. [Configurando o Pinia](gerenciamento-estados/configurando-pinia.html)  
+    10.2. [Configurando o estado global de produtos](gerenciamento-estados/estado-produtos.html)  
+    10.3. [Ajustes no componente de visualização de produtos](gerenciamento-estados/ajustes-componentes.html)
+
    <!-- 9. [Aula 9 - Usando o Axios](axios/intro.md)
       9.1. [Exemplos de uso](axios/exemplos-de-uso.md)
       9.2. [A API TMDB](axios/tmdb-api.md)
