@@ -113,4 +113,4 @@ Por fim, vamos adicionar a seguinte classe CSS no bloco `style`:
 }
 ```
 
-<span style="display: flex; justify-content: space-between;"> <span> [&lt; TMDB: Gerenciamento de estados com o Pinia](tmdb-gerenciamento-estados-com-pinia 'Anterior')</span> <span>[Mostrando detalhes do filme &gt;](tmdb-mostrando-detalhes-filme 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"> <span> [&lt; TMDB: Gerenciamento de estados com o Pinia](tmdb-gerenciamento-estados-com-pinia.html 'Anterior')</span> <span>[Mostrando detalhes do filme &gt;](tmdb-mostrando-detalhes-filme.html 'Próximo')</span></span>

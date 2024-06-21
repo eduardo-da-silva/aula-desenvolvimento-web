@@ -1,5 +1,5 @@
 ---
-title: "Adicionar o Vue-router"
+title: 'Adicionar o Vue-router'
 permalink: /axios/tmdb-adicionar-vue-router
 ---
 
@@ -7,58 +7,58 @@ permalink: /axios/tmdb-adicionar-vue-router
 
 Nesta etapa, vamos adicionar o Vue-router ao projeto. Para isso, vamos executar o seguinte comando no terminal:
 
-```
+```bash
 npm install vue-router
 ```
 
 Em seguida, vamos criar o arquivo `src/router/index.js` com o seguinte conteúdo:
 
 ```js
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: () => import('../views/Home.vue')
+    component: () => import('../views/Home.vue'),
   },
   {
     path: '/filmes',
     name: 'Movies',
-    component: () => import('../views/MoviesView.vue')
+    component: () => import('../views/MoviesView.vue'),
   },
   {
     path: '/tv',
     name: 'TV',
-    component: () => import('../views/TvView.vue')
-  }
-]
+    component: () => import('../views/TvView.vue'),
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
 ```
 
 No exemplo acima, estamos criando um roteador com três rotas:
-* `/`: rota para a página inicial
-* `/filmes`: rota para a página de filmes
-* `/tv`: rota para a página de programas de TV
 
+- `/`: rota para a página inicial
+- `/filmes`: rota para a página de filmes
+- `/tv`: rota para a página de programas de TV
 
-No arquivo `src/main.js`, vamos importar o Vue-router e adicionar o router ao projeto:
+No arquivo `src/main.js`, vamos importar o Vue-router e adicionar o router ao projeto. Para substitua o conteúdo do arquivo pelo seguinte:
 
 ```js
-import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import { createApp } from 'vue';
+import App from './App.vue';
+import router from './router';
 
-const app = createApp(App)
-app.use(router)
+const app = createApp(App);
+app.use(router);
 
-app.mount('#app')
+app.mount('#app');
 ```
 
 Nesse caso, estamos adicionando o suporte ao Vue-router ao projeto e, em seguida, montando o aplicativo.
@@ -87,15 +87,15 @@ Para criar a página para gêneros de filmes, vamos criar o arquivo `src/views/M
 
 ```html
 <script setup>
-import { ref, onMounted } from 'vue'
-import api from '@/plugins/axios'
+  import { ref, onMounted } from 'vue';
+  import api from '@/plugins/axios';
 
-const genres = ref([])
+  const genres = ref([]);
 
-onMounted(async () => {
-  const response = await api.get('genre/movie/list?language=pt-BR')
-  genres.value = response.data.genres
-})
+  onMounted(async () => {
+    const response = await api.get('genre/movie/list?language=pt-BR');
+    genres.value = response.data.genres;
+  });
 </script>
 <template>
   <div>
@@ -117,15 +117,15 @@ Para criar a página para gêneros de programas de TV, vamos criar o arquivo `sr
 
 ```html
 <script setup>
-import { ref, onMounted } from 'vue'
-import api from '@/plugins/axios'
+  import { ref, onMounted } from 'vue';
+  import api from '@/plugins/axios';
 
-const genres = ref([])
+  const genres = ref([]);
 
-onMounted(async () => {
-  const response = await api.get('genre/tv/list?language=pt-BR')
-  genres.value = response.data.genres
-})
+  onMounted(async () => {
+    const response = await api.get('genre/tv/list?language=pt-BR');
+    genres.value = response.data.genres;
+  });
 </script>
 
 <template>
@@ -147,8 +147,7 @@ Note que o exemplo é muito semelhante ao anterior, com a diferença de que esta
 Nesta etapa, vamos adicionar o menu de navegação. Para isso, vamos alterar o arquivo `src/App.vue` para o seguinte conteúdo:
 
 ```html
-<script setup>
-</script>
+<script setup></script>
 
 <template>
   <div>
@@ -162,15 +161,15 @@ Nesta etapa, vamos adicionar o menu de navegação. Para isso, vamos alterar o a
 </template>
 
 <style scoped>
-nav {
-  display: flex;
-  justify-content: flex-start;
-  margin-bottom: 1rem;
-  column-gap: 2rem;
-}
+  nav {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+    column-gap: 2rem;
+  }
 </style>
 ```
 
-Note que estamos utilizando o componente `RouterLink` para criar os links de navegação. Também estamos utilizando o componente `RouterView` para indicar onde o conteúdo da página será exibido. Ainda, fizemos uma pequena estilização para o menu de navegação, para que os links fiquem alinhados à esquerda e com um espaçamento entre eles. Note que usamos o atributo `scoped` para que o estilo seja aplicado apenas ao componente atual. 
+Note que estamos utilizando o componente `RouterLink` para criar os links de navegação. Também estamos utilizando o componente `RouterView` para indicar onde o conteúdo da página será exibido. Ainda, fizemos uma pequena estilização para o menu de navegação, para que os links fiquem alinhados à esquerda e com um espaçamento entre eles. Note que usamos o atributo `scoped` para que o estilo seja aplicado apenas ao componente atual.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMBD no Vue](tmdb-no-vue "Anterior")</span> <span>[Ajustes de estilos CSS &gt;](tmdb-ajustes-estilos "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMBD no Vue](tmdb-no-vue.html 'Anterior')</span> <span>[Ajustes de estilos CSS &gt;](tmdb-ajustes-estilos.html 'Próximo')</span></span>

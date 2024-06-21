@@ -1,5 +1,5 @@
 ---
-title: "Visualizar ícone de carregando"
+title: 'Visualizar ícone de carregando'
 permalink: /axios/tmdb-mostrando-tag-generos
 ---
 
@@ -34,7 +34,11 @@ Agora, vamos alterar a listagem de filmes para que ele substitua o `id` do gêne
 
 ```html
 <p class="movie-genres">
-  <span v-for="genre_id in movie.genre_ids" :key="genre_id" @click="listMovies(genre_id)">
+  <span
+    v-for="genre_id in movie.genre_ids"
+    :key="genre_id"
+    @click="listMovies(genre_id)"
+  >
     {% raw %}{{ getGenreName(genre_id) }} {% endraw %}
   </span>
 </p>
@@ -68,10 +72,9 @@ Por fim, vamos fazer uma estilização para a exibição dos gêneros. Para tal,
   background-color: #455a08;
   box-shadow: 0 0 0.5rem #748708;
 }
-``` 
+```
 
 Note que a classe `.movie-genres` já existia no bloco `style` do arquivo `MoviesView.vue`. Neste caso, apenas alteramos o valor do atributo `display` para `flex` e adicionamos os demais atributos para que os gêneros sejam exibidos em uma única linha, com um pequeno espaçamento entre eles.
-
 
 # Formatando a data para o padrão brasileiro
 
@@ -86,9 +89,9 @@ Neste exemplo, vamos alterar a forma como a data de lançamento dos filmes é ex
 Note que localizamos a tag `p` com a classe `.movie-release-date` e substituímos o conteúdo `{{ movie.release_date }}` pelo conteúdo `{% raw %}{{ formatDate(movie.release_date) }}{% endraw %}`. Além disso, vamos adicionar o seguinte conteúdo no bloco `script`:
 
 ```javascript
-const formatDate = (date) => new Date(date).toLocaleDateString('pt-BR')
+const formatDate = (date) => new Date(date).toLocaleDateString('pt-BR');
 ```
 
 Note que criamos uma função `formatDate` que recebe a data de lançamento como parâmetro e retorna a data formatada para o padrão brasileiro. Para isso, usamos a função `toLocaleDateString` do JavaScript para formatar a data para o padrão brasileiro. Sugiro colocar a função `formatDate` logo após a função `getGenreName`.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: visualizar carregando](tmdb-visualizar-carregando "Anterior")</span> <span>[TMDB: Gerenciamento de estados com Pinia &gt;](tmdb-gerenciamento-estados-com-pinia "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: visualizar carregando](tmdb-visualizar-carregando.html 'Anterior')</span> <span>[TMDB: Gerenciamento de estados com Pinia &gt;](tmdb-gerenciamento-estados-com-pinia.html 'Próximo')</span></span>

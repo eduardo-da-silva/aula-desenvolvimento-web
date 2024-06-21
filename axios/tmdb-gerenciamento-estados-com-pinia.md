@@ -7,27 +7,13 @@ permalink: /axios/tmdb-gerenciamento-estados-com-pinia
 
 Nas aplicações web, é comum que tenhamos que lidar com estados. Por exemplo, em uma aplicação de cadastro de clientes, podemos ter um estado que indica se o cliente está sendo editado ou não. Em uma aplicação de carrinho de compras, podemos ter um estado que indica se o carrinho está vazio ou não. Em uma aplicação de listagem de filmes, podemos ter um estado que indica se os filmes estão sendo carregados ou não, ou mesmo armazenar os filmes ou gêneros que foram carregados.
 
-No VueJS, podemos usar a API de reatividade para gerenciar estados. Contudo, essa abordagem pode se tornar complexa conforme a aplicação cresce. Para facilitar o gerenciamento de estados, podemos usar uma biblioteca chamada [Pinia](https://pinia.esm.dev/). Essa biblioteca é inspirada no [Vuex](https://vuex.vuejs.org/), mas com uma abordagem mais simples e moderna.
-
-# O Pinia
-
-O Pinia é uma biblioteca que permite o gerenciamento de estados de forma centralizada. Para isso, ela usa o conceito de _stores_ que são objetos que armazenam os estados da aplicação. Cada _store_ é um objeto que possui um conjunto de variáveis reativas e funções que alteram essas variáveis. Além disso, o Pinia permite que as _stores_ sejam compartilhadas entre os componentes da aplicação.
-
-O gerenciamento de estados usando o Pinia pode ser compreendido em três blocos:
-
-- variáveis reativas: são variáveis que podem ser observadas e que, quando alteradas, disparam uma re-renderização dos componentes que as usam;
-- funções: são funções que alteram as variáveis reativas, também conhecidas como _actions_ ou _mutations_. Algumas funções podem ser assíncronas, como por exemplo, uma função que faz uma requisição HTTP. Também é possível criar funções que alteram mais de uma variável reativa.
-- _getters_: são funções que retornam valores calculados a partir das variáveis reativas.
-
-Note que o Pinia não é uma biblioteca de gerenciamento de estados global. Cada _store_ é independente e pode ser compartilhada entre os componentes da aplicação.
-
-Também, é uma boa prática criar uma _store_ para cada recurso da aplicação. Por exemplo, em uma aplicação de listagem de filmes, podemos ter uma _store_ para gerenciar os filmes e outra para gerenciar os gêneros.
+No VueJS, podemos usar a API de reatividade para gerenciar estados. Contudo, essa abordagem pode se tornar complexa conforme a aplicação cresce. Para facilitar o gerenciamento de estados, podemos usar uma biblioteca chamada [Pinia](https://pinia.esm.dev/), como já estudamos anteriormente.
 
 ## Instalação
 
 Para instalar o Pinia, vamos abrir o terminal e executar o seguinte comando:
 
-```
+```bash
 npm install pinia
 ```
 
@@ -83,8 +69,6 @@ export const useGenreStore = defineStore('genre', () => {
 
   return { genres, getAllGenres, getGenreName };
 });
-
-export default useGenreStore;
 ```
 
 Note que, para criar a _store_, usamos o método `defineStore` que recebe dois parâmetros: o nome da _store_ e uma função que retorna um objeto com as variáveis reativas e funções que alteram essas variáveis.
@@ -100,7 +84,7 @@ Por fim, exportamos a _store_ usando o método `useGenreStore`. Esse método é 
 Para usar a _store_, vamos editar o arquivo `src/views/MoviesView.vue`. Inicialmente vamos editar o bloco `script` e adicionar o seguinte código:
 
 ```js
-import useGenreStore from '@/stores/genre';
+import { useGenreStore } from '@/stores/genre';
 
 const genreStore = useGenreStore();
 ```
@@ -152,4 +136,4 @@ Nesse exemplo, usamos a função `getGenreName` para buscar o nome do gênero co
 
 1. Fazer as alterações necessárias em `TvView.vue` para que a listagem de gêneros seja feita usando a _store_ `genre`. Note que ao chamar a função `getAllGenres` da _store_ `genre`, é necessário passar o parâmetro `'tv'` para que a listagem de gêneros seja feita com base nos filmes.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: Mostrando a tag gêneros](tmdb-mostrando-tag-generos 'Anterior')</span> <span>[TMDB: Enfatizando o gênero atual &gt;](tmdb-enfatizando-genero-atual 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: Mostrando a tag gêneros](tmdb-mostrando-tag-generos.html 'Anterior')</span> <span>[TMDB: Enfatizando o gênero atual &gt;](tmdb-enfatizando-genero-atual.html 'Próximo')</span></span>

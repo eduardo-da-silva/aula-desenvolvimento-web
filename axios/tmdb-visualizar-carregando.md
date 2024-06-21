@@ -1,5 +1,5 @@
 ---
-title: "Visualizar ícone de carregando"
+title: 'Visualizar ícone de carregando'
 permalink: /axios/tmdb-visualizar-carregando
 ---
 
@@ -12,9 +12,9 @@ npm install vue-loading-overlay
 ```
 
 Em seguida, vamos abrir o arquivo `main.js` e adicionar o seguinte conteúdo na primeira linha:
-  
+
 ```js
-import 'vue-loading-overlay/dist/css/index.css'
+import 'vue-loading-overlay/dist/css/index.css';
 ```
 
 O restante do arquivo permanece inalterado.
@@ -29,14 +29,13 @@ Neste caso, adicionamos o componente `loading` que recebe o valor da variável `
 
 ```html
 <script setup>
-import Loading from 'vue-loading-overlay'
+  import Loading from 'vue-loading-overlay';
 
-const isLoading = ref(false);
+  const isLoading = ref(false);
 </script>
 ```
 
-Note que importamos o componente `Loading` do pacote `vue-loading-overlay` e criamos uma variável reativa `isLoading` que indica se o ícone de carregando deve ser exibido ou não. Sugiro que você organize o código de forma que os `import`s fiquem no início do bloco `script` e as variáveis reativas fiquem na sequência, antes da definição das demais funções. 
-
+Note que importamos o componente `Loading` do pacote `vue-loading-overlay` e criamos uma variável reativa `isLoading` que indica se o ícone de carregando deve ser exibido ou não. Sugiro que você organize o código de forma que os `import`s fiquem no início do bloco `script` e as variáveis reativas fiquem na sequência, antes da definição das demais funções.
 
 Agora, vamos alterar o método `listMovies` para que ele altere o valor da variável `isLoading` antes e depois de fazer a requisição para a API, como segue:
 
@@ -57,8 +56,6 @@ const listMovies = async (genreId) => {
 ...
 ```
 
-Note que apenas fizemos uma pequena alteração na função, adicionando a linha `isLoading.value = true;` antes da chamada à API e a linha `isLoading.value = false;` depois da chamada à API. 
+Note que apenas fizemos uma pequena alteração na função, adicionando a linha `isLoading.value = true;` antes da chamada à API e a linha `isLoading.value = false;` depois da chamada à API.
 
-
-
-<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: ajustes nos estilos](tmdb-ajustes-estilos "Anterior")</span> <span>[TMDB: mostrando a tag gênros &gt;](tmdb-mostrando-tag-generos "Próximo")</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; TMDB: ajustes nos estilos](tmdb-ajustes-estilos.html 'Anterior')</span> <span>[TMDB: mostrando a tag gênros &gt;](tmdb-mostrando-tag-generos.html 'Próximo')</span></span>

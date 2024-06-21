@@ -1,9 +1,11 @@
 ---
-title: "A biblioteca Axios"
+title: 'A biblioteca Axios'
 description: Funcionamento básico do Axios no VueJS
 permalink: /axios/
 ---
+
 # Índice da aula
+
 8.1. [Exemplos de uso](exemplos-de-uso)  
 8.2. [A API TMDB](tmdb-api)  
 8.3. [TMDB no Vue](tmdb-no-vue)  
@@ -11,15 +13,16 @@ permalink: /axios/
 8.5. [TMDB: ajustes de estilos](tmdb-ajustes-estilos)  
 8.6. [TMDB: listando filmes](tmdb-listando-filmes)  
 8.7. [TMDB: visualizar ícone de carregando](tmdb-visualizar-carregando)  
-8.8. [TMDB: mostrando a tag gêneros](tmdb-mostrando-tag-generos)    
-8.9. [TMDB: gerenciamento de estados com Pinia](tmdb-gerenciamento-estados-com-pinia)  
+8.8. [TMDB: mostrando a tag gêneros](tmdb-mostrando-tag-generos)  
+8.9. [TMDB: gerenciamento de estados com Pinia](tmdb-gerenciamento-estados-com-pinia)
+
 # Introdução
 
 **Objetivo:** Compreender o funcionamento do axios, integrado com Vue-Router e Pinia, no desenvolvimento de aplicações web.
 
 # A biblioteca `axios` e sua instalação
 
-A biblioteca `axios` é um cliente HTTP tanto para uso no `node.js` quanto em um navegador. 
+A biblioteca `axios` é um cliente HTTP tanto para uso no `node.js` quanto em um navegador.
 
 Nos nossos projetos, instalaremos o axios usando o `npm`, como segue:
 
@@ -29,6 +32,6 @@ npm install axios
 
 Outras formas de instalação podem ser encontradas na [documentação](https://axios-http.com/ptbr/docs/intro) da biblioteca
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. "Início")</span>
-<span> 
-[Exemplos de uso do Axios &gt;](exemplos-de-uso "Próximo")  </span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](.. 'Início')</span>
+<span>
+[Exemplos de uso do Axios &gt;](exemplos-de-uso.html 'Próximo') </span></span>
