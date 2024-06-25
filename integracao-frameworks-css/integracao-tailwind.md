@@ -25,8 +25,8 @@ npx tailwindcss init -p
 
 No arquivo `tailwind.config.js`, adicione dentro dos colchetes de "content", o caminho de seus arquivos para o framework saber aonde ele deve procurar pelas classes, para poder aplica-las.
 
-```js
-'./index.html', './src/**/*.{vue,js,ts,jsx,tsx}';
+```sh
+'./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'
 ```
 
 Aqui, você especificou para ele procurar pelas suas classes no index.html, e em todos os arquivos que estiverem dentro da pasta src.

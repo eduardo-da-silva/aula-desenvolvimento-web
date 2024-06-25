@@ -49,8 +49,8 @@ npx tailwindcss init -p
 
 Em seguida, no arquivo `tailwind.config.js`, adicione dentro dos colchetes de "content", o caminho de seus arquivos para o framework saber aonde ele deve procurar pelas classes, para poder aplica-las.
 
-```js
-'./index.html', './src/**/*.{vue,js,ts,jsx,tsx}';
+```sh
+'./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'
 ```
 
 Agora, vá na pasta assets(que está dentro de src), apague todos os arquivos dentro dela, e crie um arquivo chamado `tailwind.css` dentro do arquivo, inclua o seguinte código para importas as bibliotecas do Tailwind CSS.
@@ -102,6 +102,7 @@ Note que o arquivo `main.css` importa a fonte `Poppins` do Google Fonts e define
 Vamos criar a estrutura básica do formulário. Edite o arquivo `src/App.vue`. O bloco `script` não mudará do que já vimos no exemplo de formulário anterior. Dessa forma, deixe como segue abaixo:
 
 ```javascript
+<script setup>
 import { reactive, ref } from 'vue'
 
 const titulo = ref('Oi VueJs!')

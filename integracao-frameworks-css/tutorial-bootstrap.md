@@ -89,6 +89,7 @@ Note que o arquivo `main.css` importa a fonte `Poppins` do Google Fonts e define
 Vamos criar a estrutura básica do formulário. Edite o arquivo `src/App.vue`. O bloco `script` não mudará do que já vimos no exemplo de formulário anterior. Dessa forma, deixe como segue abaixo:
 
 ```javascript
+<script setup>
 import { reactive, ref } from 'vue'
 
 const titulo = ref('Oi VueJs!')
