@@ -1,7 +1,7 @@
 ---
 title: 'Interligação em formulários'
 description: Introdução aos conceitos de interligação em formulários
-permalink: /formularios
+permalink: /formularios/
 ---
 
 # Índice da aula
@@ -78,4 +78,4 @@ A partir deste ponto, vamos considerar sempre o uso da diretiva `v-model` para v
 
 As próximas seções vão apresentar mais detalhes sobre a interligação em formulários.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Início')</span> <span>[Uso básico &gt;](formularios/uso-basico.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](../ 'Início')</span> <span>[Uso básico &gt;](formularios/uso-basico.html 'Próximo')</span></span>

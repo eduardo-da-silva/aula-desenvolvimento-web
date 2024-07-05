@@ -332,4 +332,4 @@ Com isso, a estilização do formulário está completa. Agora, você pode testa
 
 O código completo do projeto está disponível no [repositório do GitHub](https://github.com/eduardo-da-silva/formulario-basico-2infos-2024).
 
-<span style="display: flex; justify-content: space-between;"> <span>[&lt; Upload de imagens](upload-imagens.html 'Anterior')</span> <span>[Exercícios &gt;](exercicios.html 'Próximo')</span></span
+<span style="display: flex; justify-content: space-between;"> <span>[&lt; Upload de imagens](upload-imagens.html 'Anterior')</span> <span>[Exercícios &gt;](exercicios.html 'Próximo')</span></span>
