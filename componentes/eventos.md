@@ -133,6 +133,88 @@ npm run dev
 
 Acesse no navegador e veja a listagem de produtos. Clique no ícone de `lixeira` para remover um produto da lista.
 
+## Formulário para adicionar produto
+
+Vamos agora criar um componente para adicionar produtos à lista. Crie um novo componente chamado `ProductAdd.vue` no diretório `src/components` com o seguinte conteúdo:
+
+```html
+<script setup>
+  import { reactive } from 'vue';
+  const emit = defineEmits(['adicionar']);
+  const produto = reactive({
+    nome: '',
+    preco: '',
+  });
+  function salvar() {
+    if (produto.nome === '' || produto.preco === '') {
+      alert('Os campos nome e preço são obrigatórios');
+      return;
+    }
+    emit('adicionar', produto);
+  }
+</script>
+<template>
+  <form @submit.prevent="salvar">
+    <div>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" v-model="produto.nome" />
+    </div>
+    <div>
+      <label for="preco">Preço</label>
+      <input type="text" id="preco" v-model="produto.preco" />
+    </div>
+    <button type="submit">Salvar</button>
+  </form>
+</template>
+```
+
+Neste componente, criamos um formulário para adicionar produtos à lista. O formulário possui dois campos: `nome` e `preço`. Quando o usuário preenche os campos e clica no botão `Salvar`, o evento `adicionar` é emitido com o produto preenchido.
+
+Agora, edite o arquivo `src/App.vue` e adicione o componente `ProductAdd` ao template:
+
+```html
+<script setup>
+  import { ref } from 'vue';
+  import ProductList from '@/components/ProductList.vue';
+  import ProductAdd from '@/components/ProductAdd.vue';
+
+  const produtos = ref([
+    { id: 1, nome: 'Produto 1', preco: 'R$ 20,50' },
+    { id: 2, nome: 'Produto 2', preco: 'R$ 120,50' },
+    { id: 3, nome: 'Produto 3', preco: 'R$ 220,50' },
+    { id: 4, nome: 'Produto 4', preco: 'R$ 320,50' },
+  ]);
+  const proxId = ref(5);
+
+  function removerItem(id) {
+    const index = produtos.value.findIndex((produto) => produto.id === id);
+    produtos.value.splice(index, 1);
+  }
+
+  function adicionarProduto(produto) {
+    produto.id = proxId;
+    produtos.value.push(produto);
+    proxId.value++;
+  }
+</script>
+
+<template>
+  <h1>Meus produtos</h1>
+  <product-add @adicionar="adicionarProduto" />
+  <product-list
+    :produtos="produtos"
+    @excluir="excluir"
+    @apagarTudo="excluirTodos"
+  />
+</template>
+
+<style scoped></style>
+```
+
+Note que adicionamos o componente `ProductAdd` ao template do componente `App`. Além disso, criamos a função `adicionarProduto` que recebe o produto preenchido no formulário e o adiciona à lista de produtos. Também, criamos a variável `proxId` para controlar o próximo `id` a ser atribuído a um novo produto, simulando um banco de dados com `id` autoincrementável.
+
+Agora, execute o projeto e veja o formulário para adicionar produtos. Preencha os campos e clique no botão `Salvar` para adicionar um novo produto à lista.
+
 # Conclusão
 
 Neste capítulo, você aprendeu como manipular eventos em componentes Vue.js. A manipulação de eventos é uma parte importante da programação de interfaces de usuário. No Vue.js, os componentes filhos podem emitir eventos que são capturados pelos componentes pais. Para isso, é necessário utilizar a diretiva `v-on` no componente pai (abreviada com `@`) e o método `$emit` no componente filho.
