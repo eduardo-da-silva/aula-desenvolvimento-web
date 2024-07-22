@@ -150,7 +150,7 @@ Vamos agora criar um componente para adicionar produtos à lista. Crie um novo c
       alert('Os campos nome e preço são obrigatórios');
       return;
     }
-    emit('adicionar', produto);
+    emit('adicionar', { ...produto });
   }
 </script>
 <template>
@@ -201,11 +201,7 @@ Agora, edite o arquivo `src/App.vue` e adicione o componente `ProductAdd` ao tem
 <template>
   <h1>Meus produtos</h1>
   <product-add @adicionar="adicionarProduto" />
-  <product-list
-    :produtos="produtos"
-    @excluir="excluir"
-    @apagarTudo="excluirTodos"
-  />
+  <product-list :produtos="produtos" @remove="removeItem" />
 </template>
 
 <style scoped></style>
