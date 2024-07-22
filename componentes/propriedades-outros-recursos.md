@@ -13,7 +13,7 @@ Voltando ao exemplo do componente `ExpandBox`, vamos definir a propriedade `titl
 <script setup>
   import { computed, ref, defineProps } from 'vue';
 
-  const props = defineProps({
+  defineProps({
     title: {
       type: String,
       required: true,
@@ -35,8 +35,8 @@ Voltando ao exemplo do componente `ExpandBox`, vamos definir a propriedade `titl
     {% raw %}
     <button @click="showContent=!showContent">{{buttonText}}</button>
     <div v-if="showContent" class="expand-box">
-      <h1>{{ props.title }}</h1>
-      <p>{{ props.content }}</p>
+      <h1>{{ title }}</h1>
+      <p>{{ content }}</p>
     </div>
     {% endraw %}
   </div>
@@ -99,7 +99,7 @@ Por exemplo, podemos definir uma nova propriedade `qtde` no componente `ExpandBo
 <script setup>
   import { computed, ref, defineProps } from 'vue';
 
-  const props = defineProps({
+  defineProps({
     title: {
       type: String,
       required: true,
@@ -125,9 +125,9 @@ Por exemplo, podemos definir uma nova propriedade `qtde` no componente `ExpandBo
     {% raw %}
     <button @click="showContent=!showContent">{{buttonText}}</button>
     <div v-if="showContent" class="expand-box">
-      <h1>{{ props.title }}</h1>
-      <p>{{ props.content }}</p>
-      <p>Quantidade: {{ props.qtde }}</p>
+      <h1>{{ title }}</h1>
+      <p>{{ content }}</p>
+      <p>Quantidade: {{ qtde }}</p>
     </div>
     {% endraw %}
   </div>

@@ -29,7 +29,7 @@ Crie um novo componente chamado `ProductList.vue` no diretório `src/components`
 
 ```html
 <script setup>
-  const props = defineProps(['produtos']);
+  defineProps(['produtos']);
 </script>
 
 <template>
@@ -42,7 +42,7 @@ Crie um novo componente chamado `ProductList.vue` no diretório `src/components`
       </tr>
     </thead>
     <tbody>
-      <tr v-for="produto in props.produtos" :key="produto.id">
+      <tr v-for="produto in produtos" :key="produto.id">
         {% raw %}
         <td>{{ produto.nome }}</td>
         <td>{{ produto.preco }}</td>

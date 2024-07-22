@@ -13,7 +13,7 @@ Voltando ao exemplo do componente `ExpandBox`, vamos adicionar uma propriedade c
 <script setup>
   import { computed, ref, defineProps } from 'vue';
 
-  const props = defineProps(['title']);
+  defineProps(['title']);
 
   const showContent = ref(false);
   const buttonText = computed(() =>
@@ -26,7 +26,7 @@ Voltando ao exemplo do componente `ExpandBox`, vamos adicionar uma propriedade c
     {% raw %}
     <button @click="showContent=!showContent">{{buttonText}}</button>
     <div v-if="showContent" class="expand-box">
-      <h1>{{ props.title }}</h1>
+      <h1>{{ title }}</h1>
       <p>Conteúdo da caixa de expansão.</p>
     </div>
     {% endraw %}
@@ -44,7 +44,7 @@ Voltando ao exemplo do componente `ExpandBox`, vamos adicionar uma propriedade c
 </style>
 ```
 
-No código acima, a propriedade `props.title` foi adicionada ao componente `ExpandBox`. A propriedade `props.title` é definida no bloco `<script setup>` usando o método `defineProps`. O método `defineProps` recebe um array de strings com os nomes das propriedades que o componente deve receber. No bloco `<template>`, a propriedade `props.title` é exibida no conteúdo da caixa de expansão.
+No código acima, a propriedade `title` foi adicionada ao componente `ExpandBox`. A propriedade `title` é definida no bloco `<script setup>` usando o método `defineProps`. O método `defineProps` recebe um array de strings com os nomes das propriedades que o componente deve receber. No bloco `<template>`, a propriedade `title` é exibida no conteúdo da caixa de expansão.
 
 ## Passando propriedades para um componente
 
@@ -84,7 +84,7 @@ Com isso, cada instância do componente `ExpandBox` exibirá um título diferent
 <script setup>
   import { computed, ref, defineProps } from 'vue';
 
-  const props = defineProps(['title', 'content']);
+  defineProps(['title', 'content']);
 
   const showContent = ref(false);
   const buttonText = computed(() =>
@@ -97,8 +97,8 @@ Com isso, cada instância do componente `ExpandBox` exibirá um título diferent
     {% raw %}
     <button @click="showContent=!showContent">{{buttonText}}</button>
     <div v-if="showContent" class="expand-box">
-      <h1>{{ props.title }}</h1>
-      <p>{{ props.content }}</p>
+      <h1>{{ title }}</h1>
+      <p>{{ content }}</p>
     </div>
     {% endraw %}
   </div>
