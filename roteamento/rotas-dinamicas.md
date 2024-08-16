@@ -136,7 +136,7 @@ Vamos agora configurar a rota para a página de detalhes do produto. Edite o arq
 import { createRouter, createWebHistory } from 'vue-router';
 import HomeView from '../views/HomeView.vue';
 import ContactView from '../views/ContactView.vue';
-import ProductView from '../views/ProjectView.vue';
+import ProductsView from '../views/ProductsView.vue';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -159,7 +159,7 @@ const router = createRouter({
     {
       path: '/products',
       name: 'products',
-      component: ProjectView,
+      component: ProductsView,
     },
     {
       path: '/products/:id',

@@ -28,15 +28,15 @@ Durante a criação do projeto, você será questionado sobre a adição de Type
 Vue.js - The Progressive JavaScript Framework
 
 ✔ Package name: … vue-layout-router
-✔ Add TypeScript? … No / Yes
-✔ Add JSX Support? … No / Yes
-✔ Add Vue Router for Single Page Application development? … No / Yes
-✔ Add Pinia for state management? … No / Yes
-✔ Add Vitest for Unit Testing? … No / Yes
+✔ Add TypeScript? … No
+✔ Add JSX Support? … No
+✔ Add Vue Router for Single Page Application development? …  Yes
+✔ Add Pinia for state management? … No
+✔ Add Vitest for Unit Testing? … No
 ✔ Add an End-to-End Testing Solution? › No
-✔ Add ESLint for code quality? … No / Yes
-✔ Add Prettier for code formatting? … No / Yes
-✔ Add Vue DevTools 7 extension for debugging? (experimental) … No / Yes
+✔ Add ESLint for code quality? … Yes
+✔ Add Prettier for code formatting? … Yes
+✔ Add Vue DevTools 7 extension for debugging? (experimental) … Yes
 
 Scaffolding project in [...]/vue-layout-router...
 ```
