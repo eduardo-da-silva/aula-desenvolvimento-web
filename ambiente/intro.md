@@ -1,7 +1,7 @@
 ---
 title: 'Ambiente de desenvolvimento'
 description: Configuração do ambiente de desenvolvimento no Linux
-permalink: /ambiente
+permalink: /ambiente/
 ---
 
 # Introdução
@@ -15,7 +15,7 @@ Recomendo a utilização do `nvm`, que permite a utilização de versões difere
 Para instalar ou atualizar o o `nvm`, execute o comando abaixo:
 
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.2/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.2/install.sh | bash
 ```
 
 Após a instalação, é necessário atualizar as variáveis de ambiente do seu terminal. Para tal, sugiro fechar o terminal e abrir novamente. Em seguida, você pode instalar a versão LTS do NodeJS:
@@ -147,7 +147,7 @@ module.exports = {
 }
 ``` -->
 
-[&lt; Início](. 'Início')
+[&lt; Início](../ 'Início')
 
 <!-- <span style="display: inline-block;width: 60%"></span>
 [Exemplos de uso do Axios &gt;](exemplos-de-uso.html "Próximo")   -->
