@@ -21,4 +21,4 @@ Duas características importantes do VueJs são:
 - Renderização declarativa: o VueJs permite a criação de _templates_ HTML que são renderizados dinamicamente com base nos dados da aplicação. Essa renderização é feita de forma declarativa, ou seja, o desenvolvedor declara o que deve ser renderizado, e não como deve ser renderizado. Isso permite que o VueJs faça o trabalho de atualizar a interface do usuário de forma eficiente.
 - Programação reativa: o VueJs rastreia automaticamente o estado de cada variável declarada na aplicação, e atualiza a interface do usuário quando os dados são alterados. Isso permite que o desenvolvedor se concentre no desenvolvimento da aplicação, sem se preocupar com a atualização da interface do usuário.
 
-<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](. 'Início')</span> <span>[Criando um aplicação VueJS &gt;](criar-aplicacao-vuejs.html 'Próximo')</span></span>
+<span style="display: flex; justify-content: space-between;"><span>[&lt; Início](../ 'Início')</span> <span>[Criando um aplicação VueJS &gt;](criar-aplicacao-vuejs.html 'Próximo')</span></span>

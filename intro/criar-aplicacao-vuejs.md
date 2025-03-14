@@ -15,32 +15,39 @@ Criar um primeiro projeto usando o VueJS.
 
 # Criação de uma aplicação VueJS
 
-Supondo que você esteja em um projeto vazio no VSCode. Para criar uma aplicação VueJS, abra o terminal e execute o comando:
+Para criar uma aplicação VueJS, abra o terminal no diretório em que você deseja criar o projeto e execute o comando:
 
 ```bash
-npm init vue@latest .
+npm init vue@latest [nome-do-projeto]
 ```
 
-_Note que usamos a opção `.` para criar a aplicação na pasta atual. Caso você não queira criar a aplicação na pasta atual, basta informar o nome da pasta que deseja criar._
+_Note que usamos um parâmetro `[nome-do-projeto]` que é opcional. Se você informar este parâmetro, ele criará um projeto com o nome informado, caso contrário, ele solicitará o nome do projeto._
 
-O comando anterior irá criar uma aplicação VueJS usando uma ferramenta de scaffolding chamada `create-vue`. Ele apresentará uma série de perguntas para você. Responda conforme a seguir (assumo que o nome da pasta e do projeto são iguais: `exemplo-inicial-vue3`):
+O comando anterior irá criar uma aplicação VueJS usando uma ferramenta de scaffolding chamada `create-vue`. Ele apresentará uma série de perguntas para você. Responda conforme a seguir:
+
+1. **Project name**: informe o nome do projeto. Este nome será usado para criar a pasta do projeto.
+
+2. **Select features to include in your project**: selecione as funcionalidades que você deseja incluir no projeto. Você pode navegar pelas opções usando as setas do teclado e selecionar/deselecionar as opções usando a barra de espaço. Abaixo, eu deixei um exemplo do que você deve pode escolher nesta etapa inicial do curso.
 
 ```bash
-✔ Project name: … exemplo-inicial-vue3
-✔ Add TypeScript? … No
-✔ Add JSX Support? … No
-✔ Add Vue Router for Single Page Application development? … No
-✔ Add Pinia for state management? … No
-✔ Add Vitest for Unit testing? … No
-✔ Add Cypress for both Unit and End-to-End testing? … No
-✔ Add ESLint for code quality? … Yes
-✔ Add Prettier for code formatting? … Yes
-
-Scaffolding project in ./<your-project-name>...
-Done.
+◆  Select features to include in your project: (↑/↓ to navigate, space to select, a to toggle all, enter to confirm)
+│  ◻ TypeScript
+│  ◻ JSX Support
+│  ◻ Router (SPA development)
+│  ◻ Pinia (state management)
+│  ◻ Vitest (unit testing)
+│  ◻ End-to-End Testing
+│  ◼ ESLint (error prevention)
+│  ◼ Prettier (code formatting)
 ```
+
+3. **Install Oxlint for faster linting**: selecione `No` para não instalar o Oxlint.
+
+Então ele fará a criação do projeto em uma pasta com o nome do projeto informado.
 
 Note que no exemplo anterior, escolhemos não usar o Vue Router, Pinia, Vitest, Cypress, ESLint e Prettier, bem como o suporte ao TypeScript e JSX. Você pode escolher o que desejar.
+
+Agora, abra no VSCode a pasta do projeto criado. Importante que você abra a pasta do projeto, e não um arquivo específico. Outro ponto importante: caso você tenha executado o comando de criação do projeto já dentro do VS Code, eu sugiro que você reabra na pasta do projeto, pois o VS Code pode não reconhecer o projeto corretamente.
 
 Em seguida, basta executar os seguintes comandos:
 
@@ -52,7 +59,7 @@ npm run dev
 O primeiro comando instala as dependências do projeto. O segundo comando executa o servidor de desenvolvimento do VueJS. Em geral, o servidor estará em execução na porta 5173, caso esta esteja livre. Para acessar a aplicação, basta abrir o navegador e acessar a URL `http://localhost:5173`.
 
 ```bash
-  VITE v3.2.2  ready in 500 ms
+  VITE v6.2.2  ready in 500 ms
 
   ➜  Local:   http://127.0.0.1:5173/
   ➜  Network: use --host to expose
@@ -122,10 +129,10 @@ Note também que antes de fechar a tag `</body>`, há uma referência para o arq
 Como comentando anteriormente, o arquivo `main.js` é o ponto de entrada da aplicação. Ele é responsável por carregar o VueJS e o componente raiz da aplicação. O código a seguir mostra o arquivo `main.js`:
 
 ```javascript
+import './assets/main.css';
+
 import { createApp } from 'vue';
 import App from './App.vue';
-
-import './assets/main.css';
 
 createApp(App).mount('#app');
 ```
